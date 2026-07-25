@@ -1,0 +1,148 @@
+export const translations = {
+  en: {
+    title: "Terms and Conditions",
+    subtitle: "BELTEI IU MOBILE APP",
+    lastUpdated: "Last updated: August 19, 2025",
+    sections: [
+      {
+        num: "1",
+        title: "About and Usage",
+        type: "text",
+        body: "BELTEI IU Mobile App is an application designed to provide general information about BELTEI International University to the public and students. It also includes the World-Wide E-Library, BELTEI IU E-Learning, which is a place for students to study on their own. In addition, BELTEI IU Mobile App also has a portal for students and professors with many functions and benefits: attendance tracking, study schedule, exam schedule, academic results, etc. Users can use this application only on devices running Android or iOS operating systems. Therefore, users are required to have a phone or tablet that can download the application from the Play Store or App Store and requires internet service to operate the various functions available in the application.",
+      },
+      {
+        num: "2",
+        title: "Acceptance of Terms of Use",
+        type: "text",
+        body: "By accessing the BELTEI IU Mobile App, users agree to be bound by all terms and conditions set forth in this document. BELTEI International University reserves the right to modify these terms and conditions at any time in its sole discretion without notice. Modifications shall be effective immediately upon posting on the App.",
+      },
+      {
+        num: "3",
+        title: "Privacy Policy",
+        type: "list",
+        body: "All user information or data is not stored or created through the BELTEI IU Mobile App. Users must register at any branch of BELTEI International University. Users must use this application for academic purposes and must not allow it to be used for illegal purposes or to harm other users. BELTEI IU Mobile App reserves the right to terminate use by suspending any account if there is a serious violation of these Terms of Use. Users promise and guarantee the following prohibited conditions:",
+        items: [
+          "Users must not enter false information with the intention of deceiving others.",
+          "Do not take any action that may harm the national society, national honor, or any public figure.",
+          "Do not use data or copy documents, lessons, images, videos, for further teaching or for commercial purposes without written permission from BELTEI International University.",
+          "Do not hack, download data, or copy program code that causes the program to function abnormally or not function. In the event that any person acts as described above, he/she will be held responsible under applicable law.",
+        ],
+      },
+      {
+        num: "4",
+        title: "Account",
+        type: "text",
+        body: "Student accounts are created through registration at both BELTEI International University campuses. After registration, students will receive a personal account with a student ID, password, and PIN code to access the Student Portal. This account is for personal use only, is not transferable to others, and the user is responsible for maintaining the confidentiality of the password or PIN.",
+      },
+      {
+        num: "5",
+        title: "Payment",
+        type: "list",
+        body: "",
+        items: [
+          "Students can pay tuition fees through the BELTEI IU Mobile App by scanning the bank’s KHQR.",
+          "Students must check the invoice first before paying tuition fees.",
+          "Amounts already paid are non-refundable.",
+          "In case of any error or mistake, please contact the Information and Hospitality Department of BELTEI International University.",
+          "BELTEI IU Mobile App does not store your bank card information when you make a payment transaction.",
+        ],
+      },
+      {
+        num: "6",
+        title: "Top Up",
+        type: "list",
+        body: "",
+        items: [
+          "Students can add money to their wallet to use for paying for bicycle, motorbike, or car, etc.",
+          "The amount already added cannot be withdrawn.",
+          "If there is any case or error, please contact the Information and Hospitality Department of BELTEI International University.",
+        ],
+      },
+      {
+        num: "7",
+        title: "Account Security",
+        type: "text",
+        body: "Students must maintain secure access and change their passwords or PIN codes regularly. If there are signs of digital intrusion, unauthorized access, or in the event of loss of a device, they must immediately notify BELTEI International University.",
+      },
+      {
+        num: "8",
+        title: "Contact Us",
+        type: "text",
+        body: "For any questions related to the use of the Terms of Use, as well as other information, you can contact BELTEI International University or via email: belteiiuapp@beltei.edu.kh",
+      },
+    ],
+  },
+  kh: {
+    title: "លក្ខខណ្ឌនៃការប្រើប្រាស់",
+    subtitle: "កម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប",
+    lastUpdated: "បានធ្វើបច្ចុប្បន្នភាពចុងក្រោយ៖ ១៩ សីហា ២០២៥",
+    sections: [
+      {
+        num: "១",
+        title: "អំពីកម្មវិធី និងការប្រើប្រាស់",
+        type: "text",
+        body: "កម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប (BELTEI IU Mobile App) គឺជាកម្មវិធីមួយដែលបង្កើតឡើងសម្រាប់ផ្ដល់នូវព័ត៌មានទូទៅរបស់ សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ជូនដល់សាធារណៈជន និងសិស្សានុសិស្ស ។ នៅក្នុងនោះក៏បានបញ្ចូលនូវបណ្ណាល័យ អេឡិចត្រូនិច (World Wide E-Library), ប៊ែលធី អាយយូ E-Learning ដែលជាកន្លែងសម្រាប់សិស្សនិស្សិតអាចសិក្សាដោយខ្លួនឯង ។មិនតែប៉ុណ្ណោះកម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប ក៏មាននូវថ្នាលសម្រាប់និស្សិត និងសាស្ត្រាចារ្យ ដែលមានមុខងារ និង អត្ថប្រយោជន៍ ជាច្រើនដូចជា៖ ការតាមដានវត្តមាន, កាលវិភាគសិក្សា, កាលវិភាគប្រឡង, លទ្ធផលសិក្សាជាដើម ។ អ្នកប្រើប្រាស់អាចប្រើប្រាស់ កម្មវិធីនេះបានតែនៅលើឧបករណ៍ដែលដំណើរការដោយប្រព័ន្ធប្រតិបត្តិការ Android ឬ iOS តែប៉ុណ្ណោះ ។ ហេតុដូច្នេះ ហើយតម្រូវឱ្យ អ្នកប្រើប្រាស់មានទូរស័ព្ទ ឬ ថេប្លេត ដែលមានសមត្ថភាពទាញយកកម្មវិធីពី Play Store ឬ App Store និងតម្រូវឱ្យមានសេវាអ៊ិនធឺណិត ដើម្បីដំណើរការមុខងារផ្សេងៗដែលមានក្នុងកម្មវិធី ។",
+      },
+      {
+        num: "២",
+        title: "ការទទួលយកលក្ខខណ្ឌនៃការប្រើប្រាស់",
+        type: "text",
+        body: "ការចូលប្រើប្រាស់កម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប អ្នកប្រើប្រាស់យល់ព្រមអនុវត្តតាមនូវលក្ខខណ្ឌ និងគោលការណ៍ទាំងអស់ដែលបានកំណត់ក្នុងឯកសារនេះ ។ សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ រក្សាសិទ្ធិក្នុងការកែប្រែ បញ្ញត្តិ និងលក្ខខណ្ឌទាំងនេះនៅពេលណាមួយក៏បានស្របតាមតាមឆន្ទានុសិទ្ធិរបស់ខ្លួន ដោយមិនមានការជូនដំណឹងអ្វីឡើយ ។ ការកែប្រែត្រូវមានប្រសិទ្ធភាពអនុវត្តន៍ភ្លាមបន្ទាប់ ពីការកែប្រែនោះត្រូវបានដាក់នៅលើអ៊ែប ។",
+      },
+      {
+        num: "៣",
+        title: "គោលការណ៍នៃសិទ្ធិឯកជន",
+        type: "list",
+        body: "រាល់ព័ត៌មាន ឬទិន្នន័យរបស់អ្នកប្រើប្រាស់ និងមិនត្រូវបានរក្សាទុក ឬបង្កើតគណនីតាមរយៈកម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែបនោះទេ អ្នកប្រើប្រាស់ត្រូវទៅ ចុះឈ្មោះ នៅតាមបណ្ដាលសាខារបស់ សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ។ អ្នកប្រើប្រាស់ត្រូវ ប្រើប្រាស់កម្មវិធី នេះតាមគោលបំណងសិក្សា និងមិនអនុញ្ញាតឲ្យប្រើប្រាស់ក្នុងគោល បំណងខុសច្បាប់ ឬប៉ះពាល់ដល់អ្នកប្រើប្រាស់ដទៃដាច់ខាត ។ កម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប និងរក្សាសិទ្ធិក្នុងការបញ្ឈប់ការប្រើប្រាស់ ដោយផ្អាកគណនីណាមួយ បើសិនជាមានករណីរំលោភ បំពានធ្ងន់ធ្ងរចំពោះលក្ខខណ្ឌនៃការប្រើប្រាស់នេះ ។ អ្នកប្រើប្រាស់ធ្វើការសន្យា និងធានាបាននូវលក្ខខណ្ឌហាមឃាត់មួយចំនួនដូចខាង ក្រោម៖",
+        items: [
+          "អ្នកប្រើប្រាស់មិនត្រូវបញ្ចូលព័ត៌មានមិនពិត ក្នុងគោលបំណងបោកប្រាស់អ្នកដទៃឡើយ ។",
+          "មិនត្រូវធ្វើសកម្មភាពណាមួយដែលនាំឱ្យប៉ះពាល់ដល់សង្គមជាតិ កិត្តិយសជាតិ ឬបុគ្គលសាធារណៈណាមួយឡើយ ។",
+          "មិនត្រូវប្រើប្រាស់ទិន្នន័យ ចម្លងឯកសារ មេរៀន រូបភាព វីដេអូ យកទៅបង្រៀនបន្ត ឬប្រើប្រាស់ក្នុងន័យ អាជីវកម្ម ដោយគ្មានការអនុញ្ញាតជាលាយលក្ខណ៍អក្សរពី សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិឡើយ ។",
+          "មិនត្រូវធ្វើការវាយប្រហារ (Hack) ទាញយកទិន្នន័យ ចម្លងកូដកម្មវិធី ដែលធ្វើឱ្យកម្មវិធីដំណើរការមិន ប្រក្រតី ឬមិនអាចដំណើរ ការបាន ។ ករណីជនណាដែលធ្វើសកម្មភាពដូចមានខាងលើនឹងត្រូវទទួលខុសត្រូវចំពោះ មុខច្បាប់ជាធរមាន ។",
+        ],
+      },
+      {
+        num: "៤",
+        title: "អំពីគណនី",
+        type: "text",
+        body: "គណនីរបស់និស្សិត ត្រូវបានបង្កើតឡើងតាមរយៈការចុះឈ្មោះ នៅតាមបណ្ដាលសាខារបស់ សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ទាំងពីរទីតាំង ។ បន្ទាប់ពីការចុះឈ្មោះ និស្សិតនឹងទទួលបាននូវ គណនីផ្ទាល់ខ្លួនដែលមាន លេខសម្គាល់សិស្ស (Student ID) ពាក្យសម្ងាត់ (Password) និង PIN កូដ (Pin Code) សម្រាប់ចូលប្រើប្រាស់ថ្នាលនិស្សិត (Student Portal) ។ គណនីនេះមានគោលបំណងសម្រាប់ប្រើប្រាស់ផ្ទាល់ខ្លួនតែប៉ុណ្ណោះ មិនអនុញ្ញាតឲ្យផ្ទេរទៅឱ្យអ្នកដទៃ និងត្រូវមានទំនួលខុសត្រូវក្នុង ការរក្សា ពាក្យសម្ងាត់ ឬ PIN កូដ ផ្ទាល់ខ្លួន ។",
+      },
+      {
+        num: "៥",
+        title: "អំពីការទូទាត់",
+        type: "list",
+        body: "",
+        items: [
+          "និស្សិតអាចបង់ថ្លៃសិក្សា តាមរយៈកម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប តាមរយៈការស្កេន KHQR របស់ធនាគារ ។",
+          "និស្សិត ត្រូវពិនិត្យវិក្កយបត្រជាមុន មុននឹងបង់ថ្លៃសិក្សា ។",
+          "ចំនួនទឹកប្រាក់ដែលបានបង់រួចហើយ មិនអាចដកវិញបានឡើយ ។",
+          "ប្រសិនបើមានករណី ឬកំហុសខុសឆ្គងណាមួយ សូមធ្វើការទាក់ទងទៅកាន់ផ្នែក ផ្ដល់ព័ត៌មាន និងបដិសណ្ឋារកិច្ច របស់សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ។",
+          "កម្មវិធី ប៊ែលធី អាយយូ ម៉ូបាលអ៊ែប មិនរក្សាព័ត៌មានកាតធនាគាររបស់លោកអ្នកឡើយ នៅពេលដែលលោកអ្នកធ្វើប្រតិបត្តិការ បង់ប្រាក់ ។",
+        ],
+      },
+      {
+        num: "៦",
+        title: "កាបូបលុយ",
+        type: "list",
+        body: "",
+        items: [
+          "និស្សិតអាចបញ្ចូលទឹកប្រាក់ទៅក្នុង កាបូបលុយ ដើម្បីប្រើប្រាស់សម្រាប់ការទូទាត់ថ្លៃផ្ញើ កង់ ម៉ូតូ ឬរថយន្តជាដើម ។",
+          "ចំនួនទឹកប្រាក់ដែលបានបញ្ចូលរួចរាល់ មិនអាចដកវិញឡើយ ។",
+          "ប្រសិនបើមានករណី ឬកំហុសខុសឆ្គងណាមួយ សូមធ្វើការទាក់ទងទៅកាន់ផ្នែក ផ្ដល់ព័ត៌មាន និងបដិសណ្ឋារកិច្ច របស់សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ។",
+        ],
+      },
+      {
+        num: "៧",
+        title: "សុវត្ថិភាពគណនី",
+        type: "text",
+        body: "និស្សិតត្រូវរក្សាការចូលប្រើប្រាស់ឱ្យមានសុវត្ថិភាព និងផ្លាស់ប្តូរពាក្យសម្ងាត់ ឬ PIN កូដ ជាប្រចាំ ប្រសិនបើមានសញ្ញាឈ្លានពានឌីជីថល ការចូលប្រើខុសប្រក្រតី ឬក្នុងករណីបាត់ឧបករណ៍ប្រើប្រាស់ ត្រូវជូនដំណឹងភ្លាមៗទៅកាន់សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ។",
+      },
+      {
+        num: "៨",
+        title: "ទំនាក់ទំនងមកយើង",
+        type: "text",
+        body: "រាល់ចម្ងល់ផ្សេងៗ ដែលទាក់ទងទៅនឹងបញ្ហានៃការប្រើប្រាស់លក្ខខណ្ឌនៃការប្រើប្រាស់ក៏ដូចជាព័ត៌មាន ផ្សេងៗទៀតលោកអ្នកអាចធ្វើ ការទាក់ទងមកកាន់សាកលវិទ្យាល័យ ប៊ែលធី អន្តរជាតិ ឬតាមរយៈ Email: belteiiuapp@beltei.edu.kh",
+      },
+    ],
+  },
+};
