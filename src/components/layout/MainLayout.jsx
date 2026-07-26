@@ -1,7 +1,17 @@
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Navbar from '@/components/layout/Navbar';
+import { isMobile } from 'react-device-detect';
 
 export default function MainLayout() {
     return (
-        <Outlet />
+        <div className="relative w-full min-h-screen flex flex-col">
+            {!isMobile && (
+                <Navbar />
+            )}
+            <main className="flex-1 w-full">
+                <Outlet />
+            </main>
+        </div>
     );
 }

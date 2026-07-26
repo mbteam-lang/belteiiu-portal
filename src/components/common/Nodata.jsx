@@ -10,8 +10,8 @@ const NoData = ({ isText = false }) => {
             {t('home.no_data_available')}
         </div>
     ) : (
-        <div className="flex flex-col items-center justify-center w-full py-16 px-4 select-none animate-fadeIn">
-            <div className="w-48 h-48 md:w-60 md:h-60 transition-all duration-300">
+         <div className="min-h-screen bg-gradient-to-b font-sans text-slate-700 flex flex-col justify-center items-center relative p-6 overflow-hidden">
+             <div className="w-48 h-48 md:w-60 md:h-60 transition-all duration-300">
                 <Lottie animationData={noDataAnimation} loop={true} />
             </div>
             <div className="text-center mt-2 max-w-md">
