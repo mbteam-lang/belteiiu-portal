@@ -39,8 +39,6 @@ import Scholarship from '@/pages/collaboration/Scholarship.jsx';
 import Subject_list from '@/pages/e_learning/Subject_list.jsx';
 import LessonScreen from '@/pages/e_learning/Lesson.jsx';
 import Course from '@/pages/e_learning/Course.jsx';
-import News from '@/pages/home/News.jsx';
-import NewsDetails from '@/pages/home/News_Details.jsx';
 
 import Other_Library from '@/pages/about/Other_Library.jsx';
 import Award from '@/pages/about/Award.jsx';
@@ -90,8 +88,6 @@ const AppRouter = () => (
                 <Route path="e-faculty/:id" element={<Subject_list />} />
                 <Route path="courses/:id" element={<Course />} /> 
                 <Route path="lessons/:id" element={<LessonScreen />} />
-                <Route path="news" element={<News />} />
-                <Route path="news/detail/:id" element={<NewsDetails />} />
                 <Route path="history_detail/:id" element={<HistoryDetails />} />
                 <Route path="other_library" element={<Other_Library />} />
                 <Route path="award/:id" element={<Award />} />

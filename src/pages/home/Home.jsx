@@ -2,7 +2,6 @@ import React from "react";
 import usePageTitle from '@/hooks/usePageTitle';
 import HeroSection from '@/components/sections/HeroSection';
 import StatsSection from '@/components/sections/StatsSection';
-import NewsSection from '@/components/sections/NewsSection';
 import FacultySection from '@/components/sections/FacultySection';
 import ServingVideo from "@/components/sections/VideoSection";
 
@@ -12,7 +11,6 @@ export default function Home() {
         <div className="select-none">
             {/* <HeroSection />
             <StatsSection />
-            <NewsSection />
             <FacultySection />
             <ServingVideo /> */}
             

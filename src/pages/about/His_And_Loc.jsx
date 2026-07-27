@@ -7,7 +7,6 @@ import ListCard from '@/components/common/Card';
 export default function Index() {
     usePageTitle('ប្រវត្តិ និងទីតាំង', 'History & Location');
     const { about, loading } = useAbout();
-    console.log("In Index : ", about);
     return (
         <>
             <div className="grid grid-cols-1 md:gap-2 p-4 md:space-y-0 space-y-2 max-w-7xl m-auto">
