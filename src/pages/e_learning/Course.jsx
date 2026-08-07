@@ -57,36 +57,36 @@ export default function Course() {
     }, [course]);
 
     return (
-        <div className={`${isDark ? 'bg-[#181818]' : 'bg-[#fafafa]'} min-h-screen`}>
+        <div className="bg-[#fafafa] dark:bg-[#181818] min-h-screen transition-colors duration-200">
 
             {/* Loading skeleton */}
             {loading && (
                 <div className="w-full">
-                    <div className={`w-full ${isDark ? 'bg-[#303030]' : 'bg-[#BFE2EA]'}`}>
+                    <div className="w-full bg-[#BFE2EA] dark:bg-[#303030]">
                         <div className='flex items-center container mx-auto gap-5 md:px-2 px-5 py-3'>
-                            <div className='lg:w-14 lg:h-14 w-12 h-12 drop-shadow-lg bg-gray-200 animate-pulse rounded-full flex justify-center items-center' />
-                            <div className='w-48 h-6 rounded bg-gray-200 animate-pulse' />
+                            <div className='lg:w-14 lg:h-14 w-12 h-12 drop-shadow-lg bg-gray-200 dark:bg-slate-700 animate-pulse rounded-full flex justify-center items-center' />
+                            <div className='w-48 h-6 rounded bg-gray-200 dark:bg-slate-700 animate-pulse' />
                         </div>
                     </div>
                     <section className="container mx-auto px-2 py-10">
                         <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
                             {[...Array(4)].map((_, index) => (
-                                <div key={index} className={`rounded-xl shadow-md p-3 h-full flex flex-col justify-between animate-pulse ${isDark ? 'bg-[#303030]' : 'bg-white'}`}>
+                                <div key={index} className="rounded-xl shadow-md p-3 h-full flex flex-col justify-between animate-pulse bg-white dark:bg-[#303030] border border-gray-100 dark:border-slate-700">
                                     <div>
-                                        <div className='relative h-48 overflow-hidden rounded-md bg-gray-200' />
-                                        <div className='mt-3 h-5 bg-gray-200 rounded w-3/4' />
-                                        <div className='mt-2 h-4 bg-gray-200 rounded w-1/2' />
+                                        <div className='relative h-48 overflow-hidden rounded-md bg-gray-200 dark:bg-slate-700' />
+                                        <div className='mt-3 h-5 bg-gray-200 dark:bg-slate-700 rounded w-3/4' />
+                                        <div className='mt-2 h-4 bg-gray-200 dark:bg-slate-700 rounded w-1/2' />
                                     </div>
 
-                                    <div className='flex justify-between items-center mt-5 pt-2 border-t border-gray-100'>
+                                    <div className='flex justify-between items-center mt-5 pt-2 border-t border-gray-100 dark:border-slate-700'>
                                         <div className='flex items-center gap-1 min-w-0 w-2/3'>
-                                            <div className='w-8 h-8 flex-shrink-0 bg-gray-200 rounded-full' />
+                                            <div className='w-8 h-8 flex-shrink-0 bg-gray-200 dark:bg-slate-700 rounded-full' />
                                             <div className='ml-2 min-w-0 flex-1 space-y-2'>
-                                                <div className='h-3 bg-gray-200 rounded w-full' />
-                                                <div className='h-3 bg-gray-200 rounded w-1/2' />
+                                                <div className='h-3 bg-gray-200 dark:bg-slate-700 rounded w-full' />
+                                                <div className='h-3 bg-gray-200 dark:bg-slate-700 rounded w-1/2' />
                                             </div>
                                         </div>
-                                        <div className='h-4 bg-gray-200 rounded w-12 flex-shrink-0' />
+                                        <div className='h-4 bg-gray-200 dark:bg-slate-700 rounded w-12 flex-shrink-0' />
                                     </div>
                                 </div>
                             ))}
@@ -105,14 +105,14 @@ export default function Course() {
             {!loading && !nodata && (
                 <>
                     {/* Header */}
-                    <div className={`w-full ${isDark ? 'bg-[#303030]' : 'bg-[#BFE2EA]'}`}>
+                    <div className="w-full bg-[#BFE2EA] dark:bg-[#303030]">
                         <div className='flex items-center container mx-auto gap-5 md:px-2 px-5'>
-                            <div className='lg:w-14 lg:h-14 w-12 h-12 drop-shadow-lg bg-[#BFE2EA] flex justify-center items-center rounded-full my-3'>
+                            <div className='lg:w-14 lg:h-14 w-12 h-12 drop-shadow-lg bg-[#BFE2EA] dark:bg-slate-800 flex justify-center items-center rounded-full my-3'>
                                 <div className='lg:w-10 lg:h-10 w-8 h-8 bg-[#0a96a4] rounded-full flex justify-center items-center'>
                                     <CastForEducationIcon className='text-white' />
                                 </div>
                             </div>
-                            <h1 className={`font-bold md:text-xl text-lg flex items-center ${isDark ? 'text-white opacity-75' : 'text-[#4E4E4E]'}`}>
+                            <h1 className="font-bold md:text-xl text-lg flex items-center text-[#4E4E4E] dark:text-slate-100">
                                 {course && course.length > 0 ? course[0]?.title : ''}
                             </h1>
                         </div>
@@ -129,7 +129,7 @@ export default function Course() {
                                         to={`/lessons/${courseItem.course_id}`}
                                         onClick={() => handleClick(courseItem.course_id)}
                                     >
-                                        <div className={`rounded-xl shadow-md p-3 h-full flex flex-col justify-between transition-colors ${isDark ? 'bg-[#303030]' : 'bg-white'}`}>
+                                        <div className="rounded-xl shadow-md p-3 h-full flex flex-col justify-between transition-colors bg-white dark:bg-[#303030] border border-gray-100 dark:border-slate-700">
                                             <div>
                                                 <div className='relative h-48 overflow-hidden rounded-md'>
                                                     <img
@@ -142,26 +142,26 @@ export default function Course() {
                                                         {t('e_learning.videos')}
                                                     </div>
                                                 </div>
-                                                <h1 className={`mt-2 font-semibold text-lg line-clamp-2 ${isDark ? 'text-white opacity-90' : 'text-[#4E4E4E]'}`}>
+                                                <h1 className="mt-2 font-semibold text-lg line-clamp-2 text-[#4E4E4E] dark:text-slate-100">
                                                     {courseItem.title}
                                                 </h1>
                                             </div>
 
-                                            <div className={`flex justify-between items-center mt-3 pt-2 border-t ${isDark ? 'border-gray-700' : 'border-gray-100'}`}>
+                                            <div className="flex justify-between items-center mt-3 pt-2 border-t border-gray-100 dark:border-slate-700">
                                                 <div className='flex items-center gap-1 min-w-0'>
                                                     <div className='w-8 h-8 flex-shrink-0 bg-[#0a96a4] rounded-full flex justify-center items-center'>
                                                         <SchoolIcon fontSize="small" className='text-white' />
                                                     </div>
                                                     <div className='ml-2 min-w-0'>
-                                                        <h1 className={`text-sm truncate max-w-[120px] ${isDark ? 'text-gray-300' : 'text-gray-500'}`}>
+                                                        <h1 className="text-sm truncate max-w-[120px] text-gray-500 dark:text-slate-300">
                                                             {courseItem.faculty}
                                                         </h1>
-                                                        <h1 className={`text-xs ${isDark ? 'text-gray-400' : 'text-gray-400'}`}>
+                                                        <h1 className="text-xs text-gray-400 dark:text-slate-400">
                                                             {t('e_learning.views')} : {courseItem.view}
                                                         </h1>
                                                     </div>
                                                 </div>
-                                                <div className={`flex items-center gap-1 text-sm flex-shrink-0 ${isDark ? 'text-gray-300' : 'text-gray-500'}`}>
+                                                <div className="flex items-center gap-1 text-sm flex-shrink-0 text-gray-500 dark:text-slate-300">
                                                     <AccessTimeIcon fontSize="small" />
                                                     {formatDuration(timeToSeconds(courseItem.duration))}
                                                 </div>

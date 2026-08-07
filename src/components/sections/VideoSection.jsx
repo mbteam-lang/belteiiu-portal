@@ -10,12 +10,12 @@ export default function ServingVideo() {
     const { t } = useTranslation();
 
     return (
-        <section className="py-10 bg-white">
+        <section className="py-10 bg-white dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center border-b pb-4">
                     <div className="flex items-center gap-2">
                         <div className="h-7 w-1.5 bg-blue-800 rounded-full"></div>
-                        <h1 className="text-xl md:text-2xl font-medium text-slate-800">
+                        <h1 className="text-xl md:text-2xl font-medium text-slate-800 dark:text-gray-200">
                             {t('home.sharing_videos')}
                         </h1>
                     </div>
@@ -27,10 +27,10 @@ export default function ServingVideo() {
                         <div 
                             key={video.id} 
                             onClick={() => navigate(`/watch/${video.youtubeId}`)}
-                            className="group flex flex-col justify-between p-3 rounded-2xl border bg-white hover:shadow-xl transition-all duration-300 cursor-pointer"
+                            className="group flex flex-col justify-between p-3 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-xl transition-all duration-300 cursor-pointer"
                         >
                             <div>
-                                <div className="relative w-full h-44 overflow-hidden rounded-xl bg-gray-100 shadow-inner">
+                                <div className="relative w-full h-44 overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-700 shadow-inner">
                                     <img
                                         src={`https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`}
                                         alt={video.title}
@@ -48,23 +48,23 @@ export default function ServingVideo() {
                                     </div>
                                 </div>
                                 <div className="mt-3 space-y-1.5">
-                                    <h3 className="text-md font-medium leading-snug line-clamp-2 text-slate-800 group-hover:text-red-600 transition-colors duration-200">
+                                    <h3 className="text-md font-medium leading-snug line-clamp-2 text-slate-800 dark:text-gray-200 group-hover:text-red-600 transition-colors duration-200">
                                         {video.title}
                                     </h3>
-                                    <p className="text-gray-500 text-sm leading-relaxed line-clamp-2 font-medium">
+                                    <p className="text-gray-500 dark:text-gray-300 text-sm leading-relaxed line-clamp-2 font-medium">
                                         {video.description}
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="flex justify-between items-center w-full mt-4 pt-3 border-t border-gray-100">
-                                <div className="flex items-center gap-1 text-gray-400">
+                            <div className="flex justify-between items-center w-full mt-4 pt-3 border-t border-gray-100 dark:border-gray-700">
+                                <div className="flex items-center gap-1 text-gray-400 dark:text-gray-400">
                                     <AccessTimeIcon style={{ fontSize: 14 }} />
                                     <span className="text-sm font-medium">
                                         {video.duration}
                                     </span>
                                 </div>
-                                <p className="text-gray-400 text-xs font-medium">
+                                <p className="text-gray-400 dark:text-gray-400 text-xs font-medium">
                                     {formatDynamicDate(video.date)}
                                 </p>
                             </div>

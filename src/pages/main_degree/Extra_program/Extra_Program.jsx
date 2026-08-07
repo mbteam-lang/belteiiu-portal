@@ -36,12 +36,12 @@ export default function ExtraProgram() {
           Array.from({ length: 6 }).map((_, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-1 md:gap-2 bg-white border border-gray-100 p-3 rounded-lg animate-pulse"
+              className="flex items-center gap-1 md:gap-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-3 rounded-lg animate-pulse"
             >
-              <div className="w-28 h-18 md:w-36 md:h-24 bg-gray-100 rounded-lg flex-shrink-0"></div>
+              <div className="w-28 h-18 md:w-36 md:h-24 bg-gray-100 dark:bg-slate-700 rounded-lg flex-shrink-0"></div>
               <div className="flex-1 space-y-3 py-1">
-                <div className="h-5 bg-gray-100 rounded w-5/6"></div>
-                <div className="h-3.5 bg-gray-100 rounded w-1/2"></div>
+                <div className="h-5 bg-gray-100 dark:bg-slate-700 rounded w-5/6"></div>
+                <div className="h-3.5 bg-gray-100 dark:bg-slate-700 rounded w-1/2"></div>
               </div>
             </div>
           ))}
@@ -60,7 +60,7 @@ export default function ExtraProgram() {
                   state: { title: item.title },
                 });
               }}
-              className="group flex items-center w-full text-left bg-white border border-gray-200 p-1.5 md:p-3 rounded-lg hover:bg-gray-50/60 hover:border-[#0a96a4]/50 transition-all duration-200"
+              className="group flex items-center w-full text-left bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-1.5 md:p-3 rounded-lg hover:bg-gray-50/60 dark:hover:bg-slate-700/60 hover:border-[#0a96a4]/50 transition-all duration-200"
             >
               {/* Significantly Enlarged Thumbnail Container */}
               <div className="relative w-28 h-18 md:w-36 md:h-24 rounded-md overflow-hidden flex-shrink-0 ">
@@ -75,13 +75,13 @@ export default function ExtraProgram() {
               {/* Text Info Column with Enlarged Fonts */}
               <div className="flex-1 min-w-0 px-4 md:px-5 flex flex-col justify-center">
                
-                <h3 className="font-medium text-gray-700 text-sm md:text-base lg:text-[17px] leading-snug line-clamp-2 group-hover:text-[#0a96a4] transition-colors">
+                <h3 className="font-medium text-gray-700 dark:text-slate-100 text-sm md:text-base lg:text-[17px] leading-snug line-clamp-2 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400 transition-colors">
                   {item.title}
                 </h3>
               </div>
 
               {/* Icon Signifier */}
-              <div className="flex-shrink-0 pr-1 text-gray-400 group-hover:text-[#0a96a4]/70 group-hover:translate-x-0.5 transition-all duration-200 mr-2">
+              <div className="flex-shrink-0 pr-1 text-gray-400 dark:text-slate-400 group-hover:text-[#0a96a4]/70 dark:group-hover:text-cyan-400 group-hover:translate-x-0.5 transition-all duration-200 mr-2">
                 {item.link ? (
                   <FaExternalLinkAlt className="text-xs md:text-sm" />
                 ) : (

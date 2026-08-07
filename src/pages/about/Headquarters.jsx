@@ -10,24 +10,24 @@ export default function Headquarters() {
     return (
         <>
             {loading && (
-                <div className='max-w-7xl m-auto px-5 pt-5'>
+                <div className='max-w-7xl m-auto px-5 pt-5 min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                     <div className='space-y-4 hq'>
                         <div className='md:grid-cols-2 gap-5 mx-auto'>
-                            <div className="w-full h-64 bg-gray-200 rounded"></div>
+                            <div className="w-full h-64 bg-gray-200 dark:bg-slate-700 rounded"></div>
                         </div>
                         <div className='md:grid-cols-2 gap-5 mx-auto'>
-                            <div className="w-full h-64 bg-gray-200 rounded"></div>
+                            <div className="w-full h-64 bg-gray-200 dark:bg-slate-700 rounded"></div>
                         </div>
                         <div className='space-y-2 py-2'>
                             {Array.from({ length: 9 }).map((_, index) => (
-                                <div className='h-4 bg-gray-200 rounded w-full'></div>
+                                <div key={index} className='h-4 bg-gray-200 dark:bg-slate-700 rounded w-full'></div>
                             ))}
                         </div>
 
                     </div>
                 </div>
             )}
-            <div className=''>
+            <div className='min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 <div className="h-5"></div>
                 <section className='max-w-7xl m-auto px-5'>
                     <div className='m-auto flex justify-center items-center mb-5 md:px-0'>
@@ -50,7 +50,7 @@ export default function Headquarters() {
                             <div className='md:text-left'>
                                 {/* Changed <p> to <div> and added max-w-full img classes */}
                                 <div 
-                                    className='text-md text-gray-700 [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:my-4 [&_img]:shadow-sm'
+                                    className='text-md text-gray-700 dark:text-slate-300 [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:my-4 [&_img]:shadow-sm'
                                     dangerouslySetInnerHTML={{ __html: hq.desc }} 
                                 />
                             </div>

@@ -14,15 +14,15 @@ export default function Admission() {
     setExpandedId((prev) => (prev === id ? null : id));
   };
   return (
-    <div className="bg-[#F5F5F5] min-h-screen select-none">
+    <div className="bg-[#F5F5F5] dark:bg-slate-900 min-h-screen select-none transition-colors duration-200">
       <div className="h-5" />
       <section className="max-w-7xl m-auto md:px-5 px-2">
         {loading ? (
           Array.from({ length: 4 }).map((_, idx) => (
             <div key={idx} className="mb-2 animate-pulse">
-              <div className="p-3 shadow rounded-md bg-white flex justify-between items-center">
-                <div className="h-5 bg-gray-200 rounded w-1/3" />
-                <div className="w-6 h-6 bg-gray-200 rounded-full" />
+              <div className="p-3 shadow rounded-md bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 flex justify-between items-center">
+                <div className="h-5 bg-gray-200 dark:bg-slate-700 rounded w-1/3" />
+                <div className="w-6 h-6 bg-gray-200 dark:bg-slate-700 rounded-full" />
               </div>
             </div>
           ))
@@ -34,15 +34,15 @@ export default function Admission() {
               <div key={items.id} className="mb-2">
                 <div
                   onClick={() => toggleExpand(items.id)}
-                  className="cursor-pointer flex-col p-3 shadow rounded-md w-full bg-white text-gray-800"
+                  className="cursor-pointer flex-col p-3 shadow rounded-md w-full bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-800 dark:text-slate-200"
                 >
                   {/* Header */}
                   <div className="flex justify-between items-center">
-                    <h1 className="text-[#0a96a4] md:text-lg text-md">
+                    <h1 className="text-[#0a96a4] dark:text-cyan-400 md:text-lg text-md font-semibold">
                       {items.degrees}
                     </h1>
 
-                    <div className="text-[#0a96a4]">
+                    <div className="text-[#0a96a4] dark:text-cyan-400">
                       {isOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
                     </div>
                   </div>
@@ -57,7 +57,7 @@ export default function Admission() {
                       transition: 'height 0.35s ease',
                       overflow: 'hidden',
                     }}
-                    className="text-gray-800 text-left whitespace-pre-wrap break-words leading-relaxed mt-2"
+                    className="text-gray-800 dark:text-slate-300 text-left whitespace-pre-wrap break-words leading-relaxed mt-2"
                     dangerouslySetInnerHTML={{ __html: items.remark }}
                   />
                 </div>

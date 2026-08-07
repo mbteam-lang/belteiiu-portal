@@ -46,24 +46,24 @@ export default function Academic_Research() {
     };
 
     return (
-        <div className="p-2 max-w-7xl m-auto md:px-5">
+        <div className="p-2 max-w-7xl m-auto md:px-5 min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
             <div className="flex items-center gap-2 mb-4 select-none">
                 <input
                     type="text"
                     placeholder="Search..."
-                    className="flex-1 border rounded-lg px-3 py-2 shadow-sm"
+                    className="flex-1 border rounded-lg px-3 py-2 shadow-sm bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-500 outline-none"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 />
                 <button
-                    className="p-2 rounded-lg bg-gray-100 shadow text-red-500"
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 shadow text-red-500 dark:text-red-400"
                     onClick={() => handleReset()}
                 >
                     <RefreshIcon  />
                 </button>
                 <button
-                    className="p-2 rounded-lg bg-gray-100 shadow text-[#0a96a4]"
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 shadow text-[#0a96a4] dark:text-cyan-400"
                     onClick={() => setOpenFilter(true)}
                 >
                     <FilterAltIcon />
@@ -75,14 +75,14 @@ export default function Academic_Research() {
                     Array.from({ length: 5 }).map((_, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-between bg-white rounded-lg shadow-sm px-3 py-1 animate-pulse"
+                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 animate-pulse"
                         >
                             <div className="flex items-center w-full">
-                                <div className="w-16 h-16 bg-gray-200 rounded-md"></div>
+                                <div className="w-16 h-16 bg-gray-200 dark:bg-slate-700 rounded-md"></div>
 
                                 <div className="flex-1 ml-3">
-                                    <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
-                                    <div className="h-4 bg-gray-200 rounded w-1/2"></div>
+                                    <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-3/4 mb-2"></div>
+                                    <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-1/2"></div>
                                 </div>
                             </div>
                         </div>
@@ -92,12 +92,12 @@ export default function Academic_Research() {
                         <div
                             key={academics.id}
                             onClick={() => window.open(academics.pdf, "_blank", "noopener,noreferrer")}
-                            className="flex items-center justify-between bg-white rounded-lg shadow-sm px-3 py-1 cursor-pointer hover:bg-gray-50"
+                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-700/60 transition-colors"
                         >
                             <div className="flex items-center">
                                 <img src={academics.image} alt='404' className="w-16 rounded-md" />
                                 <div className="w-full ml-3">
-                                    <h1 className="md:text-base text-sm font-normal text-gray-800 line-clamp-2 text-left">
+                                    <h1 className="md:text-base text-sm font-normal text-gray-800 dark:text-slate-100 line-clamp-2 text-left">
                                         {academics.title}
                                     </h1>
                                 </div>
@@ -113,15 +113,15 @@ export default function Academic_Research() {
 
             {openFilter && (
                 <div className="fixed inset-0 bg-black bg-opacity-60 flex items-end justify-center z-50">
-                    <div className="bg-white w-full rounded-t-2xl p-5 shadow-lg">
+                    <div className="bg-white dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 w-full rounded-t-2xl p-5 shadow-lg text-slate-800 dark:text-slate-100">
                         <div className="flex justify-between items-center mb-4">
-                            <h2 className="text-lg font-semibold text-gray-800">Filter</h2>
-                            <button onClick={() => setOpenFilter(false)}>✕</button>
+                            <h2 className="text-lg font-semibold text-gray-800 dark:text-slate-100">Filter</h2>
+                            <button onClick={() => setOpenFilter(false)} className="text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-200">✕</button>
                         </div>
 
-                        <label className="block mb-2 font-medium text-gray-500">Major</label>
+                        <label className="block mb-2 font-medium text-gray-500 dark:text-slate-300">Major</label>
                         <select
-                            className="w-full border rounded-lg px-3 py-2 mb-4"
+                            className="w-full border rounded-lg px-3 py-2 mb-4 bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-600 text-slate-800 dark:text-slate-100"
                             value={majorId}
                             onChange={(e) => setMajorId(e.target.value)}
                         >
@@ -131,9 +131,9 @@ export default function Academic_Research() {
                             ))}
                         </select>
 
-                        <label className="block mb-2 font-medium text-gray-500">Year</label>
+                        <label className="block mb-2 font-medium text-gray-500 dark:text-slate-300">Year</label>
                         <select
-                            className="w-full border rounded-lg px-3 py-2 mb-6"
+                            className="w-full border rounded-lg px-3 py-2 mb-6 bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-600 text-slate-800 dark:text-slate-100"
                             value={yearId}
                             onChange={(e) => setYearId(e.target.value)}
                         >
@@ -144,11 +144,11 @@ export default function Academic_Research() {
                         </select>
 
                         <div className="flex justify-between items-center">
-                            <button className="text-gray-500" onClick={handleReset}>
+                            <button className="text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-200" onClick={handleReset}>
                                 View all
                             </button>
                             <button
-                                className="bg-teal-600 text-white px-4 py-2 rounded-lg"
+                                className="bg-teal-600 dark:bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 dark:hover:bg-cyan-500 transition-colors"
                                 onClick={handleShowResult}
                             >
                                 Show Result

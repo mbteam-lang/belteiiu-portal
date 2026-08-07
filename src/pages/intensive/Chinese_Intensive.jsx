@@ -17,7 +17,7 @@ export default function Chinese_Intensive() {
                     </div>
                     <div className='space-y-7'>
                         <div className='md:text-left text-justify space-y-7'>
-                            <p className='text-md text-gray-600 leading-7'>{t('chinese_intensive.js_chinese_desc')}</p>
+                            <p className='text-md text-gray-600 dark:text-slate-300 leading-7'>{t('chinese_intensive.js_chinese_desc')}</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="">
@@ -28,9 +28,9 @@ export default function Chinese_Intensive() {
                                     t={t}
                                     headerColor = "#ffc62a"
                                 />
-                                <div className="bg-white p-5 flex justify-between items-center font-bold ">
-                                    <span className="text-gray-700 text-base sm:text-lg">{t('tuition.js_total')} : </span>
-                                    <span className="text-lg  text-[#0a96a4]">{t('chinese_intensive.js_15')}</span>
+                                <div className="bg-white dark:bg-slate-800 p-5 flex justify-between items-center font-bold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
+                                    <span className="text-gray-700 dark:text-slate-200 text-base sm:text-lg">{t('tuition.js_total')} : </span>
+                                    <span className="text-lg text-[#0a96a4] dark:text-cyan-400">{t('chinese_intensive.js_15')}</span>
                                 </div>
                             </div>
 
@@ -42,9 +42,9 @@ export default function Chinese_Intensive() {
                                     t={t}
                                     headerColor = "#ffc62a"
                                 />
-                                <div className="bg-white p-5 flex justify-between items-center font-bold ">
-                                    <span className="text-gray-700 text-base sm:text-lg">{t('tuition.js_total')} : </span>
-                                    <span className="text-lg  text-[#0a96a4]">{t('chinese_intensive.js_15')}</span>
+                                <div className="bg-white dark:bg-slate-800 p-5 flex justify-between items-center font-bold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
+                                    <span className="text-gray-700 dark:text-slate-200 text-base sm:text-lg">{t('tuition.js_total')} : </span>
+                                    <span className="text-lg text-[#0a96a4] dark:text-cyan-400">{t('chinese_intensive.js_15')}</span>
                                 </div>
                             </div>
                         </div>
@@ -58,9 +58,9 @@ export default function Chinese_Intensive() {
                                     t={t}
                                     headerColor = "#ffc62a"
                                 />
-                                <div className="bg-white p-5 flex justify-between items-center font-semibold ">
-                                    <span className="text-gray-700 text-base sm:text-lg">全部的 : </span>
-                                    <span className="text-lg  text-[#0a96a4]">15 学分</span>
+                                <div className="bg-white dark:bg-slate-800 p-5 flex justify-between items-center font-semibold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
+                                    <span className="text-gray-700 dark:text-slate-200 text-base sm:text-lg">全部的 : </span>
+                                    <span className="text-lg text-[#0a96a4] dark:text-cyan-400">15 学分</span>
                                 </div>
                             </div>
 
@@ -72,9 +72,9 @@ export default function Chinese_Intensive() {
                                     t={t}
                                     headerColor = "#ffc62a"
                                 />
-                                <div className="bg-white p-5 flex justify-between items-center font-semibold ">
-                                    <span className="text-gray-700 text-base sm:text-lg">全部的 : </span>
-                                    <span className="text-lg  text-[#0a96a4]">15 学分</span>
+                                <div className="bg-white dark:bg-slate-800 p-5 flex justify-between items-center font-semibold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
+                                    <span className="text-gray-700 dark:text-slate-200 text-base sm:text-lg">全部的 : </span>
+                                    <span className="text-lg text-[#0a96a4] dark:text-cyan-400">15 学分</span>
                                 </div>
                             </div>
                         </div>

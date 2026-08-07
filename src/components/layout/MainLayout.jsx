@@ -5,7 +5,7 @@ import { isMobile } from 'react-device-detect';
 
 export default function MainLayout() {
     return (
-        <div className="relative w-full min-h-screen flex flex-col">
+        <div className="relative w-full min-h-screen flex flex-col bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-200">
             {!isMobile && (
                 <Navbar />
             )}

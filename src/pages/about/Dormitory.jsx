@@ -25,9 +25,9 @@ export default function Dormitory() {
         </div>
 
         {/* Content Description Section */}
-        <div className='bg-white rounded-xl border border-slate-200 p-4 md:p-8 shadow-sm space-y-4 md:space-y-6 text-slate-600 leading-relaxed text-sm md:text-base'>
+        <div className='bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 md:p-8 shadow-sm space-y-4 md:space-y-6 text-slate-600 dark:text-slate-200 leading-relaxed text-sm md:text-base'>
           <div className="space-y-3">
-            <p className='text-gray-600 font-medium text-base md:text-lg'>
+            <p className='text-gray-600 dark:text-slate-100 font-medium text-base md:text-lg'>
               {t('dormitory.js_dorm_desc')}
             </p>
             <p className='text-justify'>{t('dormitory.js_dorm1')}</p>
@@ -36,7 +36,7 @@ export default function Dormitory() {
           </div>
           
           {/* Bullet points feature styled into a clean layout list */}
-          <ul className='space-y-2 pl-5 list-disc text-gray-500 font-medium border-t border-slate-100 pt-4'>
+          <ul className='space-y-2 pl-5 list-disc text-gray-500 dark:text-slate-300 font-medium border-t border-slate-100 dark:border-slate-700 pt-4'>
             <li>{t('dormitory.js_dorm4')}</li>
             <li>{t('dormitory.js_dorm5')}</li>
             <li>{t('dormitory.js_dorm6')}</li>

@@ -28,7 +28,7 @@ export default function HeroSection() {
                     <div className="lg:col-span-7 flex flex-col justify-center space-y-6 md:space-y-8 text-left">
                         
                         {/* Pill Badge */}
-                        <div className="animated fadeInDown inline-flex items-center self-start gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-sm border border-slate-200 text-indigo-700 shadow-sm transition-all duration-300 hover:bg-white">
+                        <div className="animated fadeInDown inline-flex items-center self-start gap-2 px-3.5 py-1.5 rounded-full bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm border border-slate-200 text-indigo-700 dark:text-indigo-300 shadow-sm transition-all duration-300 hover:bg-white dark:hover:bg-slate-800">
                             <User size={14} className="animate-bounce text-indigo-600" />
                             <span className="text-xs font-bold tracking-wider uppercase">
                                 {t("welcome.js_wlcome")}
@@ -53,7 +53,7 @@ export default function HeroSection() {
 
                         {/* Call to Actions */}
                         <div className="flex flex-col sm:flex-row gap-4 sm:items-center pt-2 animated fadeInDown">
-                            <button className="group w-full sm:w-auto justify-center px-8 py-4 bg-[#0a96a4] text-white font-semibold rounded-xl shadow-lg shadow-indigo-950/30 hover:bg-[#08818d] active:scale-95 transition-all duration-200 flex items-center gap-2">
+                            <button className="group w-full sm:w-auto justify-center px-8 py-4 bg-[#0a96a4] dark:bg-[#075f73] text-white font-semibold rounded-xl shadow-lg shadow-indigo-950/30 hover:bg-[#08818d] dark:hover:bg-[#054c5c] active:scale-95 transition-all duration-200 flex items-center gap-2">
                                 Explore Services
                                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                             </button>
@@ -80,8 +80,8 @@ export default function HeroSection() {
 
                         <div className="relative p-2 transition-transform duration-500 hover:scale-[1.01] rounded-[2rem] w-full max-w-[340px] sm:max-w-[420px] lg:max-w-none">
                             <img
-                                src="src/assets/images/avarta.png"
-                                className="w-full h-auto max-h-[380px] lg:max-h-[550px] object-contain drop-shadow-2xl"
+                                src="https://maisontpe.fr/_next/image?url=%2Fimages%2Ffigma%2Fdemo-woman.png&w=1200&q=75"
+                                className="w-full h-auto max-h-[380px] lg:max-h-[550px] object-contain drop-shadow-2xl fit-cover"
                                 alt="BELTEI Hero Graphics"
                             />
                         </div>
@@ -100,7 +100,7 @@ export default function HeroSection() {
 function ContactGrid() {
     return (
         <div className="animated fadeInDown bg-slate-950/40 backdrop-blur-md rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-slate-950/50 transition-all duration-300">
-            <div className="bg-[#0a96a4] text-white py-3.5 px-6">
+            <div className="bg-[#0a96a4] dark:bg-[#075f73] text-white py-3.5 px-6">
                 <h2 className="text-sm md:text-base font-bold tracking-wide">
                     Contact BELTEI University
                 </h2>
@@ -109,7 +109,7 @@ function ContactGrid() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/10 bg-white/5">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/10 bg-white/5 dark:bg-gray-800/5">
                 {/* Phone Card */}
                 <div className="p-4 sm:p-5 text-center flex flex-col items-center justify-center hover:bg-white/10 transition-colors duration-200">
                     <div className="w-9 h-9 rounded-xl bg-blue-500/20 text-blue-300 flex items-center justify-center mb-2">

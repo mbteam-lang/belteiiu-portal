@@ -33,7 +33,7 @@ export default function ExtraDetail() {
                     state: { title: item.title },
                   })
                 }
-                className="flex w-full border border-gray-200 bg-gray-100 rounded-lg hover:bg-gray-200 transition mb-2"
+                className="flex w-full border border-gray-200 dark:border-slate-700 bg-gray-100 dark:bg-slate-800 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 transition mb-2"
               >
                 <div className="relative flex-shrink-0 p-1 pl-1">
                   <img
@@ -46,7 +46,7 @@ export default function ExtraDetail() {
                   </div>
                 </div>
                 <div className="p-3 flex items-center">
-                  <p className="font-medium text-gray-700 line-clamp-2 text-left text-md md:text-lg">
+                  <p className="font-medium text-gray-700 dark:text-slate-100 line-clamp-2 text-left text-md md:text-lg">
                     {item.title}
                   </p>
                 </div>
