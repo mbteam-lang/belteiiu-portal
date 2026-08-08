@@ -106,6 +106,7 @@ const Navbar = () => {
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
                             t={t}
+                            to="/list_intensive"
                         />
                         <DesktopDropdown
                             index="about"
@@ -115,7 +116,7 @@ const Navbar = () => {
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
                             t={t}
-                            // to='/history'
+                            to='/history'
                         />
                         <DesktopDropdown
                             index="collab"
@@ -125,7 +126,7 @@ const Navbar = () => {
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
                             t={t}
-                            // to="/list_collaboration"
+                            to="/list_collaboration"
                         />
                         <DesktopDropdown
                             index="degree"
@@ -135,7 +136,7 @@ const Navbar = () => {
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
                             t={t}
-                            // to="/list_main"
+                            to="/list_main"
                         />
                         <DesktopDropdown
                             index="dorm"

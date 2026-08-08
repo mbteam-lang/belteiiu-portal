@@ -70,7 +70,7 @@ export default function Tuition_Fees() {
     };
 
     return (
-        <div className="bg-[#F8FAFC] dark:bg-slate-900 min-h-screen py-2 sm:py-6 px-1 sm:px-4 transition-colors duration-200">
+        <div className="bg-[#F8FAFC] dark:bg-slate-900 min-h-screen py-2 sm:py-6 px-1 sm:px-4 transition-colors duration-200 select-none">
             <div className="w-full max-w-7xl mx-auto space-y-3 sm:space-y-5">
 
                 {/* Main Header */}
@@ -79,11 +79,6 @@ export default function Tuition_Fees() {
                         <h1 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-[#151B74] dark:text-cyan-400 tracking-wide">
                             {t('tuition.js_tuition_fee')}
                         </h1>
-
-                        {/* Divider */}
-                        <div className="flex items-center justify-center gap-3 my-1">
-                            <span className="w-32 h-[1px] rounded-full bg-gray-300 dark:bg-slate-700"></span>
-                        </div>
                     </div>
                 </div>
 
@@ -129,7 +124,7 @@ export default function Tuition_Fees() {
                             </tr>
 
                             {/* Semester Sub-Headers */}
-                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[11px] md:text-[13px]">
+                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
                                     {t('tuition.js_semester1')}
@@ -169,7 +164,7 @@ export default function Tuition_Fees() {
                             {natData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
                                     <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
-                                        <div className="md:px-3 text-[5.5px] sm:text-xs md:text-[14px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
+                                        <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
@@ -223,7 +218,7 @@ export default function Tuition_Fees() {
                             </tr>
 
                             {/* Semester Sub-Headers */}
-                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[11px] md:text-[13px]">
+                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
                                     {t('tuition.js_semester1')}
@@ -258,7 +253,7 @@ export default function Tuition_Fees() {
                             {interData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
                                     <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
-                                        <div className="md:px-3 text-[5.5px] sm:text-xs md:text-[14px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
+                                        <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
@@ -309,7 +304,7 @@ export default function Tuition_Fees() {
                             </tr>
 
                             {/* Semester Sub-Headers */}
-                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[11px] md:text-[13px]">
+                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
                                     {t('tuition.js_semester1')}
@@ -337,7 +332,7 @@ export default function Tuition_Fees() {
                             {masterData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
                                     <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
-                                        <div className="md:px-3 text-[5.5px] sm:text-xs md:text-[14px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
+                                        <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
@@ -386,7 +381,7 @@ export default function Tuition_Fees() {
                             </tr>
 
                             {/* Semester Sub-Headers */}
-                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[11px] md:text-[13px]">
+                            <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
                                     {t('tuition.js_semester1')}
@@ -409,7 +404,7 @@ export default function Tuition_Fees() {
                             {civilData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
                                     <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
-                                        <div className="md:px-3 text-[5.5px] sm:text-xs md:text-[14px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
+                                        <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
