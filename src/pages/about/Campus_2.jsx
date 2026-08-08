@@ -25,26 +25,26 @@ export default function Campus2() {
     };
 
     return (
-        <div className='p-3 md:p-6 lg:p-8 max-w-7xl m-auto'>
+        <div className='p-3 md:p-6 lg:p-8 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
             {loading && (
                 <>
                     <div className="space-y-3 animate-pulse">
-                        <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-                        <div className="h-4 bg-gray-200 rounded w-full"></div>
-                        <div className="h-72 bg-gray-200 rounded w-full"></div>
+                        <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-3/4"></div>
+                        <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-full"></div>
+                        <div className="h-72 bg-gray-200 dark:bg-slate-700 rounded w-full"></div>
                     </div>
                     {Array.from({ length: 9 }).map((_, idx) => (
                         <div
                             key={idx}
                             
                         >
-                            <div className="h-4 bg-gray-200 rounded w-full mt-3"></div>
+                            <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-full mt-3"></div>
                         </div>
                     ))}
                 </>
             )}
             <div className='md:text-left'>
-                <div className='text-md text-gray-500'>
+                <div className='text-md text-gray-500 dark:text-slate-300'>
                     {/* Cleaned content passed here */}
                     <p dangerouslySetInnerHTML={{ __html: getCleanedHtml(campus2?.desc) }} />
                 </div>

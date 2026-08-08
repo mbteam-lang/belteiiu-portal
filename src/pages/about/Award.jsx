@@ -37,7 +37,7 @@ export default function Award() {
   };
 
   return (
-    <div className="p-3 md:p-5 space-y-6 max-w-7xl m-auto">
+    <div className="p-3 md:p-5 space-y-6 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
       {award.map((award) => (
         <div key={award.id} className="space-y-4">
           {award.video_1 && (
@@ -51,16 +51,16 @@ export default function Award() {
             </div>
           )}
 
-          <div className="border-l-4 border-blue-600 pl-4 py-1.5 transition-all">
-            <span className="text-xs font-semibold tracking-wider text-gray-400 uppercase font-sans">
+          <div className="border-l-4 border-blue-600 dark:border-cyan-500 pl-4 py-1.5 transition-all">
+            <span className="text-xs font-semibold tracking-wider text-gray-400 dark:text-slate-400 uppercase font-sans">
               ព័ត៌មានលម្អិត / Award Details
             </span>
-            <h2 className="font-medium text-gray-700 text-base md:text-xl lg:text-2xl mt-0.5 leading-tight">
+            <h2 className="font-medium text-gray-700 dark:text-slate-100 text-base md:text-xl lg:text-2xl mt-0.5 leading-tight">
               {award.title}
             </h2>
           </div>
-          <div className="w-full border-t border-dashed border-gray-300 my-2"></div>
-          <p className="text-gray-500 text-sm mt-1">{award.remark}</p>
+          <div className="w-full border-t border-dashed border-gray-300 dark:border-slate-700 my-2"></div>
+          <p className="text-gray-500 dark:text-slate-300 text-sm mt-1">{award.remark}</p>
           {award.albums && award.albums.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {award.albums.map((album, index) => (

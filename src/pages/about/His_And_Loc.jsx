@@ -9,16 +9,16 @@ export default function Index() {
     const { about, loading } = useAbout();
     return (
         <>
-            <div className="grid grid-cols-1 md:gap-2 p-4 md:space-y-0 space-y-2 max-w-7xl m-auto">
+            <div className="flex flex-col gap-3 p-4 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
                 {loading ? (
                     Array.from({ length: 8 }).map((_, idx) => (
                         <div
                             key={idx}
-                            className="flex items-center justify-between bg-white rounded-lg shadow-sm px-4 py-3 animate-pulse"
+                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse"
                         >
                             <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 bg-gray-200 rounded" />
-                                <div className="h-4 w-32 bg-gray-200 rounded" />
+                                <div className="w-10 h-10 bg-gray-200 dark:bg-slate-700 rounded" />
+                                <div className="h-4 w-32 bg-gray-200 dark:bg-slate-700 rounded" />
                             </div>
                         </div>
                     ))

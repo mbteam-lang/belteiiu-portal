@@ -11,7 +11,7 @@ export default function Single_Major() {
     const {majorDetail, loading } = useMajorDetail(majorId);
     
     return (
-        <div className='bg-[#F5F5F5] min-h-screen'>
+        <div className='bg-[#F5F5F5] dark:bg-slate-900 min-h-screen transition-colors duration-200'>
             {loading ? (
                 <>
                     <div className='h-3'></div>
@@ -33,11 +33,11 @@ export default function Single_Major() {
                             </div>
                             <section className="max-w-7xl mx-auto md:px-5 px-2">
                                 <div className="text-center mb-5">
-                                    <h2 className="text-[#0a96a4] md:text-3xl text-xl font-bold">{items.title}</h2>
-                                    <div className="w-24 h-1 bg-[#0a96a4] mx-auto rounded-full mt-2"></div>
+                                    <h2 className="text-[#0a96a4] dark:text-cyan-400 md:text-3xl text-xl font-bold">{items.title}</h2>
+                                    <div className="w-24 h-1 bg-[#0a96a4] dark:bg-cyan-400 mx-auto rounded-full mt-2"></div>
                                 </div>
                                 <div className="mb-10">
-                                    <pre className="pre1 text-justify break-words whitespace-pre-wrap text-gray-800 md:text-lg text-md p-6 border rounded-lg shadow-md bg-gray-50">
+                                    <pre className="pre1 text-justify break-words whitespace-pre-wrap text-gray-800 dark:text-slate-200 md:text-lg text-md p-6 border border-gray-200 dark:border-slate-700 rounded-lg shadow-md bg-gray-50 dark:bg-slate-800">
                                         {items.remark}
                                     </pre>
                                 </div>
@@ -48,7 +48,7 @@ export default function Single_Major() {
                                                 <img
                                                     src={album.title}
                                                     alt={`Curriculum ${index + 1}`}
-                                                    className="rounded-2xl shadow-lg border border-gray-200 max-w-full h-auto"
+                                                    className="rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 max-w-full h-auto"
                                                     loading="lazy"
                                                     onError={(e) => {
                                                         e.target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Found';
@@ -66,7 +66,7 @@ export default function Single_Major() {
                                                 <img 
                                                     src={album.name} 
                                                     alt={`Album ${index + 1}`}
-                                                    className="rounded-2xl shadow-lg border border-gray-200 max-w-full h-auto"
+                                                    className="rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 max-w-full h-auto"
                                                     loading="lazy"
                                                     onError={(e) => {
                                                         e.target.src = 'https://via.placeholder.com/300x200?text=Image+Not+Found';

@@ -27,8 +27,8 @@ export default function ComputerIntensive() {
   ];
 
   // Reusable CSS style groups
-  const thStyles = "md:px-5 py-4 md:text-lg text-md text-center bg-[#0a96a4] border text-white font-medium";
-  const tdStyles = "md:px-5 px-3 md:text-lg text-md py-4 border text-gray-700 transition-colors";
+  const thStyles = "md:px-5 py-4 md:text-lg text-md text-center bg-[#0a96a4] border border-gray-200 dark:border-slate-700 text-white font-medium";
+  const tdStyles = "md:px-5 px-3 md:text-lg text-md py-4 border border-gray-200 dark:border-slate-700 text-gray-700 dark:text-slate-200 transition-colors";
 
   return (
     <main className="Dormitory select-none py-6 md:py-10">
@@ -43,16 +43,16 @@ export default function ComputerIntensive() {
         <div className="space-y-8 md:text-left text-justify">
           
           {/* Main Description */}
-          <p className="text-md text-gray-500 leading-relaxed">
+          <p className="text-md text-gray-500 dark:text-slate-300 leading-relaxed">
             {t('computer_intensive.js_com_desc')}
           </p>
 
           {/* Section: Terms & Conditions */}
           <div className="space-y-4">
-            <h2 className="md:text-xl text-lg text-gray-800 font-semibold flex items-center gap-2">
+            <h2 className="md:text-xl text-lg text-gray-800 dark:text-slate-100 font-semibold flex items-center gap-2">
               <span className="text-[#0a96a4]">❖</span> {t('computer_intensive.js_com_term')}
             </h2>
-            <p className="text-md text-gray-500 leading-loose pl-6">
+            <p className="text-md text-gray-500 dark:text-slate-300 leading-loose pl-6">
               {t('computer_intensive.js_com_term_1')}<br />
               {t('computer_intensive.js_com_term_2')}<br />
               {t('computer_intensive.js_com_term_3')}
@@ -61,11 +61,11 @@ export default function ComputerIntensive() {
 
           {/* Section: Subject Matrix */}
           <div className="space-y-4">
-            <h2 className="md:text-xl text-lg text-gray-800 font-semibold flex items-center gap-2">
+            <h2 className="md:text-xl text-lg text-gray-800 dark:text-slate-100 font-semibold flex items-center gap-2">
               <span className="text-[#0a96a4]">❖</span> {t('computer_intensive.js_com_sub')}
             </h2>
             
-            <div className="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
+            <div className="overflow-x-auto shadow-sm rounded-lg border border-gray-200 dark:border-slate-700">
               <table className="w-full table-auto border-collapse">
                 <thead>
                   <tr>
@@ -74,19 +74,19 @@ export default function ComputerIntensive() {
                     <th className={thStyles}>{t('computer_intensive.js_price')}</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200">
+                <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
                   {courses.map((item) => (
-                    <tr key={item.id} className="even:bg-gray-50 odd:bg-white hover:bg-gray-100">
+                    <tr key={item.id} className="even:bg-gray-50 dark:even:bg-slate-700/50 odd:bg-white dark:odd:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700">
                       <td className={`${tdStyles} text-left font-medium`}>{item.name}</td>
                       <td className={`${tdStyles} text-center`}>{item.duration}</td>
                       <td className={`${tdStyles} text-center`}>{item.price}</td>
                     </tr>
                   ))}
                   {/* Totals Row */}
-                  <tr className="bg-gray-100 font-bold">
+                  <tr className="bg-gray-100 dark:bg-slate-700 font-bold">
                     <td className={`${tdStyles} text-center`}>{t('tuition.js_total')}</td>
                     <td className={`${tdStyles} text-center`}>{t('computer_intensive.js_hour_75')}</td>
-                    <td className={`${tdStyles} text-center text-[#0a96a4]`}>$ 200</td>
+                    <td className={`${tdStyles} text-center text-[#0a96a4] dark:text-cyan-400`}>$ 200</td>
                   </tr>
                 </tbody>
               </table>
@@ -95,34 +95,34 @@ export default function ComputerIntensive() {
 
           {/* Section: Time Schedule */}
           <div className="space-y-4">
-            <h2 className="md:text-xl text-lg text-gray-800 font-semibold flex items-center gap-2">
+            <h2 className="md:text-xl text-lg text-gray-800 dark:text-slate-100 font-semibold flex items-center gap-2">
               <span className="text-[#0a96a4]">❖</span> {t('computer_intensive.js_com_shedule')}
             </h2>
             
-            <div className="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
+            <div className="overflow-x-auto shadow-sm rounded-lg border border-gray-200 dark:border-slate-700">
               <table className="w-full table-auto border-collapse">
                 <thead>
                   <tr>
                     <th className={thStyles} colSpan={2}>{t('tuition.js_mon_fri')}</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200 text-sm">
-                  <tr className="bg-white hover:bg-gray-50">
+                <tbody className="divide-y divide-gray-200 dark:divide-slate-700 text-sm">
+                  <tr className="bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50">
                     <td className={`${tdStyles} text-center font-medium`}>{t('tuition.js_morning')}</td>
                     <td className={`${tdStyles} text-center`}>08:00 AM - 11:15 AM</td>
                   </tr>
-                  <tr className="bg-gray-50 hover:bg-gray-100">
+                  <tr className="bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700">
                     <td className={`${tdStyles} text-center font-medium`}>{t('tuition.js_afternoon')}</td>
                     <td className={`${tdStyles} text-center`}>02:00 PM - 05:15 PM</td>
                   </tr>
-                  <tr className="bg-white hover:bg-gray-50">
+                  <tr className="bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50">
                     <td className={`${tdStyles} text-center font-medium`}>{t('tuition.js_evening')}</td>
                     <td className={`${tdStyles} text-center`}>05:30 PM - 08:30 PM</td>
                   </tr>
-                  <tr className="bg-gray-50 font-medium text-center italic text-gray-500">
+                  <tr className="bg-gray-50 dark:bg-slate-700/50 font-medium text-center italic text-gray-500 dark:text-slate-400">
                     <td className="" colSpan={2}>{t('tuition.js_first_int')}</td>
                   </tr>
-                  <tr className="bg-white font-medium text-center italic text-gray-500">
+                  <tr className="bg-white dark:bg-slate-800 font-medium text-center italic text-gray-500 dark:text-slate-400">
                     <td className="" colSpan={2}>{t('tuition.js_second_int')}</td>
                   </tr>
                 </tbody>

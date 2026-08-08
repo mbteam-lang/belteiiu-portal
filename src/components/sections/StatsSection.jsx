@@ -23,9 +23,9 @@ export default function StatsSection() {
     });
 
     return (
-        <section ref={ref} className="bg-neutral-50 py-10">
+        <section ref={ref} className="bg-neutral-50 dark:bg-gray-900 py-10">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 md:divide-x md:divide-slate-200">
+                <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 md:divide-x md:divide-slate-200 dark:divide-slate-600">
                     {stats.map((item, index) => {
                         const { number, suffix } = parseCount(item.value);
                         const IconComponent = item.icon;
@@ -34,7 +34,7 @@ export default function StatsSection() {
                                 className="flex flex-col items-center justify-center text-center px-4"
                                 key={index}
                             >
-                                <h1 className="font-display text-5xl font-bold tracking-tight text-slate-900 md:text-5xl">
+                                <h1 className="font-display text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-200 md:text-5xl">
                                     <span className="text-[#0a96a4]">
                                         {inView ? (
                                             <CountUp
@@ -49,11 +49,11 @@ export default function StatsSection() {
                                 </h1>
                                 <div className="flex flex-row items-center justify-center gap-2 text-center mt-3">
                                     {IconComponent && (
-                                        <div className="flex items-center justify-center rounded-xl bg-blue-50 p-2 text-[#0a96a4]">
-                                            <IconComponent className="h-5 w-5 md:h-6 md:w-6" />
+                                        <div className="flex items-center justify-center rounded-xl bg-blue-50 dark:bg-slate-800 p-2 text-[#0a96a4] dark:text-gray-300">
+                                            <IconComponent className="h-5 w-5 md:h-6 md:w-6 dark:text-gray-300" />
                                         </div>
                                     )}
-                                    <span className="text-md md:text-lg font-semibold tracking-wide text-[#0a96a4] uppercase">
+                                    <span className="text-md md:text-lg font-semibold tracking-wide text-[#0a96a4] dark:text-gray-300 uppercase">
                                         {item.label}
                                     </span>
                                 </div>

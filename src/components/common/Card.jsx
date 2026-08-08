@@ -6,33 +6,30 @@ const ListCard = ({
   title
 }) => {
   return (
-    <div className="w-full rounded-xl overflow-hidden shadow">
-      <div
-        className=" group w-full h-20 bg-white rounded-xl px-4 flex items-center justify-between transition-all duration-300 cursor-pointer "
-      >
-        <div className="flex items-center gap-4">
-          <div className="h-14 w-14 rounded-xl bg-sky-50 flex items-center justify-center p-2">
-            <img
-              src={images}
-              alt="English"
-              className=" object-cover"
-            />
-          </div>
-
-          <p className="text-base font-medium text-slate-700">
-            {title}
-          </p>
+    <div className="group w-full min-h-[4.5rem] bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700/80 rounded-xl px-4 py-3 flex items-center justify-between shadow-xs transition-all duration-300 cursor-pointer gap-3">
+      <div className="flex items-center gap-3.5 min-w-0">
+        <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-sky-50/80 dark:bg-slate-700/80 flex items-center justify-center p-2 shrink-0">
+          <img
+            src={images}
+            alt={title || "Icon"}
+            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+          />
         </div>
 
-        <NavigateNextIcon
-          className="
-            text-slate-400
-            transition-all duration-300
-            group-hover:translate-x-1
-            group-hover:text-sky-500
-          "
-        />
+        <p className="text-sm sm:text-base font-medium text-slate-800 dark:text-slate-100 leading-snug line-clamp-2">
+          {title}
+        </p>
       </div>
+
+      <NavigateNextIcon
+        className="
+          text-slate-400 dark:text-slate-500
+          shrink-0
+          transition-all duration-300
+          group-hover:translate-x-1
+          group-hover:text-sky-500 dark:group-hover:text-cyan-400
+        "
+      />
     </div>
   );
 };

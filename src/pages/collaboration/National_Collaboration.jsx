@@ -6,20 +6,20 @@ export default function NationalCollaboration() {
     usePageTitle('កិច្ចសហប្រតិបត្តិការជាតិ', 'National Collaboration');
     const { collaboration, loading } = useCollaboration(1);
     return (
-        <div className="py-6 min-h-screen max-w-7xl m-auto">
+        <div className="py-6 min-h-screen max-w-7xl m-auto bg-slate-50/50 dark:bg-slate-900 transition-colors duration-200">
             <section className="container mx-auto md:px-4 px-2 max-w-2xl">
                 <div className="space-y-6">
                 {loading && (
                     Array.from({ length: 2 }).map((_, idx) => (
                         <div
                             key={idx}
-                            className="flex items-center justify-between bg-white rounded-lg shadow-sm px-4 py-3 animate-pulse mt-3"
+                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse mt-3"
                         >
                             <div className="flex items-center gap-4">
-                                <div className="w-24 h-12 bg-gray-200 rounded" />
-                                <div className="h-4 w-32 bg-gray-200 rounded" />
+                                <div className="w-24 h-12 bg-gray-200 dark:bg-slate-700 rounded" />
+                                <div className="h-4 w-32 bg-gray-200 dark:bg-slate-700 rounded" />
                             </div>
-                            <div className="w-6 h-6 bg-gray-200 rounded-full" />
+                            <div className="w-6 h-6 bg-gray-200 dark:bg-slate-700 rounded-full" />
                         </div>
                     ))
                 )}
@@ -46,10 +46,10 @@ export default function NationalCollaboration() {
                             return (
                             <div 
                                 key={item.id || idx} 
-                                className="flex items-center justify-between bg-white rounded-lg p-4 border border-gray-100 hover:border-gray-200 hover:bg-gray-50/40 transition-all duration-200 group"
+                                className="flex items-center justify-between bg-white dark:bg-slate-800 rounded-lg p-4 border border-gray-100 dark:border-slate-700 hover:border-gray-200 dark:hover:border-slate-600 hover:bg-gray-50/40 dark:hover:bg-slate-700/50 transition-all duration-200 group"
                             >
                                 <div className="flex items-center min-w-0 flex-1 mr-4">
-                                    <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 bg-gray-50 rounded-lg flex items-center justify-center p-1.5 border border-gray-100 mr-3 sm:mr-4">
+                                    <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 bg-gray-50 dark:bg-slate-700/60 rounded-lg flex items-center justify-center p-1.5 border border-gray-100 dark:border-slate-600 mr-3 sm:mr-4">
                                         <img
                                             src={item.logo}
                                             alt={item.title || "logo"}
@@ -61,7 +61,7 @@ export default function NationalCollaboration() {
                                             href={item.link || '#'}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="no-underline inline-block text-gray-700 hover:text-blue-800"
+                                            className="no-underline inline-block text-gray-700 dark:text-slate-100 hover:text-blue-800 dark:hover:text-cyan-400"
                                         >
                                             <h3 className="text-[13px] md:text-lg font-medium leading-tight">
                                                 {item.title}
@@ -70,7 +70,7 @@ export default function NationalCollaboration() {
                                     </div>
                                 </div>
                                 {item.image && (
-                                    <div className="flex-shrink-0 w-16 md:w-24 md:h-16 rounded-lg overflow-hidden border border-gray-100 bg-gray-50">
+                                    <div className="flex-shrink-0 w-16 md:w-24 md:h-16 rounded-lg overflow-hidden border border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-700/50">
                                         <img
                                             src={item.image}
                                             alt="Colab preview"

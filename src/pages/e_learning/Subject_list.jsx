@@ -28,7 +28,7 @@ export default function Subject_list() {
 
     if (loading) {
         return (
-            <div className={`min-h-screen flex items-center justify-center ${isDark ? 'bg-[#181818] text-white' : 'bg-white text-gray-500'}`}>
+            <div className="min-h-screen flex items-center justify-center bg-white dark:bg-[#181818] text-gray-500 dark:text-slate-100">
                 <div className="animate-pulse flex flex-col items-center">
                     <SchoolIcon sx={{ fontSize: 60 }} className="mb-4 opacity-20" />
                     <p className="font-medium">Loading Curriculum...</p>
@@ -45,17 +45,17 @@ export default function Subject_list() {
     }
     return (
         <div>
-            <div className={`min-h-screen pb-20 ${isDark ? 'bg-[#181818]' : 'bg-gray-50'}`}>
+            <div className="min-h-screen pb-20 bg-gray-50 dark:bg-[#181818] text-slate-800 dark:text-slate-100 transition-colors duration-200">
                 {/* Header / Title Section */}
                 <Searchcomponent />
-                <div className={`${isDark ? 'bg-[#303030]' : 'bg-[#BFE2EA]'} py-6 shadow-md transition-colors`}>
+                <div className="bg-[#BFE2EA] dark:bg-[#303030] py-6 shadow-md transition-colors">
                     <div className="container mx-auto px-5 flex items-center gap-5 ">
-                        <div className="w-20 h-20 bg-[#BFE2EA] rounded-full flex items-center justify-center shadow-lg">
+                        <div className="w-20 h-20 bg-[#BFE2EA] dark:bg-slate-800 rounded-full flex items-center justify-center shadow-lg">
                             <div className="w-14 h-14 bg-[#0a96a4] rounded-full flex items-center justify-center">
                                 <SchoolIcon className="text-white" />
                             </div>
                         </div>
-                        <h1 className={`text-xl md:text-2xl font-bold ${isDark ? 'text-white opacity-90' : 'text-[#4E4E4E]'}`}>
+                        <h1 className="text-xl md:text-2xl font-bold text-[#4E4E4E] dark:text-slate-100">
                             {facultyData?.faculty}
                         </h1>
                     </div>
@@ -65,7 +65,7 @@ export default function Subject_list() {
                     
                     {/* Sidebar: Majors */}
                     <aside className="w-full md:w-1/3 lg:w-1/4">
-                        <h2 className={`text-lg font-bold mb-4 border-b-2 pb-2 ${isDark ? 'text-white opacity-70 border-gray-700' : 'text-[#4E4E4E] border-[#BFE2EA]'}`}>
+                        <h2 className="text-lg font-bold mb-4 border-b-2 pb-2 text-[#4E4E4E] border-[#BFE2EA] dark:text-slate-100 dark:border-slate-700">
                             {i18n.t('home.major')}
                         </h2>
 
@@ -76,9 +76,7 @@ export default function Subject_list() {
                                     setSelectedMajorIndex(Number(e.target.value));
                                     setSelectedYearIndex(0);
                                 }}
-                                className={`w-full p-3 rounded-xl border outline-none font-bold shadow-sm ${
-                                    isDark ? 'bg-[#303030] border-gray-700 text-white' : 'bg-white border-[#BFE2EA] text-[#4E4E4E]'
-                                }`}
+                                className="w-full p-3 rounded-xl border outline-none font-bold shadow-sm bg-white dark:bg-[#303030] border-[#BFE2EA] dark:border-slate-700 text-[#4E4E4E] dark:text-slate-100"
                             >
                                 {facultyData.major.map((m, idx) => (
                                     <option key={idx} value={idx}>{m.major}</option>
@@ -95,8 +93,8 @@ export default function Subject_list() {
                                         }}
                                         className={`flex justify-between items-center px-5 py-4 rounded-full transition-all duration-200 font-bold ${
                                             selectedMajorIndex === idx
-                                                ? (isDark ? 'bg-[#0a96a4] text-white shadow-lg' : 'bg-[#0a96a4] text-white shadow-md')
-                                                : (isDark ? 'bg-[#303030] text-white opacity-70 hover:opacity-100' : 'bg-white text-[#4E4E4E] hover:bg-gray-100 border border-gray-200')
+                                                ? 'bg-[#0a96a4] text-white shadow-md'
+                                                : 'bg-white dark:bg-[#303030] text-[#4E4E4E] dark:text-slate-200 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-200 dark:border-slate-700'
                                         }`}
                                     >
                                         <span>{m.major}</span>
@@ -111,15 +109,15 @@ export default function Subject_list() {
                     <main className="w-full md:w-2/3 lg:w-3/4">
                         
                         {/* Year Tabs */}
-                        <div className={`flex rounded-xl shadow-sm mb-8 overflow-hidden sticky top-4 z-0 ${isDark ? 'bg-[#303030]' : 'bg-white border border-gray-200'}`}>
+                        <div className="flex rounded-xl shadow-sm mb-8 overflow-hidden sticky top-4 z-0 bg-white dark:bg-[#303030] border border-gray-200 dark:border-slate-700">
                             {currentMajor?.year?.map((y, idx) => (
                                 <button
                                     key={idx}
                                     onClick={() => setSelectedYearIndex(idx)}
                                     className={`flex-1 py-4 text-sm md:text-base font-bold transition-all border-b-4 ${
                                         selectedYearIndex === idx
-                                            ? 'border-[#0a96a4] text-[#0a96a4]'
-                                            : 'border-transparent text-gray-400 hover:text-gray-500'
+                                            ? 'border-[#0a96a4] text-[#0a96a4] dark:text-cyan-400'
+                                            : 'border-transparent text-gray-400 dark:text-slate-400 hover:text-gray-500 dark:hover:text-slate-200'
                                     }`}
                                 >
                                     {y.years}
@@ -130,12 +128,12 @@ export default function Subject_list() {
                         {/* Semesters & Subject Cards */}
                         <div className="space-y-10">
                             {currentYear?.semester?.map((sem, semIdx) => (
-                                <section key={semIdx} className={`rounded-3xl shadow-lg overflow-hidden border ${isDark ? 'bg-[#303030] border-gray-800' : 'bg-white border-gray-100'}`}>
+                                <section key={semIdx} className="rounded-3xl shadow-lg overflow-hidden border bg-white dark:bg-[#303030] border-gray-100 dark:border-slate-700">
                                     
                                     {/* Semester Header */}
-                                    <div className={`px-6 py-4 flex items-center gap-3 ${isDark ? 'bg-[#181818]' : 'bg-[#BFE2EA] bg-opacity-20'}`}>
-                                        <CalendarMonthIcon className={isDark ? 'text-white opacity-70' : 'text-[#0a96a4]'} />
-                                        <h3 className={`text-lg font-bold ${isDark ? 'text-white opacity-90' : 'text-[#0a96a4]'}`}>
+                                    <div className="px-6 py-4 flex items-center gap-3 bg-[#BFE2EA] bg-opacity-20 dark:bg-[#181818]">
+                                        <CalendarMonthIcon className="text-[#0a96a4] dark:text-cyan-400" />
+                                        <h3 className="text-lg font-bold text-[#0a96a4] dark:text-cyan-400">
                                             {sem.semester}
                                         </h3>
                                     </div>
@@ -148,19 +146,11 @@ export default function Subject_list() {
                                                 key={i}
                                                 className="block group"
                                             >
-                                                <div className={`flex justify-between items-center px-6 py-5 rounded-2xl border transition-all duration-200 shadow-sm ${
-                                                    isDark 
-                                                    ? 'bg-[#181818] border-gray-800 group-hover:border-[#0a96a4] group-hover:bg-[#252525]' 
-                                                    : 'bg-white border-gray-100 group-hover:border-[#0a96a4] group-hover:shadow-md'
-                                                }`}>
-                                                    <span className={`font-bold transition-colors ${
-                                                        isDark ? 'text-white opacity-75 group-hover:opacity-100' : 'text-[#4E4E4E] group-hover:text-[#0a96a4]'
-                                                    }`}>
+                                                <div className="flex justify-between items-center px-6 py-5 rounded-2xl border transition-all duration-200 shadow-sm bg-white dark:bg-[#181818] border-gray-100 dark:border-slate-700 group-hover:border-[#0a96a4] dark:group-hover:border-[#0a96a4] group-hover:shadow-md">
+                                                    <span className="font-bold transition-colors text-[#4E4E4E] dark:text-slate-100 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400">
                                                         {sub.subject}
                                                     </span>
-                                                    <KeyboardArrowRightIcon className={`transition-transform duration-200 group-hover:translate-x-2 ${
-                                                        isDark ? 'text-gray-600' : 'text-gray-400'
-                                                    }`} />
+                                                    <KeyboardArrowRightIcon className="transition-transform duration-200 group-hover:translate-x-2 text-gray-400 dark:text-slate-400" />
                                                 </div>
                                             </Link>
                                         ))}

@@ -9,25 +9,25 @@ export default function Academic_Categories() {
     usePageTitle('ការចុះឈ្មោះ' , 'Admission');
     const { academicCategories, loading } = useAcademicCategories();
     return (
-        <div>
+        <div className="min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
             <div className="grid grid-cols-1 md:gap-3 p-4 md:space-y-0 space-y-2 select-none max-w-7xl m-auto">
                 {loading ? (
                     Array.from({ length: 5 }).map((_, idx) => (
                         <div
                             key={idx}
-                            className="flex items-center justify-between bg-white rounded-lg shadow-sm px-4 py-4 animate-pulse"
+                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-4 animate-pulse"
                         >
                             <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 bg-gray-200 rounded" />
-                                <div className="h-4 w-32 bg-gray-200 rounded" />
+                                <div className="w-10 h-10 bg-gray-200 dark:bg-slate-700 rounded" />
+                                <div className="h-4 w-32 bg-gray-200 dark:bg-slate-700 rounded" />
                             </div>
-                            <div className="w-6 h-6 bg-gray-200 rounded-full" />
+                            <div className="w-6 h-6 bg-gray-200 dark:bg-slate-700 rounded-full" />
                         </div>
                     ))
                 ) : (
                     academicCategories?.map((academic_research) => (
-                        <Link key={academic_research.id} to={`/academic_faculties/${academic_research.id}`} rel="noopener noreferrer" className="flex rounded-lg shadow-sm overflow-hidden">
-                            <div className="bg-white flex items-center justify-center p-2 px-4">
+                        <Link key={academic_research.id} to={`/academic_faculties/${academic_research.id}`} rel="noopener noreferrer" className="flex rounded-lg shadow-sm overflow-hidden border border-gray-100 dark:border-slate-700">
+                            <div className="bg-white dark:bg-slate-800 flex items-center justify-center p-2 px-4 border-r border-gray-100 dark:border-slate-700">
                                 <img
                                     src={academic_research.image}
                                     alt={academic_research.title}

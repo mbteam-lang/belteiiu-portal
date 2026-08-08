@@ -15,13 +15,13 @@ export default function List_Collaboration() {
             Array.from({ length: 2 }).map((_, idx) => (
                 <div
                     key={idx}
-                    className="flex items-center justify-between bg-white rounded-lg shadow-sm px-4 md:py-3 py-2 animate-pulse max-w-7xl mx-auto mb-3"
+                    className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 md:py-3 py-2 animate-pulse max-w-7xl mx-auto mb-3"
                 >
                     <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 bg-gray-200 rounded" />
-                        <div className="h-4 w-32 bg-gray-200 rounded" />
+                        <div className="w-10 h-10 bg-gray-200 dark:bg-slate-700 rounded" />
+                        <div className="h-4 w-32 bg-gray-200 dark:bg-slate-700 rounded" />
                     </div>
-                    <div className="w-6 h-6 bg-gray-200 rounded-full" />
+                    <div className="w-6 h-6 bg-gray-200 dark:bg-slate-700 rounded-full" />
                 </div>
             ))
         ) : (

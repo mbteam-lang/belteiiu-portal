@@ -25,13 +25,13 @@ export default function WatchVideo() {
     const recommendedVideos = sharingVideos.filter(video => video.youtubeId !== id);
 
     return (
-        <section className=" min-h-screen py-6 max-w-7xl mx-auto px-4 lg:px-6">
-            <div className="flex justify-between items-center border-b border-slate-200 pb-4 mt-4 mb-8">
-                <Link to="/index_biu" className="hover:text-[#0a96a4] font-medium flex items-center gap-1.5 transition-all hover:gap-2 text-md md:text-lg text-[#0a98a9]">
+        <section className="min-h-screen py-6 max-w-7xl mx-auto px-4 lg:px-6">
+            <div className="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-4 mt-4 mb-8">
+                <Link to="/index_biu" className="hover:text-[#0a96a4] font-medium flex items-center gap-1.5 transition-all hover:gap-2 text-md md:text-lg text-[#0a98a9] dark:text-[#1fcfe0]">
                     <KeyboardDoubleArrowLeftIcon style={{ fontSize: 18 }} />{t('news.home')}
                 </Link>
             </div>
-            <div className=" grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {/* LEFT COLUMN: Main Video Player & Details */}
                 <div className="lg:col-span-2">
                     <div className="aspect-video w-full bg-black rounded-xl overflow-hidden shadow-sm">
@@ -50,11 +50,11 @@ export default function WatchVideo() {
                         ></iframe>
                     </div>
 
-                    <div className="mt-4 bg-white p-3 rounded-xl border border-gray-100">
-                        <h1 className="text-xl md:text-2xl font-bold text-slate-800 leading-snug">
+                    <div className="mt-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                        <h1 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100 leading-snug">
                             {currentVideo.title}
                         </h1>
-                        <div className="flex flex-wrap items-center gap-4 mt-2 text-xs text-gray-500 font-medium border-b pb-4">
+                        <div className="flex flex-wrap items-center gap-4 mt-2 text-xs text-gray-500 dark:text-slate-400 font-medium border-b border-gray-100 dark:border-slate-700 pb-4">
                             {/* <span>{currentVideo.views}</span>
                             <span>•</span>
                             <span>{currentVideo.date}</span>
@@ -64,8 +64,8 @@ export default function WatchVideo() {
                             </span> */}
                         </div>
 
-                        <div className="mt-4 text-md text-slate-600">
-                            <p className="font-semibold text-slate-700 mb-2">Description</p>
+                        <div className="mt-4 text-md text-slate-600 dark:text-slate-300">
+                            <p className="font-semibold text-slate-700 dark:text-slate-200 mb-2">Description</p>
                             {currentVideo.description}
                         </div>
                     </div>
@@ -73,8 +73,8 @@ export default function WatchVideo() {
 
                 {/* RIGHT COLUMN: "Up Next" Sidebar */}
                 <div className="space-y-4">
-                    <h2 className="text-sm font-bold text-slate-700 tracking-wide uppercase px-1 flex items-center gap-2">
-                        <Clapperboard className="w-4 h-4 text-gray-500" /> {/* 3. Icon element */}
+                    <h2 className="text-sm font-bold text-slate-700 dark:text-slate-200 tracking-wide uppercase px-1 flex items-center gap-2">
+                        <Clapperboard className="w-4 h-4 text-gray-500 dark:text-slate-400" /> {/* 3. Icon element */}
                         {t('home.related_videos')}
                     </h2>
                     
@@ -83,9 +83,9 @@ export default function WatchVideo() {
                             <div 
                                 key={video.id}
                                 onClick={() => navigate(`/watch/${video.youtubeId}`)}
-                                className="flex gap-3 bg-white p-2 rounded-xl border border-gray-100 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 group"
+                                className="flex gap-3 bg-white dark:bg-slate-800 p-2 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 group"
                             >
-                                <div className="relative w-40 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
+                                <div className="relative w-40 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100 dark:bg-slate-700">
                                     <img
                                         src={`https://img.youtube.com/vi/${video.youtubeId}/mqdefault.jpg`}
                                         alt={video.title}
@@ -98,15 +98,15 @@ export default function WatchVideo() {
 
                                 <div className="flex flex-col justify-between py-0.5">
                                     <div>
-                                        <h3 className="text-md font-semibold leading-snug text-gray-700 group-hover:text-[#0a96a4] transition-colors line-clamp-1">
+                                        <h3 className="text-md font-semibold leading-snug text-gray-800 dark:text-slate-200 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400 transition-colors line-clamp-1">
                                             {video.title}
                                         </h3>
-                                        <h3 className="text-sm leading-snug text-gray-500 group-hover:text-[#0a96a4] transition-colors line-clamp-2">
+                                        <h3 className="text-sm leading-snug text-gray-500 dark:text-slate-400 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400 transition-colors line-clamp-2">
                                             {video.description}
                                         </h3>
-                                        <p className="text-[11px] text-gray-400 mt-1">{video.views}</p>
+                                        <p className="text-[11px] text-gray-400 dark:text-slate-400 mt-1">{video.views}</p>
                                     </div>
-                                    <p className="text-[11px] text-gray-400">
+                                    <p className="text-[11px] text-gray-400 dark:text-slate-400">
                                         {formatDynamicDate(video.date)}
                                     </p>
                                 </div>
