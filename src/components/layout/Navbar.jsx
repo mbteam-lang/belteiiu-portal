@@ -260,6 +260,11 @@ const Navbar = () => {
                         t={t}
                         to="/term_condition"
                     />
+
+                    <div className="flex justify-between items-center px-4 py-2 mt-2 border-t border-white/10 pt-3">
+                        <span className="text-sm font-medium text-white/80">Theme Mode</span>
+                        <ThemeToggle />
+                    </div>
                 </div>
             )}
         </header>
