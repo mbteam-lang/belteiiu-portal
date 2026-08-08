@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "proxy": "http://127.0.0.1:8000",
   "engines": {
     "node": ">=22.0.0"
   },

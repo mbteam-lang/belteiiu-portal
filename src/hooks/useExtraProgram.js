@@ -42,6 +42,5 @@ export const useExtraProgram = () => {
         extraProgram,
         loading,
         error,
-        // refetch: fetchExtraProgram,
     };
 };

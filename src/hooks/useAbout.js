@@ -30,7 +30,6 @@ export const useAbout = (id) => {
                 setLoading(false)
                 setError(getResponseMessage({ response: res }));
             }
-            console.log('----------------About: ', about);
         } catch (err) {
             setAbout([]);
             setLoading(false)

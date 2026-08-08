@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { FaYoutube } from "react-icons/fa";
 import ViewExtra from "./View_Extra";
 import usePageTitle from "@/hooks/usePageTitle";
@@ -8,7 +8,7 @@ import { useExtraDetail } from "@/hooks/useExtraDetail";
 export default function ExtraDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  usePageTitle('កម្មវិធីសិក្សាបន្ថែម' , 'Main Extra');
+  usePageTitle('ព័ត៌មានលម្អិត', 'Curriculum Detail');
   const { extraDetail, loading, showView } = useExtraDetail(id);
 
   return (

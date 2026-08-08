@@ -1,4 +1,4 @@
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useExtraView } from '@/hooks/useExtraView';
 import usePageTitle from '@/hooks/usePageTitle';
 import { useTranslation } from 'react-i18next';
@@ -6,10 +6,9 @@ import { useTranslation } from 'react-i18next';
 export default function ViewExtra() {
   const { t } = useTranslation();
   const { id } = useParams();
-  usePageTitle('កម្មវិធីសិក្សាបន្ថែម', 'Main Extra');
+  usePageTitle('ព័ត៌មានលម្អិតអំពីកម្មវិធីសិក្សា', 'Curriculum Detail');
   const { extraView, loading } = useExtraView(id);
   const item = extraView?.[0];
-
   return (
     <div className="max-w-7xl m-auto">
       {/* 1. SKELETON LOADING STATE */}

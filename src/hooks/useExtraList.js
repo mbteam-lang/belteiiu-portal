@@ -41,6 +41,7 @@ export const useExtraList = (extraID) => {
             const res = await getService(endpoints.extraList, { main_extras_id: id });
             if (res && res.data) {
                 extraListCache[cacheKey] = res.data;
+               
                 processResponseData(res.data);
             } else {
                 setNoData(true);
@@ -74,6 +75,7 @@ export const useExtraList = (extraID) => {
         setYears(uniqueYears);
     };
 
+    
     return { 
         data, 
         isGrouped, 

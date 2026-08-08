@@ -10,10 +10,9 @@ export default function ExtraList() {
     const { id } = useParams();
     const navigate = useNavigate();
     const location = useLocation();
-    const itemTitle = location.state?.title;
+    usePageTitle('', '', location.state?.title);
     const openedRef = useRef(false);
     const [filterYear, setFilterYear] = useState("");
-
     const { 
         data, 
         isGrouped, 
@@ -24,9 +23,7 @@ export default function ExtraList() {
         loading, 
         currentLanguage 
     } = useExtraList(id);
-    usePageTitle(itemTitle || 'កម្មវិធីសិក្សាបន្ថែម' , 'Main Extra');
 
-    
     useEffect(() => {
         // open pdf
         if (!loading && data.length === 0 && fileLink) {
@@ -106,7 +103,7 @@ export default function ExtraList() {
             {!loading && !isGrouped && filteredData.map((item) => (
                 <button 
                     key={item.id}
-                    onClick={() => navigate(`/extras-detail/${item.id}#${currentLanguage}`, { state: { title: itemTitle } })}
+                    onClick={() => navigate(`/extras-detail/${item.id}#${currentLanguage}`, { state: { title: location.state?.title } })}
                     className="flex w-full border border-gray-200 bg-gray-50 rounded-lg hover:bg-gray-100 transition mb-1 text-left p-2" 
                 >
                     <img 

@@ -6,7 +6,7 @@ import { FaExternalLinkAlt, FaChevronRight } from "react-icons/fa";
 
 export default function ExtraProgram() {
   const navigate = useNavigate();
-  usePageTitle('កម្មវិធីសិក្សាបន្ថែម', 'Main Extra');
+  usePageTitle('កម្មវិធីសិក្សាបន្ថែម' , 'Extra-Curriculum Programs');
   const { extraProgram, loading } = useExtraProgram();
 
   const fixedItem = useMemo(

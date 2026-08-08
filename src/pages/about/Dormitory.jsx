@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import YouTubePlayer from '@/components/common/YouTubePlayer';
 import usePageTitle from '@/hooks/usePageTitle';
 import { useTranslation } from 'react-i18next';
-import dormitoryData from '../../data/dormitory';
+import dormitoryData from '@/data/dormitory';
 
 export default function Dormitory() {
   usePageTitle('អគារស្នាក់នៅនិស្សិត', 'Dormitory');
