@@ -10,7 +10,7 @@ export default function ServingVideo() {
     const { t } = useTranslation();
 
     return (
-        <section className="py-10 bg-white dark:bg-gray-900">
+        <section className="py-10 bg-white dark:bg-[#282828]">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center border-b pb-4">
                     <div className="flex items-center gap-2">
@@ -27,7 +27,7 @@ export default function ServingVideo() {
                         <div 
                             key={video.id} 
                             onClick={() => navigate(`/watch/${video.youtubeId}`)}
-                            className="group flex flex-col justify-between p-3 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:shadow-xl transition-all duration-300 cursor-pointer"
+                            className="group flex flex-col justify-between p-3 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#353535] hover:shadow-xl transition-all duration-300 cursor-pointer"
                         >
                             <div>
                                 <div className="relative w-full h-44 overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-700 shadow-inner">

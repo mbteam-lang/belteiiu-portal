@@ -23,7 +23,7 @@ export default function StatsSection() {
     });
 
     return (
-        <section ref={ref} className="bg-neutral-50 dark:bg-gray-900 py-10">
+        <section ref={ref} className="bg-neutral-50 dark:bg-[#282828] py-10">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 md:divide-x md:divide-slate-200 dark:divide-slate-600">
                     {stats.map((item, index) => {
@@ -49,7 +49,7 @@ export default function StatsSection() {
                                 </h1>
                                 <div className="flex flex-row items-center justify-center gap-2 text-center mt-3">
                                     {IconComponent && (
-                                        <div className="flex items-center justify-center rounded-xl bg-blue-50 dark:bg-slate-800 p-2 text-[#0a96a4] dark:text-gray-300">
+                                        <div className="flex items-center justify-center rounded-xl bg-blue-50 dark:bg-[#353535] p-2 text-[#0a96a4] dark:text-gray-300">
                                             <IconComponent className="h-5 w-5 md:h-6 md:w-6 dark:text-gray-300" />
                                         </div>
                                     )}

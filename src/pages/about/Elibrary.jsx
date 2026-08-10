@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import usePageTitle from '@/hooks/usePageTitle';
-import { useWorldWideELibrary } from '@/hooks/useWorldWideElibrary'; 
+import { useWorldWideELibrary } from '@/hooks/useWorldWideElibrary';
 import ListCard from '@/components/common/Card';
 
 
@@ -11,12 +11,12 @@ export default function Elibrary() {
 
     return (
         <>
-           <div className='flex flex-col gap-3 p-3 md:p-6 lg:p-8 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
+            <div className='flex flex-col gap-3 p-3 md:p-6 lg:p-8 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 {loading ? (
                     Array.from({ length: 6 }).map((_, idx) => (
                         <div
                             key={idx}
-                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse"
+                            className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse"
                         >
                             <div className="flex items-center gap-4">
                                 <div className="w-10 h-10 bg-gray-200 dark:bg-slate-700 rounded" />
@@ -28,10 +28,10 @@ export default function Elibrary() {
                 ) : (
                     worldWideElibrary.map((items) => (
                         <Link key={items.id} to={items.title === "OTHER LIBRARIES" ? "/Other_Library" : items.url} rel="noopener noreferrer" className="flex py-1">
-                                <ListCard
-                                    images={items.image}
-                                    title = {items.title}
-                                />
+                            <ListCard
+                                images={items.image}
+                                title={items.title}
+                            />
                         </Link>
                     )))}
             </div>

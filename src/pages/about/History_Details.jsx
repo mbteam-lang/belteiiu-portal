@@ -31,7 +31,7 @@ export default function HistoryDetails() {
                     <Link
                         key={history.id}
                         to={`/award/${history.id}`}
-                        className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-xl shadow-sm px-4 py-3 hover:shadow-md transition-all"
+                        className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-xl shadow-sm px-4 py-3 hover:shadow-md transition-all"
                     >
                         <div className="flex items-center gap-4">
                             <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white dark:bg-slate-700/60 rounded-lg flex items-center justify-center p-1 shrink-0 border border-gray-100 dark:border-slate-700 overflow-hidden">

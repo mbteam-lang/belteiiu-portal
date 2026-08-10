@@ -14,13 +14,13 @@ export default function CustomTable({
     children,
     className = '',
     tableClassName = '',
-    headerBg = 'bg-[#151B74] dark:bg-slate-900 text-white',
+    headerBg = 'bg-[#151B74] dark:bg-[#282828] text-white',
     border = true,
     shadow = true,
     rounded = true,
     ...restProps
 }) {
-    const containerClasses = `overflow-x-auto bg-white dark:bg-slate-800 ${
+    const containerClasses = `overflow-x-auto bg-white dark:bg-[#353535] ${
         rounded ? 'rounded-lg' : ''
     } ${shadow ? 'shadow-sm' : ''} ${
         border ? 'border border-gray-300 dark:border-slate-700' : ''

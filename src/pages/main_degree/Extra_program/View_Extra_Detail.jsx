@@ -10,7 +10,7 @@ export default function ViewExtraDetail({ itemTitle }) {
   usePageTitle('កម្មវិធីសិក្សាបន្ថែម', 'Main Extra');
   const { extraViewDetail, loading } = useExtraViewDetail(id);
 
-  
+
   if (loading) {
     return (
       <div className="flex flex-col gap-2 p-4 animate-pulse">
@@ -30,7 +30,7 @@ export default function ViewExtraDetail({ itemTitle }) {
 
   if (!extraViewDetail.length) {
     return <div className="text-center py-10">
-      
+
     </div>;
   }
   const item = extraViewDetail[0];
@@ -51,11 +51,11 @@ export default function ViewExtraDetail({ itemTitle }) {
       <p className="text-md md:text-lg text-gray-800 dark:text-slate-100">{item.title}</p>
       <p className="text-sm text-gray-500 dark:text-slate-400">{t("news.posted")} : {item.created_at}</p>
       <hr className="my-3 border-t border-dashed border-gray-400 dark:border-slate-700" />
-      <p className="text-md md:text-lg text-gray-800 dark:text-slate-100">{item.title +" : "+item.program+item.batch}</p>
+      <p className="text-md md:text-lg text-gray-800 dark:text-slate-100">{item.title + " : " + item.program + item.batch}</p>
       <p className="text-md md:text-lg text-gray-800 dark:text-slate-200">{item.description}</p>
       <div className="flex flex-col gap-2">
         {item.image_album?.map((img, index) => (
-          <img key={index} src={img} alt={`album-${index}`} className="rounded-md"/>
+          <img key={index} src={img} alt={`album-${index}`} className="rounded-md" />
         ))}
       </div>
     </div>

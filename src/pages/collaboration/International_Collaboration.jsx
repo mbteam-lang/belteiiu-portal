@@ -6,7 +6,7 @@ import NoData from '@/components/common/Nodata';
 
 export default function International_Collaboration() {
     usePageTitle('កិច្ចសហប្រតិបត្តិការអន្តរជាតិ', 'International Collaboration');
-    const { collaboration , loading } = useCollaboration(2);
+    const { collaboration, loading } = useCollaboration(2);
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     const toggleExpand = (index) => {
@@ -19,7 +19,7 @@ export default function International_Collaboration() {
                 Array.from({ length: 2 }).map((_, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse mt-3"
+                        className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse mt-3"
                     >
                         <div className="flex items-center gap-4">
                             <div className="w-24 h-12 bg-gray-200 dark:bg-slate-700 rounded" />
@@ -33,7 +33,7 @@ export default function International_Collaboration() {
                 collaboration.map((country, index) => (
                     <div
                         key={country.id ?? country.country ?? index}
-                        className="mb-2 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden"
+                        className="mb-2 rounded-lg bg-white dark:bg-[#353535] shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden"
                     >
                         <div
                             onClick={() => toggleExpand(index)}
@@ -50,23 +50,21 @@ export default function International_Collaboration() {
                                 </span>
                             </div>
                             <FiChevronDown
-                                className={`text-xl transition-transform duration-300 text-gray-700 dark:text-slate-200 ${
-                                    expandedIndex === index ? 'rotate-180' : ''
-                                }`}
+                                className={`text-xl transition-transform duration-300 text-gray-700 dark:text-slate-200 ${expandedIndex === index ? 'rotate-180' : ''
+                                    }`}
                             />
                         </div>
                         <div
-                            className={`overflow-hidden transition-all duration-300 ${
-                                expandedIndex === index
+                            className={`overflow-hidden transition-all duration-300 ${expandedIndex === index
                                     ? 'max-h-[2000px] opacity-100 p-2 border-t border-gray-100 dark:border-slate-700'
                                     : 'max-h-0 opacity-0'
-                            }`}
+                                }`}
                         >
                             <div className="border border-gray-200 dark:border-slate-700 overflow-hidden">
                                 {(country.collaborations || []).map((item, idx) => (
                                     <div
                                         key={item.id ?? idx}
-                                        className="grid grid-cols-12 border-b last:border-b-0 border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 min-h-[80px]"
+                                        className="grid grid-cols-12 border-b last:border-b-0 border-gray-200 dark:border-slate-700 bg-white dark:bg-[#353535] min-h-[80px]"
                                     >
                                         <div className="col-span-2 flex items-center justify-center border-r border-gray-200 dark:border-slate-700 font-medium text-gray-600 dark:text-slate-300">
                                             {idx + 1}

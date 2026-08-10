@@ -14,7 +14,7 @@ export default function CourseCard({ course, onClick }) {
             // route to lesson video
             to={`/lessons/${course.course_id}`}
             onClick={() => onClick && onClick(course.course_id)}
-            className="group flex flex-col justify-between p-3 rounded-2xl border border-gray-100 dark:border-slate-700 bg-white dark:bg-slate-800 hover:shadow-xl transition-all duration-300 w-full"
+            className="group flex flex-col justify-between p-3 rounded-2xl border border-gray-100 dark:border-slate-700 bg-white dark:bg-[#353535] hover:shadow-xl transition-all duration-300 w-full"
         >
             <div>
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl bg-gray-100 dark:bg-slate-700 shadow-inner">

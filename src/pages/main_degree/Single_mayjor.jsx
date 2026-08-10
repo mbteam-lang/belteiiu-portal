@@ -11,7 +11,7 @@ export default function Single_Major() {
     const {majorDetail, loading } = useMajorDetail(majorId);
     
     return (
-        <div className='bg-[#F5F5F5] dark:bg-slate-900 min-h-screen transition-colors duration-200'>
+        <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
             {loading ? (
                 <>
                     <div className='h-3'></div>
@@ -37,7 +37,7 @@ export default function Single_Major() {
                                     <div className="w-24 h-1 bg-[#0a96a4] dark:bg-cyan-400 mx-auto rounded-full mt-2"></div>
                                 </div>
                                 <div className="mb-10">
-                                    <pre className="pre1 text-justify break-words whitespace-pre-wrap text-gray-800 dark:text-slate-200 md:text-lg text-md p-6 border border-gray-200 dark:border-slate-700 rounded-lg shadow-md bg-gray-50 dark:bg-slate-800">
+                                    <pre className="pre1 text-justify break-words whitespace-pre-wrap text-gray-800 dark:text-slate-200 md:text-lg text-md p-6 border border-gray-200 dark:border-slate-700 rounded-lg shadow-md bg-gray-50 dark:bg-[#353535]">
                                         {items.remark}
                                     </pre>
                                 </div>

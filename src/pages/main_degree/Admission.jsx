@@ -7,26 +7,17 @@ import usePageTitle from '@/hooks/usePageTitle';
 export default function Admission() {
   const [expandedId, setExpandedId] = useState(null);
   const contentRefs = useRef({});
-  usePageTitle('ការចុះឈ្មោះ' , 'Admission');
+  usePageTitle('ការចុះឈ្មោះ', 'Admission');
   const { admission, loading } = useAdmission();
 
   const toggleExpand = (id) => {
     setExpandedId((prev) => (prev === id ? null : id));
   };
   return (
-    <div className="bg-[#F5F5F5] dark:bg-slate-900 min-h-screen select-none transition-colors duration-200">
+    <div className="bg-[#F5F5F5] dark:bg-[#282828] min-h-screen select-none transition-colors duration-200">
       <div className="h-5" />
       <section className="max-w-7xl m-auto md:px-5 px-2">
-        {loading ? (
-          Array.from({ length: 4 }).map((_, idx) => (
-            <div key={idx} className="mb-2 animate-pulse">
-              <div className="p-3 shadow rounded-md bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 flex justify-between items-center">
-                <div className="h-5 bg-gray-200 dark:bg-slate-700 rounded w-1/3" />
-                <div className="w-6 h-6 bg-gray-200 dark:bg-slate-700 rounded-full" />
-              </div>
-            </div>
-          ))
-        ) : (
+        {
           admission?.map((items) => {
             const isOpen = expandedId === items.id;
 
@@ -34,7 +25,7 @@ export default function Admission() {
               <div key={items.id} className="mb-2">
                 <div
                   onClick={() => toggleExpand(items.id)}
-                  className="cursor-pointer flex-col p-3 shadow rounded-md w-full bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-800 dark:text-slate-200"
+                  className="cursor-pointer flex-col p-3 shadow rounded-md w-full bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 text-gray-800 dark:text-slate-200"
                 >
                   {/* Header */}
                   <div className="flex justify-between items-center">
@@ -64,7 +55,7 @@ export default function Admission() {
               </div>
             );
           })
-        )}
+        }
       </section>
       <div className="h-24" />
     </div>

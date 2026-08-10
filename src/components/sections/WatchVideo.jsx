@@ -50,7 +50,7 @@ export default function WatchVideo() {
                         ></iframe>
                     </div>
 
-                    <div className="mt-4 bg-white dark:bg-slate-800 p-4 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
+                    <div className="mt-4 bg-white dark:bg-[#353535] p-4 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm">
                         <h1 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-100 leading-snug">
                             {currentVideo.title}
                         </h1>
@@ -83,7 +83,7 @@ export default function WatchVideo() {
                             <div 
                                 key={video.id}
                                 onClick={() => navigate(`/watch/${video.youtubeId}`)}
-                                className="flex gap-3 bg-white dark:bg-slate-800 p-2 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 group"
+                                className="flex gap-3 bg-white dark:bg-[#353535] p-2 rounded-xl border border-gray-100 dark:border-slate-700 shadow-sm hover:shadow-md cursor-pointer transition-all duration-200 group"
                             >
                                 <div className="relative w-40 h-24 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100 dark:bg-slate-700">
                                     <img

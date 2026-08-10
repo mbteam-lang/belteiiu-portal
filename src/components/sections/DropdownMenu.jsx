@@ -92,7 +92,7 @@ export const DesktopDropdown = ({
 
             {isOpen && hasDropdown && (
                 <div className="absolute left-0 top-full z-50 pt-2 min-w-full w-max origin-top-left">
-                    <ul className="rounded-xl border border-gray-100 dark:border-slate-700 bg-white/95 dark:bg-slate-800/95 p-1 shadow-xl backdrop-blur-md">
+                    <ul className="rounded-xl border border-gray-100 dark:border-slate-700 bg-white/95 dark:bg-[#353535]/95 p-1 shadow-xl backdrop-blur-md">
                         {data.map((item, i) => (
                             <li key={i} className="w-full">
                                 <Link

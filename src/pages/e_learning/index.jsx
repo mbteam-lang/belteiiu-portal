@@ -105,7 +105,7 @@ export default function Index() {
                         <div className="skeleton-loading">
                             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 '>
                                 {[...Array(12)].map((_, index) => (
-                                    <div key={index} className="skeleton-item w-full h-16 rounded-md bg-gray-200 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 animate-pulse" />
+                                    <div key={index} className="skeleton-item w-full h-16 rounded-md bg-gray-200 dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse" />
                                 ))}
                             </div>
                         </div>
@@ -114,7 +114,7 @@ export default function Index() {
                             {data.map((item, index) => (
                                 <Link to={`/faculty/${item.id}`} className='overflow-hidden rounded-xl hover:scale-105 transition-transform duration-300' key={index} style={{ border: `1px solid ${item.color}` }}>
                                     <div className="h-20 w-full flex justify-start items-center gap-1 drop-shadow-md rounded-lg overflow-hidden" style={{ backgroundColor: item.color }}>
-                                        <div className="flex w-20 h-20 bg-white dark:bg-slate-800">
+                                        <div className="flex w-20 h-20 bg-white dark:bg-[#353535]">
                                             <img src={item.image} alt="" className="mx-auto w-auto h-full p-2" />
                                         </div>
                                         <div className='w-full flex flex-col gap-2'>
@@ -128,7 +128,7 @@ export default function Index() {
                     )}
                     {/* popular video */}
                     <div className='flex gap-5 py-10'>
-                        <div className='w-14 h-14 bg-[#D6EBED] dark:bg-slate-800 rounded-full flex items-center justify-center'>
+                        <div className='w-14 h-14 bg-[#D6EBED] dark:bg-[#353535] rounded-full flex items-center justify-center'>
                             <div className='w-10 h-10 bg-[#0a96a4] rounded-full flex items-center justify-center'>
                                 <CastForEducationIcon className='w-10 h-10 text-white' />
                             </div>
@@ -141,7 +141,7 @@ export default function Index() {
                             <div className="skeleton-loading">
                                 <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
                                     {[...Array(4)].map((_, indexPopCourse) => (
-                                        <div key={indexPopCourse} className="skeleton-item w-full h-60 rounded-md bg-gray-200 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 animate-pulse" />
+                                        <div key={indexPopCourse} className="skeleton-item w-full h-60 rounded-md bg-gray-200 dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse" />
                                     ))}
                                 </div>
                             </div>
@@ -153,7 +153,7 @@ export default function Index() {
                                     const displayText = isTruncated ? `${popCourse.title.substring(0, maxLength)}...` : popCourse.title;
                                     return (
                                         <Link to={`/lessons/${popCourse.id}`} onClick={() => { handleClick(popCourse.id); }} key={indexPopCourse}>
-                                            <div key={indexPopCourse} className="rounded-xl shadow-md h-auto p-3 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700">
+                                            <div key={indexPopCourse} className="rounded-xl shadow-md h-auto p-3 bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700">
                                                 <div className='relative md:h-48 h-52 overflow-hidden'>
                                                     <img className="w-full h-full object-cover rounded-md hover:scale-105 transition-transform duration-300" src={popCourse.thumbnail} alt="popCourse image" />
                                                     <div className='bg-[#5EA45A] h-6 absolute bottom-2 right-2 flex gap-2 rounded-md px-2'>
@@ -196,7 +196,7 @@ export default function Index() {
                     </section>
 
                     <div className='flex gap-5 py-10'>
-                        <div className='w-14 h-14 bg-[#D6EBED] dark:bg-slate-800 rounded-full flex items-center justify-center'>
+                        <div className='w-14 h-14 bg-[#D6EBED] dark:bg-[#353535] rounded-full flex items-center justify-center'>
                             <div className='w-10 h-10 bg-[#0a96a4] rounded-full flex items-center justify-center'>
                                 <CastForEducationIcon className='w-10 h-10 text-white' />
                             </div>
@@ -209,7 +209,7 @@ export default function Index() {
                             <div className="skeleton-loading">
                                 <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
                                     {[...Array(4)].map((_, indexNewCourse) => (
-                                        <div key={indexNewCourse} className="skeleton-item w-full h-60 rounded-md bg-gray-200 dark:bg-slate-800 border border-gray-100 dark:border-slate-700 animate-pulse" />
+                                        <div key={indexNewCourse} className="skeleton-item w-full h-60 rounded-md bg-gray-200 dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse" />
                                     ))}
                                 </div>
                             </div>
@@ -221,7 +221,7 @@ export default function Index() {
                                     const displayText = isTruncated ? `${newCourse.title.substring(0, maxLength)}...` : newCourse.title;
                                     return (
                                         <Link to={`/lessons/${newCourse.id}`} onClick={() => { handleClick(newCourse.id); }} key={indexNewCourse}>
-                                            <div key={indexNewCourse} className="rounded-xl shadow-md h-auto p-3 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700">
+                                            <div key={indexNewCourse} className="rounded-xl shadow-md h-auto p-3 bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700">
                                                 <div className='relative h-48 overflow-hidden'>
                                                     <img className="w-full h-full object-cover rounded-md hover:scale-105 transition-transform duration-300" src={newCourse.thumbnail} alt="newCourse image" />
                                                     <div className='bg-[#5EA45A] h-6 absolute bottom-2 right-2 flex gap-2 rounded-md px-2'>

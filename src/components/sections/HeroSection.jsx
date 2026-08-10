@@ -28,7 +28,7 @@ export default function HeroSection() {
                     <div className="lg:col-span-7 flex flex-col justify-center space-y-6 md:space-y-8 text-left">
                         
                         {/* Pill Badge */}
-                        <div className="animated fadeInDown inline-flex items-center self-start gap-2 px-3.5 py-1.5 rounded-full bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm border border-slate-200 text-indigo-700 dark:text-indigo-300 shadow-sm transition-all duration-300 hover:bg-white dark:hover:bg-slate-800">
+                        <div className="animated fadeInDown inline-flex items-center self-start gap-2 px-3.5 py-1.5 rounded-full bg-white/95 dark:bg-[#353535]/95 backdrop-blur-sm border border-slate-200 text-indigo-700 dark:text-indigo-300 shadow-sm transition-all duration-300 hover:bg-white dark:hover:bg-slate-800">
                             <User size={14} className="animate-bounce text-indigo-600" />
                             <span className="text-xs font-bold tracking-wider uppercase">
                                 {t("welcome.js_wlcome")}

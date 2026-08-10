@@ -107,7 +107,7 @@ export default function ComputerIntensive() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-slate-700 text-sm">
-                  <tr className="bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                  <tr className="bg-white dark:bg-[#353535] hover:bg-gray-50 dark:hover:bg-slate-700/50">
                     <td className={`${tdStyles} text-center font-medium`}>{t('tuition.js_morning')}</td>
                     <td className={`${tdStyles} text-center`}>08:00 AM - 11:15 AM</td>
                   </tr>
@@ -115,14 +115,14 @@ export default function ComputerIntensive() {
                     <td className={`${tdStyles} text-center font-medium`}>{t('tuition.js_afternoon')}</td>
                     <td className={`${tdStyles} text-center`}>02:00 PM - 05:15 PM</td>
                   </tr>
-                  <tr className="bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700/50">
+                  <tr className="bg-white dark:bg-[#353535] hover:bg-gray-50 dark:hover:bg-slate-700/50">
                     <td className={`${tdStyles} text-center font-medium`}>{t('tuition.js_evening')}</td>
                     <td className={`${tdStyles} text-center`}>05:30 PM - 08:30 PM</td>
                   </tr>
                   <tr className="bg-gray-50 dark:bg-slate-700/50 font-medium text-center italic text-gray-500 dark:text-slate-400">
                     <td className="" colSpan={2}>{t('tuition.js_first_int')}</td>
                   </tr>
-                  <tr className="bg-white dark:bg-slate-800 font-medium text-center italic text-gray-500 dark:text-slate-400">
+                  <tr className="bg-white dark:bg-[#353535] font-medium text-center italic text-gray-500 dark:text-slate-400">
                     <td className="" colSpan={2}>{t('tuition.js_second_int')}</td>
                   </tr>
                 </tbody>

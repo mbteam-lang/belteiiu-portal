@@ -9,7 +9,7 @@ export const useAbout = (id) => {
     const [about, setAbout] = useState([]);
     const [award, setAward] = useState([]);
     const [details, setDetails] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [nodata, setNodata] = useState(true);
     const [error, setError] = useState(null);
 
@@ -17,23 +17,21 @@ export const useAbout = (id) => {
     const catchKey = `${currentLanguage}_${id}`;
 
     const fetchAbout = async () => {
+        setLoading(true);
         try {
             const res = await getService(endpoints.about_list);
-
             if (res.code === 200) {
                 aboutCache[currentLanguage] = res;
-  
-                setLoading(false)
                 setAbout(res.data);
-            }else {
+            } else {
                 setAbout([]);
-                setLoading(false)
                 setError(getResponseMessage({ response: res }));
             }
         } catch (err) {
             setAbout([]);
-            setLoading(false)
             setError(getResponseMessage(err));
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -49,7 +47,7 @@ export const useAbout = (id) => {
                 setDetails(res.data);
                 setNodata(false);
 
-            }else {
+            } else {
                 setDetails([]);
                 setError(getResponseMessage({ response: res }));
             }
@@ -62,7 +60,7 @@ export const useAbout = (id) => {
             setLoading(false);
         }
     };
-    
+
     const fetchAward = async (id) => {
         setLoading(true);
         try {
@@ -72,7 +70,7 @@ export const useAbout = (id) => {
             if (res.code === 200) {
                 detailCache[catchKey] = res;
                 setAward(res.data);
-            }else {
+            } else {
                 setAward([]);
                 setError(getResponseMessage({ response: res }));
             }

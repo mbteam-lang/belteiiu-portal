@@ -13,15 +13,15 @@ export default function ExtraList() {
     usePageTitle('', '', location.state?.title);
     const openedRef = useRef(false);
     const [filterYear, setFilterYear] = useState("");
-    const { 
-        data, 
-        isGrouped, 
-        years, 
-        fileTitle, 
-        fileLink, 
-        noData, 
-        loading, 
-        currentLanguage 
+    const {
+        data,
+        isGrouped,
+        years,
+        fileTitle,
+        fileLink,
+        noData,
+        loading,
+        currentLanguage
     } = useExtraList(id);
 
     useEffect(() => {
@@ -55,7 +55,7 @@ export default function ExtraList() {
         <div className="flex flex-col gap-2 md:gap-3 md:p-3 p-2 max-w-7xl m-auto">
             {fileLink && fileTitle && (
                 <Link to={fileLink} target="_blank" className="flex-shrink-0">
-                    <div className="flex items-center gap-4 p-2 bg-gray-200 dark:bg-slate-800 border border-gray-300 dark:border-slate-700 rounded-lg w-full">
+                    <div className="flex items-center gap-4 p-2 bg-gray-200 dark:bg-[#353535] border border-gray-300 dark:border-slate-700 rounded-lg w-full">
                         <img
                             src={pdfIcon}
                             alt="PDF"
@@ -72,9 +72,9 @@ export default function ExtraList() {
 
             {years.length > 0 && (
                 <div className="flex flex-wrap gap-2 mb-4">
-                    <button 
-                        onClick={() => setFilterYear("")} 
-                        className={`px-4 py-2 rounded transition-colors ${!filterYear ? 'bg-[#0a96a4] text-white' : 'bg-gray-200 dark:bg-slate-800 text-gray-800 dark:text-slate-200 hover:bg-gray-300 dark:hover:bg-slate-700'}`}
+                    <button
+                        onClick={() => setFilterYear("")}
+                        className={`px-4 py-2 rounded transition-colors ${!filterYear ? 'bg-[#0a96a4] text-white' : 'bg-gray-200 dark:bg-[#353535] text-gray-800 dark:text-slate-200 hover:bg-gray-300 dark:hover:bg-slate-700'}`}
                     >
                         {currentLanguage ? "ទាំងអស់" : "All"}
                     </button>
@@ -82,7 +82,7 @@ export default function ExtraList() {
                         <button
                             key={year}
                             onClick={() => setFilterYear(year)}
-                            className={`px-4 py-2 rounded transition-colors ${filterYear === year ? 'bg-[#0a96a4] text-white' : 'bg-gray-200 dark:bg-slate-800 text-gray-800 dark:text-slate-200 hover:bg-gray-300 dark:hover:bg-slate-700'}`}
+                            className={`px-4 py-2 rounded transition-colors ${filterYear === year ? 'bg-[#0a96a4] text-white' : 'bg-gray-200 dark:bg-[#353535] text-gray-800 dark:text-slate-200 hover:bg-gray-300 dark:hover:bg-slate-700'}`}
                         >
                             {currentLanguage ? `ឆ្នាំទី ${year}` : `Year ${year}`}
                         </button>
@@ -91,7 +91,7 @@ export default function ExtraList() {
             )}
 
             {loading && Array.from({ length: 8 }).map((_, i) => (
-                <div key={i} className="flex border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 rounded-r-lg animate-pulse">
+                <div key={i} className="flex border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-[#353535] rounded-r-lg animate-pulse">
                     <div className="w-[160px] h-[90px] bg-gray-300 dark:bg-slate-700"></div>
                     <div className="flex-1 p-3 space-y-2">
                         <div className="h-4 bg-gray-300 dark:bg-slate-700 rounded w-full"></div>
@@ -101,14 +101,14 @@ export default function ExtraList() {
             ))}
 
             {!loading && !isGrouped && filteredData.map((item) => (
-                <button 
+                <button
                     key={item.id}
                     onClick={() => navigate(`/extras-detail/${item.id}#${currentLanguage}`, { state: { title: location.state?.title } })}
-                    className="flex w-full border border-gray-200 bg-gray-50 rounded-lg hover:bg-gray-100 transition mb-1 text-left p-2" 
+                    className="flex w-full border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-[#353535] rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition mb-1 text-left p-2"
                 >
-                    <img 
-                        src={item.image} 
-                        className="w-[110px] h-[70px] md:w-[160px] md:h-[90px] flex-shrink-0 object-cover rounded" 
+                    <img
+                        src={item.image}
+                        className="w-[110px] h-[70px] md:w-[160px] md:h-[90px] flex-shrink-0 object-cover rounded"
                         alt=""
                     />
                     <div className="flex flex-col justify-start items-start px-3 py-1 text-left w-full overflow-hidden">
@@ -126,19 +126,18 @@ export default function ExtraList() {
 
             {!loading && isGrouped && filteredData.map((group) => (
                 <div key={group.id} className="mt-3">
-                    <h1 className={`mx-auto text-white font-semibold md:w-[320px] w-[245px] md:h-[50px] h-[35px] overflow-hidden flex items-center justify-center text-[13px] md:text-lg rounded-[50%] mb-6 ${
-                        group.id === 1 ? "bg-[#0a96a4]" : group.id === 2 ? "bg-red-500" : "bg-[#0a96a4]"
-                    }`}>
+                    <h1 className={`mx-auto text-white font-semibold md:w-[320px] w-[245px] md:h-[50px] h-[35px] overflow-hidden flex items-center justify-center text-[13px] md:text-lg rounded-[50%] mb-6 ${group.id === 1 ? "bg-[#0a96a4]" : group.id === 2 ? "bg-red-500" : "bg-[#0a96a4]"
+                        }`}>
                         {group.program}{group.id === 1 ? " (IP)" : " (NP)"}
                     </h1>
                     {group.items?.map((item) => (
                         <button
                             key={item.id}
                             onClick={() => navigate(`/extras-detail/${item.id}#${currentLanguage}`, { state: { title: item.title } })}
-                            className="flex w-full border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition mb-2"
+                            className="flex w-full border border-gray-200 dark:border-slate-700 bg-gray-50 dark:bg-[#353535] rounded-lg hover:bg-gray-100 dark:hover:bg-slate-700 transition mb-2"
                         >
                             <div className="relative flex-shrink-0 p-1">
-                                <img src={item.image} className="w-[130px] h-[80px] md:w-[160px] md:h-[90px] flex-shrink-0 object-cover rounded" alt=""/>
+                                <img src={item.image} className="w-[130px] h-[80px] md:w-[160px] md:h-[90px] flex-shrink-0 object-cover rounded" alt="" />
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <FaYoutube className="text-red-600 text-3xl md:text-4xl drop-shadow-lg" />
                                 </div>
@@ -154,7 +153,7 @@ export default function ExtraList() {
             ))}
 
             {!loading && noData && (
-                <NoData/>
+                <NoData />
             )}
         </div>
     );

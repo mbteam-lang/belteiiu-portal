@@ -10,16 +10,16 @@ export default function Campus2() {
     // Show map 
     const getCleanedHtml = (htmlContent) => {
         if (!htmlContent) return '';
-        
+
         return htmlContent
             // 1. Fixes the broken spaces inside the query URL
             .replace(
-                /hl=en&amp;q=beltei international university campus 2/g, 
+                /hl=en&amp;q=beltei international university campus 2/g,
                 'q=BELTEI%20International%20University%20Campus%202'
             )
             // 2. Fixes the empty sandbox restriction so the map can render scripts
             .replace(
-                /sandbox=""/g, 
+                /sandbox=""/g,
                 'sandbox="allow-scripts allow-same-origin allow-popups"'
             );
     };
@@ -36,7 +36,7 @@ export default function Campus2() {
                     {Array.from({ length: 9 }).map((_, idx) => (
                         <div
                             key={idx}
-                            
+
                         >
                             <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-full mt-3"></div>
                         </div>
@@ -49,8 +49,8 @@ export default function Campus2() {
                     <p dangerouslySetInnerHTML={{ __html: getCleanedHtml(campus2?.desc) }} />
                 </div>
             </div>
-            {!loading && campus2.length=== 0 &&(
-                <NoData/>
+            {!loading && campus2.length === 0 && (
+                <NoData />
             )}
         </div>
     );

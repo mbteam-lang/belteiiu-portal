@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiChevronDown} from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
 import usePageTitle from '@/hooks/usePageTitle';
 import { useCollaboration } from '@/hooks/useCollaboration';
 import NoData from '@/components/common/Nodata';
@@ -19,7 +19,7 @@ export default function Scholarship() {
                 Array.from({ length: 2 }).map((_, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse mt-3"
+                        className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-4 py-3 animate-pulse mt-3"
                     >
                         <div className="flex items-center gap-4">
                             <div className="w-24 h-12 bg-gray-200 dark:bg-slate-700 rounded" />
@@ -29,11 +29,11 @@ export default function Scholarship() {
                     </div>
                 ))
             )}
-            {!loading && collaboration.length===0 &&(
-                <NoData/>
+            {!loading && collaboration.length === 0 && (
+                <NoData />
             )}
             {(collaboration.map((item, index) => (
-                <div key={index} className="mb-2 rounded-lg bg-white dark:bg-slate-800 shadow-sm border border-gray-100 dark:border-slate-700">
+                <div key={index} className="mb-2 rounded-lg bg-white dark:bg-[#353535] shadow-sm border border-gray-100 dark:border-slate-700">
                     {/* HEADER */}
                     <div
                         onClick={() => toggleExpand(index)}
@@ -47,18 +47,18 @@ export default function Scholarship() {
                                 {item.country}
                             </span>
                         </div>
-                        <FiChevronDown className={`text-xl transition-transform duration-300 text-gray-700 dark:text-slate-200 ${expandedId === index ? 'rotate-180' : '' }`}
+                        <FiChevronDown className={`text-xl transition-transform duration-300 text-gray-700 dark:text-slate-200 ${expandedId === index ? 'rotate-180' : ''}`}
                         />
                     </div>
 
                     {/* Expended list */}
-                    <div className={`overflow-hidden transition-all duration-300 ${expandedId === index ? 'max-h-[3000px] opacity-100 mt-2 p-2' : 'max-h-0 opacity-0' }`} >
+                    <div className={`overflow-hidden transition-all duration-300 ${expandedId === index ? 'max-h-[3000px] opacity-100 mt-2 p-2' : 'max-h-0 opacity-0'}`} >
                         <div className="border-t border-l border-gray-400 dark:border-slate-700">
 
                             {item.collaborations?.map((school, idx) => (
                                 <div
                                     key={school.id || idx}
-                                    className="grid grid-cols-12 border-b border-gray-400 dark:border-slate-700 bg-white dark:bg-slate-800 min-h-[80px]"
+                                    className="grid grid-cols-12 border-b border-gray-400 dark:border-slate-700 bg-white dark:bg-[#353535] min-h-[80px]"
                                 >
                                     <div className="col-span-1 border-r border-gray-400 dark:border-slate-700 flex items-center justify-center p-1">
                                         <span className="text-[10px] md:text-base font-bold text-gray-700 dark:text-slate-200">

@@ -38,7 +38,7 @@ export function CustomTableCell({
             inlineStyle.backgroundColor = backgroundAttr;
         }
     } else {
-        bgClasses = 'bg-white dark:bg-slate-800';
+        bgClasses = 'bg-white dark:bg-[#353535]';
     }
 
     // Resolve text color

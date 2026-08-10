@@ -51,7 +51,7 @@ export default function LessonScreen() {
                                         <div className="h-3 w-28 bg-gray-200 dark:bg-slate-700 rounded animate-pulse" />
                                     </div>
                                 </div>
-                                <div className="p-4 rounded-lg border border-gray-100 dark:border-slate-700 bg-white dark:bg-slate-800 space-y-3">
+                                <div className="p-4 rounded-lg border border-gray-100 dark:border-slate-700 bg-white dark:bg-[#353535] space-y-3">
                                     <div className="h-4 w-32 bg-gray-200 dark:bg-slate-700 rounded animate-pulse" />
                                     <div className="h-3 w-full bg-gray-200 dark:bg-slate-700 rounded animate-pulse" />
                                     <div className="h-3 w-5/6 bg-gray-200 dark:bg-slate-700 rounded animate-pulse" />
@@ -59,7 +59,7 @@ export default function LessonScreen() {
                                 </div>
                             </div>
                             <div className="w-full xl:w-[400px] shrink-0">
-                                <div className="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-4 space-y-4">
+                                <div className="rounded-xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-[#353535] p-4 space-y-4">
                                     <div className="h-6 w-2/3 bg-gray-200 dark:bg-slate-700 rounded animate-pulse" />
                                     {[...Array(8)].map((_, i) => (
                                         <div key={i} className="p-4 rounded-xl border border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-700/50 space-y-2">
@@ -80,7 +80,7 @@ export default function LessonScreen() {
 
                             {/* LEFT - VIDEO */}
                             <div className="flex-1 min-w-0">
-                                <div className="aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-gray-100 dark:bg-slate-800">
+                                <div className="aspect-video rounded-xl overflow-hidden border border-gray-200 dark:border-slate-700 bg-gray-100 dark:bg-[#353535]">
                                     <Player.Provider>
                                         <MinimalVideoSkin>
                                             <Video
@@ -95,10 +95,10 @@ export default function LessonScreen() {
                                 <div className="mt-6">
                                     <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-slate-100">
                                         {lesson.courseTitle}
-                                     </h1>
+                                    </h1>
                                 </div>
                                 <div className="mt-6 flex items-center gap-4 ">
-                                    <div className="rounded-full bg-[#BFE2EA] dark:bg-slate-800 flex items-center justify-center p-2">
+                                    <div className="rounded-full bg-[#BFE2EA] dark:bg-[#353535] flex items-center justify-center p-2">
                                         <div className="w-9 h-9 rounded-full bg-[#0a96a4] flex items-center justify-center">
                                             <SchoolIcon className="text-white" />
                                         </div>
@@ -110,7 +110,7 @@ export default function LessonScreen() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="mt-6 p-4 rounded-lg border bg-gray-100 dark:bg-slate-800 border-gray-100 dark:border-slate-700">
+                                <div className="mt-6 p-4 rounded-lg border bg-gray-100 dark:bg-[#353535] border-gray-100 dark:border-slate-700">
                                     <h3 className="font-bold mb-2 text-gray-900 dark:text-slate-100">{i18n.t('e_learning.description')}</h3>
                                     <p className="text-sm text-gray-500 dark:text-slate-300">
                                         {lesson.description}
@@ -119,8 +119,8 @@ export default function LessonScreen() {
                             </div>
 
                             {/* RIGHT - LESSON LIST */}
-                           <div className="w-full xl:w-[550px] shrink-0">
-                                <div className="rounded-xl border overflow-hidden bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700">
+                            <div className="w-full xl:w-[550px] shrink-0">
+                                <div className="rounded-xl border overflow-hidden bg-white dark:bg-[#353535] border-gray-200 dark:border-slate-700">
                                     <div className="p-5 border-b flex items-center justify-between border-gray-100 dark:border-slate-700">
                                         <h3 className="font-bold truncate text-gray-900 dark:text-slate-100">{lesson.courseTitle}</h3>
                                         <button
@@ -148,9 +148,9 @@ export default function LessonScreen() {
                                                                         setCurrentVideo(item.video);
                                                                     }}
                                                                     className={`p-4 rounded-xl cursor-pointer border transition-all duration-200 ${isActive
-                                                                                ? 'bg-blue-50 dark:bg-slate-700/80 border-blue-200 dark:border-cyan-500'
-                                                                                : 'bg-white dark:bg-slate-800 border-gray-100 dark:border-slate-700 hover:bg-gray-50 dark:hover:bg-slate-700/50 shadow-sm'
-                                                                            }`}
+                                                                        ? 'bg-blue-50 dark:bg-slate-700/80 border-blue-200 dark:border-cyan-500'
+                                                                        : 'bg-white dark:bg-[#353535] border-gray-100 dark:border-slate-700 hover:bg-gray-50 dark:hover:bg-slate-700/50 shadow-sm'
+                                                                        }`}
                                                                 >
                                                                     <div className="flex gap-3 items-start">
                                                                         <PlayCircle
@@ -190,7 +190,7 @@ export default function LessonScreen() {
                         {/* RELATED COURSES */}
                         <section className="mt-10">
                             <div className="mt-6 flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-full bg-[#BFE2EA] dark:bg-slate-800 flex items-center justify-center">
+                                <div className="w-14 h-14 rounded-full bg-[#BFE2EA] dark:bg-[#353535] flex items-center justify-center">
                                     <div className="w-10 h-10 rounded-full bg-[#0a96a4] flex items-center justify-center">
                                         <PlayCircle className="text-white" />
                                     </div>
@@ -206,7 +206,7 @@ export default function LessonScreen() {
                                             to={`/lessons/${item.course_id}`}
                                             onClick={() => handleClick(item.course_id)}
                                         >
-                                            <div className="rounded-xl shadow-md p-3 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
+                                            <div className="rounded-xl shadow-md p-3 bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 hover:shadow-lg transition-shadow">
                                                 <div className="relative h-48 overflow-hidden rounded-md">
                                                     <img
                                                         src={item.thumbnail}
@@ -224,7 +224,7 @@ export default function LessonScreen() {
                                                         </div>
                                                         <div>
                                                             <p className="text-sm text-gray-500 dark:text-slate-300">{item.faculty}</p>
-                                                           <p className="text-xs text-gray-400 dark:text-slate-400">
+                                                            <p className="text-xs text-gray-400 dark:text-slate-400">
                                                                 {i18n.t('e_learning.views')}: {item.view}
                                                             </p>
                                                         </div>

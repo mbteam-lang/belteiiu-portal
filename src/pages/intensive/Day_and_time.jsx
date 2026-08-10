@@ -7,7 +7,7 @@ export default function Day_And_Time() {
 
     return (
         <>
-            <div className='min-h-screen py-8 bg-slate-50/30 dark:bg-slate-900 transition-colors duration-200'>
+            <div className='min-h-screen py-8 bg-slate-50/30 dark:bg-[#282828] transition-colors duration-200'>
                 <section className='max-w-7xl m-auto md:px-6 px-4 space-y-3 md:space-y-4'>
                     
                     {/* Header Title Section */}
@@ -20,7 +20,7 @@ export default function Day_And_Time() {
 
                     {/* TABLE 1: Monday - Friday */}
                     <div className="space-y-3">
-                        <div className="overflow-x-auto bg-white dark:bg-slate-800 rounded-lg shadow border border-slate-200 dark:border-slate-700">
+                        <div className="overflow-x-auto bg-white dark:bg-[#353535] rounded-lg shadow border border-slate-200 dark:border-slate-700">
                             {/* Added border-collapse and w-full */}
                             <table className="w-full border-collapse text-sm md:text-base text-slate-600 dark:text-slate-300 min-w-[320px] sm:min-w-[450px]">
                                 <thead>
@@ -52,7 +52,7 @@ export default function Day_And_Time() {
 
                     {/* TABLE 2: Saturday - Sunday */}
                     <div className="space-y-3">
-                        <div className="overflow-x-auto bg-white dark:bg-slate-800 rounded-lg shadow border border-slate-200 dark:border-slate-700">
+                        <div className="overflow-x-auto bg-white dark:bg-[#353535] rounded-lg shadow border border-slate-200 dark:border-slate-700">
                             {/* Added border-collapse and w-full */}
                             <table className="w-full border-collapse text-sm md:text-base text-slate-600 dark:text-slate-300 min-w-[320px] sm:min-w-[450px]">
                                 <thead>
@@ -95,10 +95,10 @@ export default function Day_And_Time() {
 
                     {/* Intake Info Cards */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 pt-2 md:pt-4">
-                        <div className="bg-white dark:bg-slate-800 p-4 md:p-5 border border-gray-200 dark:border-slate-700 rounded-lg text-center font-medium text-slate-700 dark:text-slate-200 text-xs sm:text-sm md:text-base shadow hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors">
+                        <div className="bg-white dark:bg-[#353535] p-4 md:p-5 border border-gray-200 dark:border-slate-700 rounded-lg text-center font-medium text-slate-700 dark:text-slate-200 text-xs sm:text-sm md:text-base shadow hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors">
                             💡 {t('tuition.js_first_int')}
                         </div>
-                        <div className="bg-white dark:bg-slate-800 p-4 md:p-5 border border-gray-200 dark:border-slate-700 rounded-lg text-center font-medium text-slate-700 dark:text-slate-200 text-xs sm:text-sm md:text-base shadow hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors">
+                        <div className="bg-white dark:bg-[#353535] p-4 md:p-5 border border-gray-200 dark:border-slate-700 rounded-lg text-center font-medium text-slate-700 dark:text-slate-200 text-xs sm:text-sm md:text-base shadow hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors">
                             📅 {t('tuition.js_second_int')}
                         </div>
                     </div>

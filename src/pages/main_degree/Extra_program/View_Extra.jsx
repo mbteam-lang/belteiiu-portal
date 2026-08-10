@@ -46,7 +46,7 @@ export default function ViewExtra() {
           <p className="text-gray-600 dark:text-slate-200 text-md md:text-lg text-justify">{item.description}</p>
           <div className="flex flex-col gap-2">
             {item.image_album?.map((img, index) => (
-              <img key={index} src={img} alt={`album-${index}`} className="rounded-md"/>
+              <img key={index} src={img} alt={`album-${index}`} className="rounded-md" />
             ))}
           </div>
         </div>

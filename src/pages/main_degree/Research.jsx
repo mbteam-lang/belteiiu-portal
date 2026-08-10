@@ -5,7 +5,7 @@ import { useAcademicResearch } from '@/hooks/useAcademicResearch';
 import usePageTitle from '@/hooks/usePageTitle';
 
 export default function Academic_Categories() {
-    usePageTitle('ការចុះឈ្មោះ' , 'Admission');
+    usePageTitle('ការចុះឈ្មោះ', 'Admission');
     const { academicResearch, loading } = useAcademicResearch();
     return (
         <>
@@ -35,7 +35,7 @@ export default function Academic_Categories() {
                             </div>
                             <div className="w-full flex items-center justify-between px-4 py-3" style={{ background: `linear-gradient(to right, ${academic_research.color})`, }}>
                                 <span className="md:text-base text-md font-normal text-white">
-                                {academic_research.title}
+                                    {academic_research.title}
                                 </span>
                                 <NavigateNextIcon className="text-white flex-shrink-0" />
                             </div>

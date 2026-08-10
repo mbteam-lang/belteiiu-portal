@@ -20,8 +20,8 @@ export default function Term_Condition() {
   const currentData = translations[lang];
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] dark:bg-slate-900 py-12 px-4 sm:px-6 lg:px-8 font-sans antialiased text-[#1E293B] dark:text-slate-200 transition-colors duration-200">
-      <div className="max-w-4xl mx-auto bg-white dark:bg-slate-800 border border-[#E2E8F0] dark:border-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl overflow-hidden p-6 sm:p-10 md:p-16 relative">
+    <div className="min-h-screen bg-[#F8FAFC] dark:bg-[#282828] py-12 px-4 sm:px-6 lg:px-8 font-sans antialiased text-[#1E293B] dark:text-slate-200 transition-colors duration-200">
+      <div className="max-w-4xl mx-auto bg-white dark:bg-[#353535] border border-[#E2E8F0] dark:border-slate-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl overflow-hidden p-6 sm:p-10 md:p-16 relative">
         
         {/* Decorative Top Accent Bar */}
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#2D88C9] to-[#1E6091]" />

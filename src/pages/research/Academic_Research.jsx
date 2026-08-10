@@ -10,13 +10,13 @@ import usePageTitle from "@/hooks/usePageTitle";
 
 export default function Academic_Research() {
     const { id } = useParams();
-    usePageTitle('កិច្ចការស្រាវជ្រាវ' , 'Academic Research');
+    usePageTitle('កិច្ចការស្រាវជ្រាវ', 'Academic Research');
     const [search, setSearch] = useState("");
     const [majorId, setMajorId] = useState("");
     const [yearId, setYearId] = useState("");
     const [openFilter, setOpenFilter] = useState(false);
 
-    const { academicResearch, loading,refetch } = useAcademicResearch(id);
+    const { academicResearch, loading, refetch } = useAcademicResearch(id);
     const { filters } = useAcademicFilter(id);
     const handleSearch = () => {
         refetch({
@@ -51,19 +51,19 @@ export default function Academic_Research() {
                 <input
                     type="text"
                     placeholder="Search..."
-                    className="flex-1 border rounded-lg px-3 py-2 shadow-sm bg-white dark:bg-slate-800 border-gray-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-500 outline-none"
+                    className="flex-1 border rounded-lg px-3 py-2 shadow-sm bg-white dark:bg-[#353535] border-gray-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-500 outline-none"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                 />
                 <button
-                    className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 shadow text-red-500 dark:text-red-400"
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-[#353535] border border-gray-200 dark:border-slate-700 shadow text-red-500 dark:text-red-400"
                     onClick={() => handleReset()}
                 >
-                    <RefreshIcon  />
+                    <RefreshIcon />
                 </button>
                 <button
-                    className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 shadow text-[#0a96a4] dark:text-cyan-400"
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-[#353535] border border-gray-200 dark:border-slate-700 shadow text-[#0a96a4] dark:text-cyan-400"
                     onClick={() => setOpenFilter(true)}
                 >
                     <FilterAltIcon />
@@ -75,7 +75,7 @@ export default function Academic_Research() {
                     Array.from({ length: 5 }).map((_, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 animate-pulse"
+                            className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 animate-pulse"
                         >
                             <div className="flex items-center w-full">
                                 <div className="w-16 h-16 bg-gray-200 dark:bg-slate-700 rounded-md"></div>
@@ -92,7 +92,7 @@ export default function Academic_Research() {
                         <div
                             key={academics.id}
                             onClick={() => window.open(academics.pdf, "_blank", "noopener,noreferrer")}
-                            className="flex items-center justify-between bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-700/60 transition-colors"
+                            className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-700/60 transition-colors"
                         >
                             <div className="flex items-center">
                                 <img src={academics.image} alt='404' className="w-16 rounded-md" />
@@ -106,14 +106,14 @@ export default function Academic_Research() {
                     ))
                 ) : (
                     <div className="text-center py-10">
-                        <NoData/>
+                        <NoData />
                     </div>
                 )}
             </div>
 
             {openFilter && (
                 <div className="fixed inset-0 bg-black bg-opacity-60 flex items-end justify-center z-50">
-                    <div className="bg-white dark:bg-slate-800 border-t border-gray-200 dark:border-slate-700 w-full rounded-t-2xl p-5 shadow-lg text-slate-800 dark:text-slate-100">
+                    <div className="bg-white dark:bg-[#353535] border-t border-gray-200 dark:border-slate-700 w-full rounded-t-2xl p-5 shadow-lg text-slate-800 dark:text-slate-100">
                         <div className="flex justify-between items-center mb-4">
                             <h2 className="text-lg font-semibold text-gray-800 dark:text-slate-100">Filter</h2>
                             <button onClick={() => setOpenFilter(false)} className="text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-200">✕</button>

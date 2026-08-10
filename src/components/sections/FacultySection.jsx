@@ -10,7 +10,7 @@ export default function FacultySection() {
     const { facultiesData } = useFaculty(3);
     
     return (
-        <section className="py-10 bg-neutral-50 dark:bg-gray-900">
+        <section className="py-10 bg-neutral-50 dark:bg-[#282828]">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex items-center justify-center mb-20">
                     <h1 className="text-3xl md:text-4xl font-bold text-blue-800 dark:text-blue-200">

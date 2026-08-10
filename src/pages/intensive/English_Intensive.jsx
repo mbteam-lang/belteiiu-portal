@@ -62,7 +62,7 @@ export default function EnglishIntensive() {
                       t={t}
                       headerColor = "#0a96a4"
                   />
-                  <div className="bg-white dark:bg-slate-800 p-5 flex justify-between items-center font-bold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
+                  <div className="bg-white dark:bg-[#353535] p-5 flex justify-between items-center font-bold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
                       <span className="text-gray-700 dark:text-slate-200 text-base sm:text-lg">{t('tuition.js_total')} : </span>
                       <span className="text-lg text-[#0a96a4] dark:text-cyan-400">{t('chinese_intensive.js_15')}</span>
                   </div>
@@ -76,7 +76,7 @@ export default function EnglishIntensive() {
                       t={t}
                       headerColor = "#0a96a4"
                   />
-                  <div className="bg-white dark:bg-slate-800 p-5 flex justify-between items-center font-bold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
+                  <div className="bg-white dark:bg-[#353535] p-5 flex justify-between items-center font-bold border-t border-slate-100 dark:border-slate-700 rounded-b-lg">
                       <span className="text-gray-700 dark:text-slate-200 text-base sm:text-lg">{t('tuition.js_total')} : </span>
                       <span className="text-lg text-[#0a96a4] dark:text-cyan-400">{t('chinese_intensive.js_15')}</span>
                   </div>
@@ -103,7 +103,7 @@ export default function EnglishIntensive() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
-                    <tr className="bg-white dark:bg-slate-800">
+                    <tr className="bg-white dark:bg-[#353535]">
                       <td className={`${tdStyles} font-medium`}>{t('tuition.js_morning')}</td>
                       <td className={tdStyles}>08:00 AM - 11:15 AM</td>
                     </tr>
@@ -111,14 +111,14 @@ export default function EnglishIntensive() {
                       <td className={`${tdStyles} font-medium`}>{t('tuition.js_afternoon')}</td>
                       <td className={tdStyles}>02:00 PM - 05:15 PM</td>
                     </tr>
-                    <tr className="bg-white dark:bg-slate-800">
+                    <tr className="bg-white dark:bg-[#353535]">
                       <td className={`${tdStyles} font-medium`}>{t('tuition.js_evening')}</td>
                       <td className={tdStyles}>05:30 PM - 08:30 PM</td>
                     </tr>
                     <tr className="bg-gray-50 dark:bg-slate-700/50 italic text-gray-500 dark:text-slate-400">
                       <td className="text-gray-500 dark:text-slate-400 text-center py-4" colSpan={2}>{t('tuition.js_first_intake')}</td>
                     </tr>
-                    <tr className="bg-white dark:bg-slate-800 italic text-gray-500 dark:text-slate-400">
+                    <tr className="bg-white dark:bg-[#353535] italic text-gray-500 dark:text-slate-400">
                       <td className="text-gray-500 dark:text-slate-400 text-center py-3" colSpan={2}>{t('tuition.js_second_intake')}</td>
                     </tr>
                   </tbody>
@@ -134,11 +134,11 @@ export default function EnglishIntensive() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-slate-700">
-                    <tr className="bg-white dark:bg-slate-800">
+                    <tr className="bg-white dark:bg-[#353535]">
                       <td className={`${tdStyles} font-medium`} rowSpan={2}>{t('tuition.js_staturday')}</td>
                       <td className={tdStyles}>08:00 AM - 11:30 AM</td>
                     </tr>
-                    <tr className="bg-white dark:bg-slate-800">
+                    <tr className="bg-white dark:bg-[#353535]">
                       <td className={tdStyles}>01:30 PM - 05:30 PM</td>
                     </tr>
                     <tr className="bg-gray-50 dark:bg-slate-700/50">
@@ -148,7 +148,7 @@ export default function EnglishIntensive() {
                     <tr className="bg-gray-50 dark:bg-slate-700/50">
                       <td className={tdStyles}>01:30 PM - 05:30 PM</td>
                     </tr>
-                    <tr className="bg-white dark:bg-slate-800 italic text-sm">
+                    <tr className="bg-white dark:bg-[#353535] italic text-sm">
                       <td className="text-gray-500 dark:text-slate-400 text-center py-4" colSpan={2}>{t('tuition.js_second_intake')}</td>
                     </tr>
                   </tbody>
@@ -175,7 +175,7 @@ export default function EnglishIntensive() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="bg-white dark:bg-slate-800 text-gray-500 dark:text-slate-300">
+                  <tr className="bg-white dark:bg-[#353535] text-gray-500 dark:text-slate-300">
                     <td className={tdStyles} colSpan={2}>{t('english_intensive.js_intensive_1')}</td>
                     <td className={tdStyles}>$ 280</td>
                     <td className={tdStyles} rowSpan={2}>$ 500</td>

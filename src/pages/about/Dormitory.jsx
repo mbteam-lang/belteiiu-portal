@@ -25,7 +25,7 @@ export default function Dormitory() {
         </div>
 
         {/* Content Description Section */}
-        <div className='bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-4 md:p-8 shadow-sm space-y-4 md:space-y-6 text-slate-600 dark:text-slate-200 leading-relaxed text-sm md:text-base'>
+        <div className='bg-white dark:bg-[#353535] rounded-xl border border-slate-200 dark:border-slate-700 p-4 md:p-8 shadow-sm space-y-4 md:space-y-6 text-slate-600 dark:text-slate-200 leading-relaxed text-sm md:text-base'>
           <div className="space-y-3">
             <p className='text-gray-600 dark:text-slate-100 font-medium text-base md:text-lg'>
               {t('dormitory.js_dorm_desc')}

@@ -33,7 +33,7 @@ export default function ExtraDetail() {
                     state: { title: item.title },
                   })
                 }
-                className="flex w-full border border-gray-200 dark:border-slate-700 bg-gray-100 dark:bg-slate-800 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 transition mb-2"
+                className="flex w-full border border-gray-200 dark:border-slate-700 bg-gray-100 dark:bg-[#353535] rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 transition mb-2"
               >
                 <div className="relative flex-shrink-0 p-1 pl-1">
                   <img

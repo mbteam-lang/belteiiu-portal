@@ -38,7 +38,7 @@ export const formatDuration = (seconds) => {
 export default function Course() {
     const { t } = useTranslation();
     const { id } = useParams();
-    
+
     // Performance fix: Use lazy state initialization
     const [isDark] = useState(() => localStorage.getItem('darkMode') === 'dark');
 
@@ -101,13 +101,13 @@ export default function Course() {
                     <NoData />
                 </div>
             )}
-            
+
             {!loading && !nodata && (
                 <>
                     {/* Header */}
                     <div className="w-full bg-[#BFE2EA] dark:bg-[#303030]">
                         <div className='flex items-center container mx-auto gap-5 md:px-2 px-5'>
-                            <div className='lg:w-14 lg:h-14 w-12 h-12 drop-shadow-lg bg-[#BFE2EA] dark:bg-slate-800 flex justify-center items-center rounded-full my-3'>
+                            <div className='lg:w-14 lg:h-14 w-12 h-12 drop-shadow-lg bg-[#BFE2EA] dark:bg-[#353535] flex justify-center items-center rounded-full my-3'>
                                 <div className='lg:w-10 lg:h-10 w-8 h-8 bg-[#0a96a4] rounded-full flex justify-center items-center'>
                                     <CastForEducationIcon className='text-white' />
                                 </div>

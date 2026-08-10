@@ -8,7 +8,7 @@ export default function CourseTable({
   headerColor = "#0a96a4",
 }) {
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
+    <div className="bg-white dark:bg-[#353535] rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden">
       <div
         className="px-5 py-3.5 flex justify-between items-center text-white font-medium"
         style={{ backgroundColor: headerColor }}

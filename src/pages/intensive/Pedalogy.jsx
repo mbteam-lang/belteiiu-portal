@@ -10,7 +10,7 @@ export default function Pedalogy() {
   usePageTitle('ថ្នាក់បំប៉នចិត្តគរុកោសល្យ', 'Pedagogy');
 
   return (
-    <div className="min-h-screen bg-slate-50/50 dark:bg-slate-900 transition-colors duration-200">
+    <div className="min-h-screen bg-slate-50/50 dark:bg-[#282828] transition-colors duration-200">
       <section className="max-w-7xl mx-auto px-2 md:px-4 lg:px-8 space-y-8">
         
         {/* Hero Video Section */}
@@ -19,7 +19,7 @@ export default function Pedalogy() {
         </div>
 
         {/* Content Cards Wrapper */}
-        <div className="bg-white dark:bg-slate-800 rounded-lg p-3 md:p-10 shadow-sm border border-slate-100 dark:border-slate-700 space-y-6">
+        <div className="bg-white dark:bg-[#353535] rounded-lg p-3 md:p-10 shadow-sm border border-slate-100 dark:border-slate-700 space-y-6">
           
           {/* About Section */}
           <div className="space-y-3">
@@ -91,7 +91,7 @@ export default function Pedalogy() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Weekday Table */}
-            <div className="overflow-hidden bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
+            <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
               <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-slate-300">
                 <thead>
                   <tr className="text-white">
@@ -124,7 +124,7 @@ export default function Pedalogy() {
             </div>
 
             {/* Weekend Table */}
-            <div className="overflow-hidden bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
+            <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
               <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-slate-300">
                 <thead >
                   <tr className="text-white text-center">
@@ -165,7 +165,7 @@ export default function Pedalogy() {
             <h2 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">{t('tuition.js_tuition_fee')}</h2>
           </div>
          
-          <div className="overflow-hidden bg-white dark:bg-slate-800 rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
+          <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
             <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-slate-300">
               <thead>
                 <tr className="text-white text-center">
@@ -199,7 +199,7 @@ export default function Pedalogy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Semester 1 Card */}
-            <div className="bg-white dark:bg-slate-800 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col justify-between">
+            <div className="bg-white dark:bg-[#353535] rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col justify-between">
               <div>
                 <div className="bg-[#0a96a4] px-5 py-3.5 flex justify-between items-center text-white font-bold">
                   <span className="text-base md:text-lg">{t('tuition.js_course')} ១</span>
@@ -223,7 +223,7 @@ export default function Pedalogy() {
             </div>
 
             {/* Semester 2 Card */}
-            <div className="bg-white dark:bg-slate-800 rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col justify-between">
+            <div className="bg-white dark:bg-[#353535] rounded-lg border border-slate-100 dark:border-slate-700 shadow-sm overflow-hidden flex flex-col justify-between">
               <div>
                 <div className="bg-[#0a96a4] px-5 py-3.5 flex justify-between items-center text-white font-bold">
                   <span className="text-base md:text-lg">{t('tuition.js_course')} ២</span>
@@ -249,7 +249,7 @@ export default function Pedalogy() {
           </div>
 
           {/* Total Row (Spans full width gracefully) */}
-          <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-xl p-5 flex justify-between items-center font-bold shadow-md">
+          <div className="bg-white dark:bg-[#353535] border border-slate-100 dark:border-slate-700 rounded-xl p-5 flex justify-between items-center font-bold shadow-md">
             <span className="text-gray-700 dark:text-slate-200 text-base md:text-lg">{t('tuition.js_total')} : </span>
             <span className="text-2xl text-[#0a96a4] dark:text-cyan-400">34</span>
           </div>

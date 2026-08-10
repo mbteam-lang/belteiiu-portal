@@ -70,7 +70,7 @@ export default function Tuition_Fees() {
     };
 
     return (
-        <div className="bg-[#F8FAFC] dark:bg-slate-900 min-h-screen py-2 sm:py-6 px-1 sm:px-4 transition-colors duration-200 select-none">
+        <div className="bg-[#F8FAFC] dark:bg-[#282828] min-h-screen py-2 sm:py-6 px-1 sm:px-4 transition-colors duration-200 select-none">
             <div className="w-full max-w-7xl mx-auto space-y-3 sm:space-y-5">
 
                 {/* Main Header */}
@@ -95,21 +95,21 @@ export default function Tuition_Fees() {
                 </div>
 
                 {/* Table 1: National Program Table */}
-                <div className="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 overflow-x-auto ">
+                <div className="bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 overflow-x-auto ">
                     <table className="w-full border-collapse border border-gray-300 dark:border-slate-700 text-center table-fixed">
                         <thead>
                             {/* Year Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700">
                                 <th
                                     rowSpan={2}
-                                    className="w-[38%] md:w-[45%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800 leading-tight relative z-10"
+                                    className="w-[38%] md:w-[45%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                                 >
                                     {t('tuition.js_faculty')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year1')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year2')}
                                 </th>
                                 <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-[#f4f7e6] dark:bg-slate-700/80">
@@ -126,16 +126,16 @@ export default function Tuition_Fees() {
                             {/* Semester Sub-Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-[#f4f7e6] dark:bg-slate-700/80 overflow-hidden">
@@ -163,12 +163,12 @@ export default function Tuition_Fees() {
                         <tbody>
                             {natData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
-                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
+                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] text-left align-middle">
                                         <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
-                                    <td colSpan={4} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={4} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee1}
                                     </td>
                                     <td colSpan={4} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
@@ -192,21 +192,21 @@ export default function Tuition_Fees() {
                 </div>
 
                 {/* Table 1: National Program Table */}
-                <div className="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 overflow-x-auto ">
+                <div className="bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 overflow-x-auto ">
                     <table className="w-full border-collapse border border-gray-300 dark:border-slate-700 text-center table-fixed">
                         <thead>
                             {/* Year Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700">
                                 <th
                                     rowSpan={2}
-                                    className="w-[30%] md:w-[36%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800 leading-tight relative z-10"
+                                    className="w-[30%] md:w-[36%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                                 >
                                     {t('tuition.js_faculty')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year1')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year1')}
                                 </th>
                                 <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-[#f4f7e6] dark:bg-slate-700/80">
@@ -220,16 +220,16 @@ export default function Tuition_Fees() {
                             {/* Semester Sub-Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-[#f4f7e6] dark:bg-slate-700/80 overflow-hidden">
@@ -252,12 +252,12 @@ export default function Tuition_Fees() {
                         <tbody>
                             {interData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
-                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
+                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] text-left align-middle">
                                         <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
-                                    <td colSpan={4} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={4} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee1}
                                     </td>
                                     <td colSpan={4} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
@@ -281,24 +281,24 @@ export default function Tuition_Fees() {
                 </div>
 
                 {/* */}
-                <div className="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 overflow-x-auto ">
+                <div className="bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 overflow-x-auto ">
                     <table className="w-full border-collapse border border-gray-300 dark:border-slate-700 text-center table-fixed">
                         <thead>
                             {/* Year Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700">
                                 <th
                                     rowSpan={2}
-                                    className="w-[23%] md:w-[27%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800 leading-tight relative z-10"
+                                    className="w-[23%] md:w-[27%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                                 >
                                     {t('tuition.academic_degree')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year1')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year2')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year3')}
                                 </th>
                             </tr>
@@ -306,22 +306,22 @@ export default function Tuition_Fees() {
                             {/* Semester Sub-Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
-                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                 <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
                             </tr>
@@ -331,18 +331,18 @@ export default function Tuition_Fees() {
                         <tbody>
                             {masterData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
-                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
+                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] text-left align-middle">
                                         <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
-                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee1}
                                     </td>
-                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee2}
                                     </td>
-                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee3}
                                     </td>
 
@@ -360,21 +360,21 @@ export default function Tuition_Fees() {
                     <img src={p1Img} alt="Civil Aviation Airplane" className="h-6 sm:h-8 md:h-10 w-auto object-contain" />
                 </div>
 
-                <div className="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 overflow-x-auto ">
+                <div className="bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 overflow-x-auto ">
                     <table className="w-full border-collapse border border-gray-300 dark:border-slate-700 text-center table-fixed">
                         <thead>
                             {/* Year Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700">
                                 <th
                                     rowSpan={2}
-                                    className="w-[16%] md:w-[18%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800 leading-tight relative z-10"
+                                    className="w-[16%] md:w-[18%] align-middle text-center px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-xs md:text-base font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                                 >
                                     {t('tuition.academic_degree')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year1')}
                                 </th>
-                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-slate-800">
+                                <th colSpan={2} className="w-[22%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[10px] sm:text-[14px] md:text-[16px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                     {t('tuition.js_year2')}
                                 </th>
                                 
@@ -383,16 +383,16 @@ export default function Tuition_Fees() {
                             {/* Semester Sub-Headers */}
                             <tr className="border-b border-gray-300 dark:border-slate-700 h-7 text-[4px] sm:text-[7px] md:text-[10px]">
                                 {/* Year 1 & Year 2 Semesters */}
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester1')}
                                 </th>
-                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-slate-800 overflow-hidden">
+                                <th className="px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center bg-white dark:bg-[#353535] overflow-hidden">
                                     {t('tuition.js_semester2')}
                                 </th>
                                 
@@ -403,15 +403,15 @@ export default function Tuition_Fees() {
                         <tbody>
                             {civilData.map((row) => (
                                 <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
-                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-left align-middle">
+                                    <td className="px-1 py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] text-left align-middle">
                                         <div className="md:px-3 text-[5.5px] sm:text-[9.5px] md:text-[13px] font-medium text-[#151B74] dark:text-cyan-300 leading-normal break-words">
                                             {renderFacultyTitle(t(`tuition.${row.key}`))}
                                         </div>
                                     </td>
-                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee1}
                                     </td>
-                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 dark:text-slate-200 align-middle">
+                                    <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                         {row.fee2}
                                     </td>
 

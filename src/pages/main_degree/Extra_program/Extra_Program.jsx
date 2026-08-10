@@ -6,7 +6,7 @@ import { FaExternalLinkAlt, FaChevronRight } from "react-icons/fa";
 
 export default function ExtraProgram() {
   const navigate = useNavigate();
-  usePageTitle('កម្មវិធីសិក្សាបន្ថែម' , 'Extra-Curriculum Programs');
+  usePageTitle('កម្មវិធីសិក្សាបន្ថែម', 'Extra-Curriculum Programs');
   const { extraProgram, loading } = useExtraProgram();
 
   const fixedItem = useMemo(
@@ -27,16 +27,16 @@ export default function ExtraProgram() {
   return (
     // Expanded container from max-w-7xl to max-w-7xl for a much grander desktop presence
     <div className="max-w-7xl mx-auto px-4 py-5 lg:py-14">
-      
+
       {/* Grid Layout: Spacious gap, 1 col mobile, 2 cols md, 3 cols lg */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
-        
+
         {/* Expanded Loading Skeletons */}
         {loading &&
           Array.from({ length: 6 }).map((_, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-1 md:gap-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-3 rounded-lg animate-pulse"
+              className="flex items-center gap-1 md:gap-2 bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 p-3 rounded-lg animate-pulse"
             >
               <div className="w-28 h-18 md:w-36 md:h-24 bg-gray-100 dark:bg-slate-700 rounded-lg flex-shrink-0"></div>
               <div className="flex-1 space-y-3 py-1">
@@ -60,7 +60,7 @@ export default function ExtraProgram() {
                   state: { title: item.title },
                 });
               }}
-              className="group flex items-center w-full text-left bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 p-1.5 md:p-3 rounded-lg hover:bg-gray-50/60 dark:hover:bg-slate-700/60 hover:border-[#0a96a4]/50 transition-all duration-200"
+              className="group flex items-center w-full text-left bg-white dark:bg-[#353535] border border-gray-200 dark:border-slate-700 p-1.5 md:p-3 rounded-lg hover:bg-gray-50/60 dark:hover:bg-slate-700/60 hover:border-[#0a96a4]/50 transition-all duration-200"
             >
               {/* Significantly Enlarged Thumbnail Container */}
               <div className="relative w-28 h-18 md:w-36 md:h-24 rounded-md overflow-hidden flex-shrink-0 ">
@@ -74,7 +74,7 @@ export default function ExtraProgram() {
 
               {/* Text Info Column with Enlarged Fonts */}
               <div className="flex-1 min-w-0 px-4 md:px-5 flex flex-col justify-center">
-               
+
                 <h3 className="font-medium text-gray-700 dark:text-slate-100 text-sm md:text-base lg:text-[17px] leading-snug line-clamp-2 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400 transition-colors">
                   {item.title}
                 </h3>

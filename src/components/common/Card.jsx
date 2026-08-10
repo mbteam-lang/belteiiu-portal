@@ -6,13 +6,13 @@ const ListCard = ({
   title
 }) => {
   return (
-    <div className="group w-full min-h-[4.5rem] bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700/80 rounded-xl px-4 py-3 flex items-center justify-between shadow-xs transition-all duration-300 cursor-pointer gap-3">
+    <div className="group w-full min-h-[4.5rem] bg-white dark:bg-[#353535] border border-gray-200 dark:border-slate-700/80 rounded-xl px-4 py-3 flex items-center justify-between shadow-xs transition-all duration-300 cursor-pointer gap-3">
       <div className="flex items-center gap-3.5 min-w-0">
         <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-sky-50/80 dark:bg-slate-700/80 flex items-center justify-center p-2 shrink-0">
           <img
             src={images}
             alt={title || "Icon"}
-            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full object-contain"
           />
         </div>
 
@@ -25,9 +25,7 @@ const ListCard = ({
         className="
           text-slate-400 dark:text-slate-500
           shrink-0
-          transition-all duration-300
-          group-hover:translate-x-1
-          group-hover:text-sky-500 dark:group-hover:text-cyan-400
+          dark:group-hover:text-cyan-400
         "
       />
     </div>

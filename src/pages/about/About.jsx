@@ -1,4 +1,4 @@
-import usePageTitle from '@/hooks/usePageTitle'; 
+import usePageTitle from '@/hooks/usePageTitle';
 import { useAbout } from '@/hooks/useAbout';
 
 export default function BiuHistory() {
@@ -7,7 +7,7 @@ export default function BiuHistory() {
     const belteiHistory = about?.[1];
     return (
         <div className="p-3 md:p-6 lg:p-8 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
-           {loading && (
+            {loading && (
                 <>
                     <div className="space-y-3 animate-pulse">
                         <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-3/4"></div>
@@ -23,7 +23,7 @@ export default function BiuHistory() {
                     ))}
                 </>
             )}
-            
+
             <div>
                 {belteiHistory?.desc && (
                     <div className="md:text-left text-md text-gray-500 dark:text-slate-300">
@@ -31,7 +31,7 @@ export default function BiuHistory() {
                     </div>
                 )}
             </div>
-            
+
         </div>
     );
 }

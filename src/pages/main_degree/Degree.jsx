@@ -6,17 +6,17 @@ import usePageTitle from '@/hooks/usePageTitle';
 import { useDegree } from '@/hooks/useDegree';
 
 export default function Degree() {
-    usePageTitle('កម្មវិធីសិក្សា','Degree');
-    const {degree, loading } = useDegree();
+    usePageTitle('កម្មវិធីសិក្សា', 'Degree');
+    const { degree, loading } = useDegree();
 
     return (
-        <div className='bg-[#F5F5F5] dark:bg-slate-900 min-h-screen transition-colors duration-200'>
+        <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
             <div className='h-5'></div>
             <section className="max-w-7xl m-auto px-2 md:h-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-5'>
                     {loading ? (
                         Array.from({ length: 2 }).map((_, idx) => (
-                            <div key={idx} className="mb-4 p-4 shadow rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 animate-pulse">
+                            <div key={idx} className="mb-4 p-4 shadow rounded-xl bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse">
                                 <div className="flex gap-3">
                                     <div className="w-12 h-12 bg-gray-200 dark:bg-slate-700 rounded-full"></div>
                                     <div className="flex-1 space-y-2">
@@ -34,7 +34,7 @@ export default function Degree() {
                         ))
                     ) : (
                         degree?.map((program, programIndex) => (
-                            <div className='mb-4 p-4 shadow rounded-xl bg-[#FFFFFF] dark:bg-slate-800 border border-gray-100 dark:border-slate-700' key={programIndex} >
+                            <div className='mb-4 p-4 shadow rounded-xl bg-[#FFFFFF] dark:bg-[#353535] border border-gray-100 dark:border-slate-700' key={programIndex} >
                                 <div className='flex gap-3'>
                                     <SchoolIcon style={{ fontSize: '3rem' }} className={`${program.programs_id === 1 ? 'text-[#0a96a4] dark:text-cyan-400' : 'text-[#277BC1] dark:text-blue-400'}`} />
                                     <div>
