@@ -11,23 +11,6 @@ export default function Academic_Faculty() {
     const { academicFaculty, loading } = useAcademicFaculty(id);
     return (
         <>
-            {loading && (
-                Array.from({ length: 5 }).map((_, index) => (
-                    <div
-                        key={index}
-                        className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 animate-pulse max-w-7xl m-auto"
-                    >
-                        <div className="flex items-center w-full">
-                            <div className="w-16 h-16 bg-gray-200 dark:bg-slate-700 rounded-md"></div>
-
-                            <div className="flex-1 ml-3">
-                                <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-3/4 mb-2"></div>
-                                <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-1/2"></div>
-                            </div>
-                        </div>
-                    </div>
-                ))
-            )}
             <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 <div className='h-3'></div>
                 <section className='max-w-7xl m-auto md:px-5 px-2'>

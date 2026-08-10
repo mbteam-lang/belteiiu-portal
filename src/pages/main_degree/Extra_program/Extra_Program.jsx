@@ -31,22 +31,7 @@ export default function ExtraProgram() {
       {/* Grid Layout: Spacious gap, 1 col mobile, 2 cols md, 3 cols lg */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">
 
-        {/* Expanded Loading Skeletons */}
-        {loading &&
-          Array.from({ length: 6 }).map((_, idx) => (
-            <div
-              key={idx}
-              className="flex items-center gap-1 md:gap-2 bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 p-3 rounded-lg animate-pulse"
-            >
-              <div className="w-28 h-18 md:w-36 md:h-24 bg-gray-100 dark:bg-slate-700 rounded-lg flex-shrink-0"></div>
-              <div className="flex-1 space-y-3 py-1">
-                <div className="h-5 bg-gray-100 dark:bg-slate-700 rounded w-5/6"></div>
-                <div className="h-3.5 bg-gray-100 dark:bg-slate-700 rounded w-1/2"></div>
-              </div>
-            </div>
-          ))}
-
-        {/* Spacious, Clean & Large List Cards */}
+        
         {!loading &&
           listData.map((item) => (
             <button

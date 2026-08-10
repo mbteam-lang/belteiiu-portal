@@ -16,20 +16,7 @@ export default function E_Learning() {
         <div className='bg-[#F8FAFC] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
             <section className='max-w-7xl m-auto md:px-5 px-3 py-6'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-2">
-                    {loading ? (
-                        Array.from({ length: 9 }).map((_, idx) => (
-                            <div
-                                key={idx}
-                                className="rounded-xl flex items-center gap-4 w-full h-24 border border-gray-200 dark:border-slate-700 animate-pulse bg-gray-200 dark:bg-[#353535]"
-                            >
-                                <div className="w-20 h-full bg-gray-300 dark:bg-slate-700 rounded-l-xl"></div>
-                                <div className="flex-1 space-y-2">
-                                    <div className="h-4 bg-gray-300 dark:bg-slate-700 rounded w-2/3"></div>
-                                    <div className="h-3 bg-gray-300 dark:bg-slate-700 rounded w-1/4"></div>
-                                </div>
-                            </div>
-                        ))
-                    ) : (
+                    {
                         facultiesData?.data?.map((items, index) => (
                             <Link key={index} to={items.link} className="group">
                                 {/* <Link key={index} to={`/e-faculty/${items.id}`} className="group"> */}
@@ -62,7 +49,7 @@ export default function E_Learning() {
                                 </div>
                             </Link>
                         ))
-                    )}
+                    }
                 </div>
             </section>
             <div className='h-10'></div>

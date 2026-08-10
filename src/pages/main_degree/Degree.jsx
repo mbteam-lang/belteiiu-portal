@@ -14,25 +14,7 @@ export default function Degree() {
             <div className='h-5'></div>
             <section className="max-w-7xl m-auto px-2 md:h-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-5'>
-                    {loading ? (
-                        Array.from({ length: 2 }).map((_, idx) => (
-                            <div key={idx} className="mb-4 p-4 shadow rounded-xl bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse">
-                                <div className="flex gap-3">
-                                    <div className="w-12 h-12 bg-gray-200 dark:bg-slate-700 rounded-full"></div>
-                                    <div className="flex-1 space-y-2">
-                                        <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-1/2"></div>
-                                        <div className="h-4 bg-gray-200 dark:bg-slate-700 rounded w-2/3"></div>
-                                    </div>
-                                </div>
-                                <div className="mt-4 space-y-2">
-                                    <div className="h-10 bg-gray-200 dark:bg-slate-700 rounded"></div>
-                                    <div className="h-10 bg-gray-200 dark:bg-slate-700 rounded"></div>
-                                    <div className="h-10 bg-gray-200 dark:bg-slate-700 rounded"></div>
-                                    <div className="h-10 bg-gray-200 dark:bg-slate-700 rounded"></div>
-                                </div>
-                            </div>
-                        ))
-                    ) : (
+                    {
                         degree?.map((program, programIndex) => (
                             <div className='mb-4 p-4 shadow rounded-xl bg-[#FFFFFF] dark:bg-[#353535] border border-gray-100 dark:border-slate-700' key={programIndex} >
                                 <div className='flex gap-3'>
@@ -58,7 +40,7 @@ export default function Degree() {
                                 </div>
                             </div>
                         ))
-                    )}
+                    }
                 </div>
             </section>
         </div>
