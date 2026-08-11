@@ -17,11 +17,13 @@ export const useCollaboration = (typeID) => {
             const res = await getService(endpoints.collaboration, {
                 collaboration_type_id: id
             });
-            if (res.code === 200) {
+            console.log("ID D : ", id)
+            console.log("DATA : ", res)
+            if (res && res.success && res.code === 200) {
                 setCollaboration(res.data || []);
             } else {
                 setCollaboration([]);
-                setError(getResponseMessage({ response: res }));
+                setError(res?.message || 'Route unavailable on server');
             }
         } catch (err) {
             setCollaboration([]);

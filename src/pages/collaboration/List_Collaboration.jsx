@@ -11,7 +11,7 @@ export default function List_Collaboration() {
    
     return (
     <div className="w-full px-4 pt-6">
-        <div className="grid grid-cols-1 md:gap-2 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 gap-2 md:gap-2 max-w-7xl mx-auto">
             {typeList?.length === 0 ? (
                 <NoData />
             ) : (
