@@ -13,11 +13,11 @@ export default function Index() {
                 {about.map((history) => (
                     <Link
                         key={history.id}
-                        // to={
-                        //     history.url
-                        //         ? history.url
-                        //         : `/history_detail/${history.id}`
-                        // }
+                        to={
+                            history.url
+                                ? history.url
+                                : `/history_detail/${history.id}`
+                        }
                         state={{ video: history.video }}
                         rel="noopener noreferrer"
                     >
