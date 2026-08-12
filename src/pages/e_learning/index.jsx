@@ -178,7 +178,7 @@ export default function Index() {
                                                         <SchoolIcon className='text-white' />
                                                     </div>
                                                     <div className='px-2 w-full'>
-                                                        <h1 className="text-md text-[#8f8f8f] dark:text-slate-300">{popCourse.faculty}</h1>
+                                                        <h1 className="text-md text-[#8f8f8f] dark:text-white">{popCourse.faculty}</h1>
                                                         <div className='flex justify-between items-center'>
                                                             <h1 className="text-sm text-[#8f8f8f] dark:text-slate-400">{i18n.t('index.view')}: {popCourse.view}</h1>
                                                             <div className='flex gap-1 items-center'>
@@ -246,7 +246,7 @@ export default function Index() {
                                                         <SchoolIcon className='text-white' />
                                                     </div>
                                                     <div className='px-2 w-full'>
-                                                        <h1 className="text-md text-[#8f8f8f] dark:text-slate-300">{newCourse.faculty}</h1>
+                                                        <h1 className="text-md text-[#8f8f8f] dark:text-white">{newCourse.faculty}</h1>
                                                         <div className='flex justify-between items-center'>
                                                             <h1 className="text-sm text-[#8f8f8f] dark:text-slate-400">{i18n.t('index.view')}: {newCourse.view}</h1>
                                                             <div className='flex gap-1 items-center'>

@@ -119,7 +119,7 @@ export default function Academic_Research() {
                             <button onClick={() => setOpenFilter(false)} className="text-gray-500 dark:text-slate-400 hover:text-gray-700 dark:hover:text-slate-200">✕</button>
                         </div>
 
-                        <label className="block mb-2 font-medium text-gray-500 dark:text-slate-300">Major</label>
+                        <label className="block mb-2 font-medium text-gray-500 dark:text-white">Major</label>
                         <select
                             className="w-full border rounded-lg px-3 py-2 mb-4 bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-600 text-slate-800 dark:text-slate-100"
                             value={majorId}
@@ -131,7 +131,7 @@ export default function Academic_Research() {
                             ))}
                         </select>
 
-                        <label className="block mb-2 font-medium text-gray-500 dark:text-slate-300">Year</label>
+                        <label className="block mb-2 font-medium text-gray-500 dark:text-white">Year</label>
                         <select
                             className="w-full border rounded-lg px-3 py-2 mb-6 bg-white dark:bg-slate-700 border-gray-200 dark:border-slate-600 text-slate-800 dark:text-slate-100"
                             value={yearId}

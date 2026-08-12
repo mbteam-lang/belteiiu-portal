@@ -1,7 +1,7 @@
 // src/i18n/index.js
 
 import i18n from 'i18next';
-import { initReactI18next }from 'react-i18next';
+import { initReactI18next } from 'react-i18next';
 import HttpApi from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { getLanguage, setLanguage } from '@/services/languageService';
@@ -11,13 +11,13 @@ const urlLang = params.get('lang');
 const supported = ['en', 'kh'];
 
 const currentLanguage =
-  supported.includes(urlLang)
-    ? urlLang
-    : getLanguage() || 'en';
+    supported.includes(urlLang)
+        ? urlLang
+        : getLanguage() || 'en';
 
 // Save only if changed
 if (getLanguage() !== currentLanguage) {
-  setLanguage(currentLanguage);
+    setLanguage(currentLanguage);
 }
 
 i18n.use(HttpApi)
@@ -32,6 +32,9 @@ i18n.use(HttpApi)
         supportedLngs: supported,
         debug: false,
         returnObjects: true,
+        react: {
+            useSuspense: false,
+        },
         interpolation: {
             escapeValue: false,
         },

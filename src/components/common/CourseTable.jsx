@@ -30,7 +30,7 @@ export default function CourseTable({
               {t ? t(item.key) : item.key}
             </span>
 
-            <span className="text-gray-500 dark:text-slate-300 bg-slate-50 dark:bg-slate-700/60 px-2.5 py-0.5 rounded-lg border border-slate-100 dark:border-slate-600 whitespace-nowrap text-xs md:text-sm">
+            <span className="text-gray-500 dark:text-white bg-slate-50 dark:bg-slate-700/60 px-2.5 py-0.5 rounded-lg border border-slate-100 dark:border-slate-600 whitespace-nowrap text-xs md:text-sm">
               {t ? t(item.credit) : item.credit}
             </span>
           </li>

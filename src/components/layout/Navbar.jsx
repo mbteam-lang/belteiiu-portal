@@ -106,7 +106,7 @@ const Navbar = () => {
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
                             t={t}
-                            to="/list_intensive"
+                            // to="/list_intensive"
                         />
                         <DesktopDropdown
                             index="about"
@@ -116,7 +116,7 @@ const Navbar = () => {
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
                             t={t}
-                            to='/history'
+                            // to='/history'
                         />
                         <DesktopDropdown
                             index="collab"

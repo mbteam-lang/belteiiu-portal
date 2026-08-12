@@ -44,12 +44,12 @@ export default function Campus2() {
                 </>
             )}
             <div className='md:text-left'>
-                <div className='text-md text-gray-500 dark:text-slate-300'>
+                <div className='text-md text-gray-500 dark:text-white'>
                     {/* Cleaned content passed here */}
                     <p dangerouslySetInnerHTML={{ __html: getCleanedHtml(campus2?.desc) }} />
                 </div>
             </div>
-            {!loading && campus2.length === 0 && (
+            {!loading && (!campus2 || !campus2?.desc) && (
                 <NoData />
             )}
         </div>

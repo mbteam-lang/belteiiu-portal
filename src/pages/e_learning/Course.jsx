@@ -153,7 +153,7 @@ export default function Course() {
                                                         <SchoolIcon fontSize="small" className='text-white' />
                                                     </div>
                                                     <div className='ml-2 min-w-0'>
-                                                        <h1 className="text-sm truncate max-w-[120px] text-gray-500 dark:text-slate-300">
+                                                        <h1 className="text-sm truncate max-w-[120px] text-gray-500 dark:text-white">
                                                             {courseItem.faculty}
                                                         </h1>
                                                         <h1 className="text-xs text-gray-400 dark:text-slate-400">
@@ -161,7 +161,7 @@ export default function Course() {
                                                         </h1>
                                                     </div>
                                                 </div>
-                                                <div className="flex items-center gap-1 text-sm flex-shrink-0 text-gray-500 dark:text-slate-300">
+                                                <div className="flex items-center gap-1 text-sm flex-shrink-0 text-gray-500 dark:text-white">
                                                     <AccessTimeIcon fontSize="small" />
                                                     {formatDuration(timeToSeconds(courseItem.duration))}
                                                 </div>

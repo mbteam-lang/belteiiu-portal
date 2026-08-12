@@ -112,7 +112,7 @@ export default function LessonScreen() {
                                 </div>
                                 <div className="mt-6 p-4 rounded-lg border bg-gray-100 dark:bg-[#353535] border-gray-100 dark:border-slate-700">
                                     <h3 className="font-bold mb-2 text-gray-900 dark:text-slate-100">{i18n.t('e_learning.description')}</h3>
-                                    <p className="text-sm text-gray-500 dark:text-slate-300">
+                                    <p className="text-sm text-gray-500 dark:text-white">
                                         {lesson.description}
                                     </p>
                                 </div>
@@ -223,13 +223,13 @@ export default function LessonScreen() {
                                                             <SchoolIcon fontSize="small" className="text-white" />
                                                         </div>
                                                         <div>
-                                                            <p className="text-sm text-gray-500 dark:text-slate-300">{item.faculty}</p>
+                                                            <p className="text-sm text-gray-500 dark:text-white">{item.faculty}</p>
                                                             <p className="text-xs text-gray-400 dark:text-slate-400">
                                                                 {i18n.t('e_learning.views')}: {item.view}
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div className="text-sm text-gray-500 dark:text-slate-300">{item.duration}</div>
+                                                    <div className="text-sm text-gray-500 dark:text-white">{item.duration}</div>
                                                 </div>
                                             </div>
                                         </Link>

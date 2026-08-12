@@ -21,7 +21,7 @@ export default function Degree() {
                                     <SchoolIcon style={{ fontSize: '3rem' }} className={`${program.programs_id === 1 ? 'text-[#0a96a4] dark:text-cyan-400' : 'text-[#277BC1] dark:text-blue-400'}`} />
                                     <div>
                                         <h1 className='country text-gray-800 dark:text-slate-100 md:text-lg text-md font-bold'>{program.title}</h1>
-                                        <h1 className='country md:text-lg text-md text-gray-800 dark:text-slate-300'>{program.remark}</h1>
+                                        <h1 className='country md:text-lg text-md text-gray-800 dark:text-white'>{program.remark}</h1>
                                     </div>
                                 </div>
                                 <div>

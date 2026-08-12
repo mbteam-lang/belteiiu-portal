@@ -26,7 +26,7 @@ export default function BiuHistory() {
 
             <div>
                 {belteiHistory?.desc && (
-                    <div className="md:text-left text-md text-gray-500 dark:text-slate-300">
+                    <div className="md:text-left text-md text-gray-500 dark:text-white">
                         <p dangerouslySetInnerHTML={{ __html: belteiHistory.desc }} />
                     </div>
                 )}

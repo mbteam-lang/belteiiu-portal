@@ -50,7 +50,7 @@ export default function Headquarters() {
                             <div className='md:text-left'>
                                 {/* Changed <p> to <div> and added max-w-full img classes */}
                                 <div 
-                                    className='text-md text-gray-700 dark:text-slate-300 [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:my-4 [&_img]:shadow-sm'
+                                    className='text-md text-gray-700 dark:text-white [&_img]:max-w-full [&_img]:h-auto [&_img]:rounded-lg [&_img]:my-4 [&_img]:shadow-sm'
                                     dangerouslySetInnerHTML={{ __html: hq.desc }} 
                                 />
                             </div>

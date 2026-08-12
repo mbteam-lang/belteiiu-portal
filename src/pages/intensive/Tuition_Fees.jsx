@@ -79,7 +79,7 @@ export default function Tuition_Fees() {
     const renderTables = () => (
         <div className="space-y-4 sm:space-y-6">
             {/* Section I: Bachelor & Associate Degree Programs */}
-            <h2 className="text-md sm:text-lg md:text-xl font-bold text-gray-700 dark:text-slate-300 px-1">
+            <h2 className="text-md sm:text-lg md:text-xl font-bold text-gray-700 dark:text-white px-1">
                 ✦ {t('tuition.js_bachelor_associate ')}
             </h2>
 
@@ -223,7 +223,7 @@ export default function Tuition_Fees() {
             </div>
 
             {/* Section II: Master & Doctoral Degree Programs */}
-            <h2 className="text-sm sm:text-md md:text-lg font-bold text-gray-700 dark:text-slate-300 px-1 pt-2">
+            <h2 className="text-sm sm:text-md md:text-lg font-bold text-gray-700 dark:text-white px-1 pt-2">
                 ✦ {t('tuition.js_master_doctoral')}
             </h2>
 

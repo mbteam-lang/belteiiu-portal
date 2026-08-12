@@ -60,7 +60,7 @@ export default function Award() {
             </h2>
           </div>
           <div className="w-full border-t border-dashed border-gray-300 dark:border-slate-700 my-2"></div>
-          <p className="text-gray-500 dark:text-slate-300 text-sm mt-1">{award.remark}</p>
+          <p className="text-gray-500 dark:text-white text-sm mt-1">{award.remark}</p>
           {award.albums && award.albums.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {award.albums.map((album, index) => (

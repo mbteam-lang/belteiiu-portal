@@ -10,19 +10,18 @@ export default function Day_And_Time() {
             <div className='min-h-screen py-8 bg-slate-50/30 dark:bg-[#282828] transition-colors duration-200'>
                 <section className='max-w-7xl m-auto md:px-6 px-4 space-y-3 md:space-y-4'>
                     
-                    {/* Header Title Section */}
-                    <div className='flex items-center gap-3 border-b border-slate-200 dark:border-slate-700 pb-4'>
+                    {/* <div className='flex items-center gap-3 border-b border-slate-200 dark:border-slate-700 pb-4'>
                         <div className="w-2.5 h-6 rounded-full bg-[#0a96a4]" />
                         <h1 className='text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100'>
                             {t('tuition.js_shedule')}
                         </h1>
-                    </div>
+                    </div> */}
 
                     {/* TABLE 1: Monday - Friday */}
                     <div className="space-y-3">
                         <div className="overflow-x-auto bg-white dark:bg-[#353535] rounded-lg shadow border border-slate-200 dark:border-slate-700">
                             {/* Added border-collapse and w-full */}
-                            <table className="w-full border-collapse text-sm md:text-base text-slate-600 dark:text-slate-300 min-w-[320px] sm:min-w-[450px]">
+                            <table className="w-full border-collapse text-sm md:text-base text-slate-600 dark:text-white min-w-[320px] sm:min-w-[450px]">
                                 <thead>
                                     <tr>
                                         {/* Placed background and text classes clearly within the <th> cells */}
@@ -42,7 +41,7 @@ export default function Day_And_Time() {
                                     ].map((row, idx) => (
                                         <tr key={idx} className="hover:bg-slate-50/50 dark:hover:bg-slate-700/50 transition-colors">
                                             <td className="px-4 md:px-6 py-4 text-center border-r border-slate-100 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-medium">{t(row.label)}</td>
-                                            <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap">{row.time}</td>
+                                            <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-white text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap">{row.time}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -54,7 +53,7 @@ export default function Day_And_Time() {
                     <div className="space-y-3">
                         <div className="overflow-x-auto bg-white dark:bg-[#353535] rounded-lg shadow border border-slate-200 dark:border-slate-700">
                             {/* Added border-collapse and w-full */}
-                            <table className="w-full border-collapse text-sm md:text-base text-slate-600 dark:text-slate-300 min-w-[320px] sm:min-w-[450px]">
+                            <table className="w-full border-collapse text-sm md:text-base text-slate-600 dark:text-white min-w-[320px] sm:min-w-[450px]">
                                 <thead>
                                     <tr>
                                         {/* Placed background and text classes clearly within the <th> cells */}
@@ -72,10 +71,10 @@ export default function Day_And_Time() {
                                         <td className="px-4 md:px-6 py-4 text-center text-slate-700 dark:text-slate-200 font-medium border-r border-slate-100 dark:border-slate-700" rowSpan="2">
                                             {t('tuition.js_staturday')}
                                         </td>
-                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap">08:00 AM - 11:30 AM</td>
+                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-white text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap">08:00 AM - 11:30 AM</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50/50 dark:hover:bg-slate-700/50 transition-colors">
-                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap border-l border-slate-100 dark:border-slate-700">01:30 PM - 05:30 PM</td>
+                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-white text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap border-l border-slate-100 dark:border-slate-700">01:30 PM - 05:30 PM</td>
                                     </tr>
 
                                     {/* Sunday Rows */}
@@ -83,10 +82,10 @@ export default function Day_And_Time() {
                                         <td className="px-4 md:px-6 py-4 text-center text-slate-700 dark:text-slate-200 font-medium border-r border-slate-100 dark:border-slate-700" rowSpan="2">
                                             {t('tuition.js_sunday')}
                                         </td>
-                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap">08:00 AM - 11:30 AM</td>
+                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-white text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap">08:00 AM - 11:30 AM</td>
                                     </tr>
                                     <tr className="hover:bg-slate-50/50 dark:hover:bg-slate-700/50 transition-colors">
-                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-slate-300 text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap border-l border-slate-100 dark:border-slate-700">01:30 PM - 05:30 PM</td>
+                                        <td className="px-4 md:px-6 py-4 text-center text-slate-600 dark:text-white text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap border-l border-slate-100 dark:border-slate-700">01:30 PM - 05:30 PM</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -64,7 +64,7 @@ export default function WatchVideo() {
                             </span> */}
                         </div>
 
-                        <div className="mt-4 text-md text-slate-600 dark:text-slate-300">
+                        <div className="mt-4 text-md text-slate-600 dark:text-white">
                             <p className="font-semibold text-slate-700 dark:text-slate-200 mb-2">Description</p>
                             {currentVideo.description}
                         </div>

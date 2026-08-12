@@ -50,7 +50,7 @@ export default function CourseCard({ course, onClick }) {
                         <School className="h-5 w-5" />
                     </div>
                     <div className="min-w-0">
-                        <p className="text-sm md:text-md font-medium text-gray-600 dark:text-slate-300 truncate">
+                        <p className="text-sm md:text-md font-medium text-gray-600 dark:text-white truncate">
                             {/* faculty */}
                             {course.faculty}
                         </p>
@@ -62,7 +62,7 @@ export default function CourseCard({ course, onClick }) {
                 </div>
                 <div className="flex items-center gap-1 text-gray-400 shrink-0 bg-neutral-50 dark:bg-slate-700/60 px-2 py-1 rounded-lg border border-neutral-100 dark:border-slate-600">
                     <Clock className="h-3.5 w-3.5 text-gray-400 dark:text-slate-400" />
-                    <span className="text-xs font-medium text-gray-500 dark:text-slate-300">
+                    <span className="text-xs font-medium text-gray-500 dark:text-white">
                         {/* duration */}
                         {course.duration}
                     </span>

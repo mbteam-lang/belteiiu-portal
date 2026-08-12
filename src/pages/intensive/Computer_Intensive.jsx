@@ -43,7 +43,7 @@ export default function ComputerIntensive() {
         <div className="space-y-8 md:text-left text-justify">
           
           {/* Main Description */}
-          <p className="text-md text-gray-500 dark:text-slate-300 leading-relaxed">
+          <p className="text-md text-gray-500 dark:text-white leading-relaxed">
             {t('computer_intensive.js_com_desc')}
           </p>
 
@@ -52,7 +52,7 @@ export default function ComputerIntensive() {
             <h2 className="md:text-xl text-lg text-gray-800 dark:text-slate-100 font-semibold flex items-center gap-2">
               <span className="text-[#0a96a4]">❖</span> {t('computer_intensive.js_com_term')}
             </h2>
-            <p className="text-md text-gray-500 dark:text-slate-300 leading-loose pl-6">
+            <p className="text-md text-gray-500 dark:text-white leading-loose pl-6">
               {t('computer_intensive.js_com_term_1')}<br />
               {t('computer_intensive.js_com_term_2')}<br />
               {t('computer_intensive.js_com_term_3')}

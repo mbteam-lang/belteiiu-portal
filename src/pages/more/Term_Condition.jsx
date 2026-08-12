@@ -37,7 +37,7 @@ export default function Term_Condition() {
                 {currentData.title}
               </h1>
             </div>
-            <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#F1F5F9] dark:bg-slate-700 text-[#64748B] dark:text-slate-300 border border-[#E2E8F0] dark:border-slate-600 whitespace-nowrap self-start md:self-auto">
+            <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#F1F5F9] dark:bg-slate-700 text-[#64748B] dark:text-white border border-[#E2E8F0] dark:border-slate-600 whitespace-nowrap self-start md:self-auto">
               {currentData.lastUpdated}
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function Term_Condition() {
                 </h2>
               </div>
               
-              <div className="text-sm sm:text-base text-[#475569] dark:text-slate-300 leading-relaxed pl-0 sm:pl-8 space-y-4">
+              <div className="text-sm sm:text-base text-[#475569] dark:text-white leading-relaxed pl-0 sm:pl-8 space-y-4">
                 {section.body && <p>{section.body}</p>}
                 
                 {section.type === "list" && section.items && (

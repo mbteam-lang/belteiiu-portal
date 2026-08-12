@@ -3,6 +3,7 @@
 
 
 @import './theme.css';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +11,25 @@
     font-family: Poppins, 'Battambang', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif, sans-serif, system-ui;
 }
 
+/* Disable native mobile long-press callout popup ONLY on touchscreens */
+@media (hover: none) and (pointer: coarse) {
 
-html, body, #root, #defaultLayout, #guestLayout {
+    a,
+    button,
+    [role="button"],
+    .cursor-pointer,
+    img {
+        -webkit-touch-callout: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+    }
+}
+
+
+html,
+body,
+#root,
+#defaultLayout,
+#guestLayout {
     min-height: 100vh;
     scroll-behavior: smooth;
     background-color: var(--bg-color);
@@ -22,13 +40,13 @@ html, body, #root, #defaultLayout, #guestLayout {
 .translate-up {
     transform: translateY(0);
     transition: transform 1s ease all;
- }
- 
- .translate-down {
-    transform: translateY(300px); 
+}
+
+.translate-down {
+    transform: translateY(300px);
     transition: transform 10s ease all;
- }
- 
+}
+
 .nav h1 {
     font-family: Poppins, 'Battambang';
 }
@@ -40,9 +58,11 @@ html, body, #root, #defaultLayout, #guestLayout {
 .nav h2 {
     font-family: Poppins, 'Battambang';
 }
+
 .cover h1 {
     font-family: Poppins, 'Battambang';
 }
+
 .cover a {
     font-family: Poppins, 'Battambang';
 }
@@ -51,9 +71,10 @@ html, body, #root, #defaultLayout, #guestLayout {
     font-family: Poppins, 'Battambang';
 }
 
-.cards h2{
+.cards h2 {
     font-family: Poppins, 'Battambang';
 }
+
 tr td {
     font-family: Poppins, 'Battambang';
 }
@@ -61,54 +82,62 @@ tr td {
 th {
     font-family: Poppins, 'Battambang';
 }
+
 .country pre {
     font-family: Poppins, 'Battambang';
 }
 
-.hq p{
-    font-family: Poppins, 'Battambang'; 
+.hq p {
+    font-family: Poppins, 'Battambang';
 }
+
 .Dormitory h1 {
     font-family: Poppins, 'Battambang';
 }
 
 .Dormitory h2 {
-      font-family: Poppins, 'Battambang';
+    font-family: Poppins, 'Battambang';
 }
 
 .pre1 {
     font-family: Poppins, 'Battambang';
 }
 
-.country{
-      font-family: Poppins, 'Battambang';
+.country {
+    font-family: Poppins, 'Battambang';
 }
+
 .Dormitory p {
     font-family: Poppins, 'Battambang';
 }
 
-.priavcy h1,p,h2 {
+.priavcy h1,
+p,
+h2 {
     font-family: Poppins, 'Battambang';
 }
 
 .btn-map a {
     font-family: Poppins, 'Battambang';
 }
+
 .mapouter {
     position: relative;
     text-align: right;
     width: 100%;
     height: 400px;
-  }
-  .gmap_canvas {
+}
+
+.gmap_canvas {
     overflow: hidden;
     background: none !important;
     width: 100%;
     height: 400px;
-  }
-  .gmap_iframe {
+}
+
+.gmap_iframe {
     height: 400px !important;
-  }
+}
 
 .cover {
     height: 100vh;
@@ -118,7 +147,7 @@ th {
     background-position: center;
     position: relative;
     background-blend-mode: darken;
-  }
+}
 
 .cover2 {
     height: 40vh;
@@ -128,9 +157,9 @@ th {
     background-position: center;
     position: relative;
     background-blend-mode: darken;
-  }
-  
-  .cover_bis {
+}
+
+.cover_bis {
     height: 80vh;
     background: rgba(0, 0, 0, 0.8) url('assets/images/bg_bis.png') no-repeat;
     background-repeat: no-repeat;
@@ -138,34 +167,35 @@ th {
     background-position: center;
     position: relative;
     background-blend-mode: darken;
-  }
+}
 
-  .menu{
+.menu {
     display: none;
-  }
+}
 
-  .transition-height {
+.transition-height {
     transition: height 0.3s ease;
-  }
-  
-  .collapsed {
+}
+
+.collapsed {
     height: 0;
     overflow: hidden;
-  }
-  
+}
+
 
 @media (min-width : 842px) {
-    .cover .menu-title:hover{
+    .cover .menu-title:hover {
         color: var(--mainColor);
         transition: all ease 0.5s;
-        
+
     }
-    .menu{
+
+    .menu {
         display: flex;
     }
 }
 
-.main_cotain{
+.main_cotain {
     display: flex;
 
     flex-direction: column;
@@ -173,14 +203,14 @@ th {
     align-items: center;
 }
 
-.nav_small_screen{
+.nav_small_screen {
     position: relative;
     z-index: 100;
-    width:100%;
+    width: 100%;
 }
 
-.card_content h1{
-     font-family: Poppins, 'Battambang';
+.card_content h1 {
+    font-family: Poppins, 'Battambang';
     line-height: 2;
 }
 
@@ -188,11 +218,12 @@ th {
 .card_content h2 {
     font-family: Poppins, 'Battambang';
 }
+
 .card_content a {
-     font-family: Poppins, 'Battambang';
+    font-family: Poppins, 'Battambang';
 }
 
-.btn-start{
+.btn-start {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -200,12 +231,13 @@ th {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
 }
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    
+
 }
 
 .fadeInDown {
@@ -221,15 +253,17 @@ th {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-5px);
     }
+
     100% {
         transform: translateY(0px);
     }
 }
 
-.animated .kdam{
+.animated .kdam {
     font-family: var(--battambong);
 }
 
@@ -272,14 +306,16 @@ input:focus {
 
 .btn-add,
 .btn-edit,
-.btn-delete{
+.btn-delete {
     padding: 0.5rem 0.75rem;
     font-size: 14px;
     border-radius: 4px;
 }
+
 .btn-add {
     background-color: #00a762;
 }
+
 .btn-delete {
     background-color: #b72424;
 }
@@ -291,6 +327,7 @@ input:focus {
     transition: all 0.3s;
     border-radius: 6px;
 }
+
 .btn-logout:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -311,13 +348,13 @@ table {
     border-collapse: collapse;
 }
 
-table > thead > tr > th {
+table>thead>tr>th {
     text-align: left;
     padding: 0.5rem 0.5rem;
     background-color: #efefef;
 }
 
-table > tbody > tr > td {
+table>tbody>tr>td {
     padding: 0.5rem 0.5rem;
     border-bottom: 1px solid #efefef;
     white-space: nowrap;
@@ -363,7 +400,7 @@ table > tbody > tr > td {
 .login-signup-form .form {
     width: 360px;
     position: relative;
-        background: #FFFFFF;
+    background: #FFFFFF;
     max-width: 360px;
     padding: 34px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
@@ -400,7 +437,7 @@ table > tbody > tr > td {
     padding: 1rem
 }
 
-#defaultLayout aside > a {
+#defaultLayout aside>a {
     display: block;
     padding: 0.75rem 1rem;
     border-radius: 6px;
@@ -409,7 +446,7 @@ table > tbody > tr > td {
     transition: all 0.2s;
 }
 
-#defaultLayout aside > a:hover {
+#defaultLayout aside>a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -438,6 +475,7 @@ table > tbody > tr > td {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -445,11 +483,11 @@ table > tbody > tr > td {
 }
 
 @keyframes equalizer {
-  0% {
-    height: 20%;
-  }
-  100% {
-    height: 100%;
-  }
-}
+    0% {
+        height: 20%;
+    }
 
+    100% {
+        height: 100%;
+    }
+}

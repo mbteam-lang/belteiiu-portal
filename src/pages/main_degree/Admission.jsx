@@ -48,7 +48,7 @@ export default function Admission() {
                       transition: 'height 0.35s ease',
                       overflow: 'hidden',
                     }}
-                    className="text-gray-800 dark:text-slate-300 text-left whitespace-pre-wrap break-words leading-relaxed mt-2"
+                    className="text-gray-800 dark:text-white text-left whitespace-pre-wrap break-words leading-relaxed mt-2"
                     dangerouslySetInnerHTML={{ __html: items.remark }}
                   />
                 </div>

@@ -24,7 +24,7 @@ export default function Pedalogy() {
           {/* About Section */}
           <div className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">{t('pedagogy.js_about_program')}</h2>
-            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed text-justify md:text-left">{t('pedagogy.js_peda_desc')}</p>
+            <p className="text-base text-slate-600 dark:text-white leading-relaxed text-justify md:text-left">{t('pedagogy.js_peda_desc')}</p>
           </div>
 
           <hr className="border-slate-100 dark:border-slate-700" />
@@ -32,7 +32,7 @@ export default function Pedalogy() {
           {/* Terms Section */}
           <div className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">{t('pedagogy.js_term')}</h2>
-            <div className="text-base text-slate-600 dark:text-slate-300 leading-relaxed space-y-1 text-justify md:text-left">
+            <div className="text-base text-slate-600 dark:text-white leading-relaxed space-y-1 text-justify md:text-left">
               <p>{t('pedagogy.js_term_1')}</p>
               <p>{t('pedagogy.js_term_2')}</p>
               <p>{t('pedagogy.js_term_3')}</p>
@@ -44,7 +44,7 @@ export default function Pedalogy() {
           {/* Program Section */}
           <div className="space-y-3">
             <h2 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">{t('pedagogy.js_program')}</h2>
-            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed text-justify md:text-left">{t('pedagogy.js_program_desc')}</p>
+            <p className="text-base text-slate-600 dark:text-white leading-relaxed text-justify md:text-left">{t('pedagogy.js_program_desc')}</p>
           </div>
 
           <hr className="border-slate-100 dark:border-slate-700" />
@@ -52,7 +52,7 @@ export default function Pedalogy() {
           {/* Results Section */}
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">{t('pedagogy.js_result')}</h2>
-            <p className="text-base text-slate-600 dark:text-slate-300">{t('pedagogy.js_result_desc')}</p>
+            <p className="text-base text-slate-600 dark:text-white">{t('pedagogy.js_result_desc')}</p>
             
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 list-none pl-0">
               {[1, 2, 3, 4].map((num) => (
@@ -71,8 +71,8 @@ export default function Pedalogy() {
           {/* Career Section */}
           <div className="space-y-4">
             <h2 className="text-lg md:text-xl font-bold text-slate-800 dark:text-slate-100">{t('pedagogy.js_career')}</h2>
-            <p className="text-base text-slate-600 dark:text-slate-300">{t('pedagogy.js_career_desc')}</p>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-base text-slate-600 dark:text-slate-300 pl-4 list-disc space-y-1">
+            <p className="text-base text-slate-600 dark:text-white">{t('pedagogy.js_career_desc')}</p>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-base text-slate-600 dark:text-white pl-4 list-disc space-y-1">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
                 <li key={num} className="marker:text-green-500">
                   {t(`pedagogy.js_career_${num}`)}
@@ -92,7 +92,7 @@ export default function Pedalogy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Weekday Table */}
             <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
-              <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-slate-300">
+              <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-white">
                 <thead>
                   <tr className="text-white">
                     <th className="bg-[#0a96a4] px-6 py-4 font-semibold text-center" colSpan="2">
@@ -125,7 +125,7 @@ export default function Pedalogy() {
 
             {/* Weekend Table */}
             <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
-              <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-slate-300">
+              <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-white">
                 <thead >
                   <tr className="text-white text-center">
                     <th className="bg-[#0a96a4] px-6 py-4 font-semibold text-center" colSpan="2">{t('tuition.js_sat_sun')}</th>
@@ -166,7 +166,7 @@ export default function Pedalogy() {
           </div>
          
           <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
-            <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-slate-300">
+            <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-white">
               <thead>
                 <tr className="text-white text-center">
                   <th className="bg-[#0a96a4] px-6 py-4 font-semibold text-center">{t('tuition.js_course')}</th>
@@ -213,7 +213,7 @@ export default function Pedalogy() {
                       <span className="text-slate-700 dark:text-slate-200 font-medium leading-relaxed">
                         {t(`pedagogy.js_course_${num}`)}
                       </span>
-                      <span className=" text-gray-500 dark:text-slate-300 bg-slate-50 dark:bg-slate-700/60 px-2.5 py-0.5 rounded-lg border border-slate-100 dark:border-slate-600 shrink-0 whitespace-nowrap text-xs md:text-sm">
+                      <span className=" text-gray-500 dark:text-white bg-slate-50 dark:bg-slate-700/60 px-2.5 py-0.5 rounded-lg border border-slate-100 dark:border-slate-600 shrink-0 whitespace-nowrap text-xs md:text-sm">
                         {num === 6 ? 2 : 3} {t('tuition.js_credit')}
                       </span>
                     </li>
@@ -237,7 +237,7 @@ export default function Pedalogy() {
                       <span className="text-slate-700 dark:text-slate-200 font-medium leading-relaxed">
                         {t(`pedagogy.js_course_${num}`)}
                       </span>
-                      <span className=" text-gray-500 dark:text-slate-300 bg-slate-50 dark:bg-slate-700/60 px-2.5 py-0.5 rounded-lg border border-slate-100 dark:border-slate-600 shrink-0 whitespace-nowrap text-xs md:text-sm">
+                      <span className=" text-gray-500 dark:text-white bg-slate-50 dark:bg-slate-700/60 px-2.5 py-0.5 rounded-lg border border-slate-100 dark:border-slate-600 shrink-0 whitespace-nowrap text-xs md:text-sm">
                         {num === 12 ? 2 : 3} {t('tuition.js_credit')}
                       </span>
                     </li>

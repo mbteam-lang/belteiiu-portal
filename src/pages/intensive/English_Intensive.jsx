@@ -33,14 +33,14 @@ export default function EnglishIntensive() {
 
         {/* Content Body */}
         <div className="space-y-8 md:text-left text-justify">
-          <p className="text-md text-gray-500 dark:text-slate-300 leading-relaxed">
+          <p className="text-md text-gray-500 dark:text-white leading-relaxed">
             {t('english_intensive.js_eng_desc')}
           </p>
           <div className="space-y-4">
             <h2 className="md:text-xl text-lg text-gray-800 dark:text-slate-100 font-semibold flex items-center gap-2">
               <span className="text-[#0a96a4]">❖</span> {t('english_intensive.js_en_term')}
             </h2>
-            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed space-y-1 text-justify sm:text-left">
+            <p className="text-base text-slate-600 dark:text-white leading-relaxed space-y-1 text-justify sm:text-left">
               {t('english_intensive.js_desc_term_1')}<br />
               {t('english_intensive.js_desc_term_2')}<br />
               {t('english_intensive.js_desc_term_3')}
@@ -175,12 +175,12 @@ export default function EnglishIntensive() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="bg-white dark:bg-[#353535] text-gray-500 dark:text-slate-300">
+                  <tr className="bg-white dark:bg-[#353535] text-gray-500 dark:text-white">
                     <td className={tdStyles} colSpan={2}>{t('english_intensive.js_intensive_1')}</td>
                     <td className={tdStyles}>$ 280</td>
                     <td className={tdStyles} rowSpan={2}>$ 500</td>
                   </tr>
-                  <tr className="bg-gray-50 dark:bg-slate-700/50 text-gray-500 dark:text-slate-300">
+                  <tr className="bg-gray-50 dark:bg-slate-700/50 text-gray-500 dark:text-white">
                     <td className={tdStyles} colSpan={2}>{t('english_intensive.js_intensive_2')}</td>
                     <td className={tdStyles}>$ 280</td>
                   </tr>

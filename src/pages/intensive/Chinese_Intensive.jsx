@@ -17,7 +17,7 @@ export default function Chinese_Intensive() {
                     </div>
                     <div className='space-y-7'>
                         <div className='md:text-left text-justify space-y-7'>
-                            <p className='text-md text-gray-600 dark:text-slate-300 leading-7'>{t('chinese_intensive.js_chinese_desc')}</p>
+                            <p className='text-md text-gray-600 dark:text-white leading-7'>{t('chinese_intensive.js_chinese_desc')}</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="">

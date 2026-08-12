@@ -80,7 +80,7 @@ export default function Scholarship() {
                                     </div>
 
                                     <div className="col-span-5 border-r border-gray-400 dark:border-slate-700 flex items-center p-2 md:p-3">
-                                        <p className="text-[9px] md:text-sm text-gray-800 dark:text-slate-300">
+                                        <p className="text-[9px] md:text-sm text-gray-800 dark:text-white">
                                             {school.remark || "N/A"}
                                         </p>
                                     </div>

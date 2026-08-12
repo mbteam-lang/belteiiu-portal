@@ -36,7 +36,7 @@ export default function Dormitory() {
           </div>
           
           {/* Bullet points feature styled into a clean layout list */}
-          <ul className='space-y-2 pl-5 list-disc text-gray-500 dark:text-slate-300 font-medium border-t border-slate-100 dark:border-slate-700 pt-4'>
+          <ul className='space-y-2 pl-5 list-disc text-gray-500 dark:text-white font-medium border-t border-slate-100 dark:border-slate-700 pt-4'>
             <li>{t('dormitory.js_dorm4')}</li>
             <li>{t('dormitory.js_dorm5')}</li>
             <li>{t('dormitory.js_dorm6')}</li>

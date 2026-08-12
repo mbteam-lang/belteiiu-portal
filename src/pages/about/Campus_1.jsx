@@ -14,8 +14,8 @@ export default function Campus1() {
         return htmlContent
             // 1. Fixes the broken spaces inside the query URL
             .replace(
-                /hl=en&amp;q=beltei international university campus 2/g,
-                'q=BELTEI%20International%20University%20Campus%202'
+                /hl=en&amp;q=beltei international university campus 1/g,
+                'q=BELTEI%20International%20University%20Campus%201'
             )
             // 2. Fixes the empty sandbox restriction so the map can render scripts
             .replace(
@@ -44,11 +44,11 @@ export default function Campus1() {
                 </>
             )}
             <div className='md:text-left'>
-                <div className='text-md text-gray-500 dark:text-slate-300'>
+                <div className='text-md text-gray-500 dark:text-white'>
                     <p dangerouslySetInnerHTML={{ __html: getCleanedHtml(campus1?.desc) }} />
                 </div>
             </div>
-            {!loading && about[6].length === 0 && (
+            {!loading && (!campus1 || !campus1?.desc) && (
                 <NoData />
             )}
         </div>

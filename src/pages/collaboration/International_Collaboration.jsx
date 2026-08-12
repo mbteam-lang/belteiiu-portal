@@ -66,7 +66,7 @@ export default function International_Collaboration() {
                                         key={item.id ?? idx}
                                         className="grid grid-cols-12 border-b last:border-b-0 border-gray-200 dark:border-slate-700 bg-white dark:bg-[#353535] min-h-[80px]"
                                     >
-                                        <div className="col-span-2 flex items-center justify-center border-r border-gray-200 dark:border-slate-700 font-medium text-gray-600 dark:text-slate-300">
+                                        <div className="col-span-2 flex items-center justify-center border-r border-gray-200 dark:border-slate-700 font-medium text-gray-600 dark:text-white">
                                             {idx + 1}
                                         </div>
                                         <div className="col-span-5 flex items-center justify-center border-r border-gray-200 dark:border-slate-700 p-2">
