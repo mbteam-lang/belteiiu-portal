@@ -30,7 +30,7 @@ export default function Headquarters() {
             <div className='min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 <div className="h-5"></div>
                 <section className='max-w-7xl m-auto px-5'>
-                    <div className='m-auto flex justify-center items-center mb-5 md:px-0'>
+                    {/* <div className='m-auto flex justify-center items-center mb-5 md:px-0'>
                         <div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
                             <iframe
                                 className='absolute top-0 left-0 w-full h-full'
@@ -44,7 +44,7 @@ export default function Headquarters() {
                                 allowFullScreen>
                             </iframe>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='space-y-4 hq'>
                         {hq && (
                             <div className='md:text-left'>
