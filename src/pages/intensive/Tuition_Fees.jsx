@@ -273,13 +273,22 @@ export default function Tuition_Fees() {
                                         {renderFacultyTitle(t(`tuition.${row.key}`))}
                                     </div>
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee1}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee2}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee3}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee3}
                                 </td>
                             </tr>
@@ -331,10 +340,16 @@ export default function Tuition_Fees() {
                                         {renderFacultyTitle(t(`tuition.${row.key}`))}
                                     </div>
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee1}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee2}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[9px] sm:text-xs md:text-[15px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
                             </tr>
