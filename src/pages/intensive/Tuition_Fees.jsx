@@ -44,13 +44,13 @@ export default function Tuition_Fees() {
     const renderTables = () => (
         <div className="space-y-4 sm:space-y-6">
             {/* Section I: Bachelor & Associate Degree Programs */}
-            <h2 className="text-md sm:text-lg md:text-xl font-bold text-gray-700 dark:text-white px-1">
+            <h2 className="text-lg md:text-xl font-bold text-gray-700 dark:text-white px-1">
                 ✦ {t('tuition.js_bachelor_associate ')}
             </h2>
 
             {/* Subsection I-1: National Program */}
             <div className="text-start px-1 sm:px-4 pt-2 sm:pt-4">
-                <h1 className="text-sm sm:text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
+                <h1 className="text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
                     I- {t('tuition.js_nat_tuition')}
                 </h1>
             </div>
@@ -131,7 +131,7 @@ export default function Tuition_Fees() {
 
             {/* Subsection I-2: International Program */}
             <div className="text-start px-1 sm:px-4 pt-2 sm:pt-4">
-                <h1 className="text-sm sm:text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
+                <h1 className="text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
                     II- {t('tuition.js_inter_tuition')}
                 </h1>
             </div>
@@ -200,12 +200,12 @@ export default function Tuition_Fees() {
             </div>
 
             {/* Section II: Master & Doctoral Degree Programs */}
-            <h2 className="text-sm sm:text-md md:text-lg font-bold text-gray-700 dark:text-white px-1 pt-2">
+            <h2 className="text-lg font-bold text-gray-700 dark:text-white px-1 pt-2">
                 ✦ {t('tuition.js_master_doctoral')}
             </h2>
 
             <div className="text-start px-1 sm:px-4 pt-2 sm:pt-4">
-                <h1 className="text-sm sm:text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
+                <h1 className="text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
                     I- {t('tuition.js_inter_tuition')}
                 </h1>
             </div>
@@ -276,7 +276,7 @@ export default function Tuition_Fees() {
 
             {/* Section III: Faculty of Civil Aviation */}
             <div className="flex flex-row justify-between items-center px-1 sm:px-4 pt-2 sm:pt-4">
-                <h1 className="text-sm sm:text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
+                <h1 className="text-md md:text-lg font-semibold text-[#151B74] dark:text-cyan-400">
                     II- {t('tuition.faculty_civil')}
                 </h1>
                 <img src={p1Img} alt="Civil Aviation Airplane" className="h-6 sm:h-8 md:h-10 w-auto object-contain" />
