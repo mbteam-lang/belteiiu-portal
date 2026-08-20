@@ -1,18 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import envCompatible from 'vite-plugin-env-compatible'
+// import envCompatible from 'vite-plugin-env-compatible'
 import path from 'path';
 
 export default defineConfig({
   base: '/',
   plugins: [
-    envCompatible(),
+    // envCompatible(),
     react()
   ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+  },
+  optimizeDeps: {
+    include: ['moment', 'moment/locale/km'],
   },
   build: {  // (!) Some chunks are larger than 500 KiB after minification
     rollupOptions: {

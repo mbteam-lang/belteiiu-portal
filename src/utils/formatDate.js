@@ -1,5 +1,5 @@
 import moment from "moment";
-import "moment/dist/locale/km";
+import "moment/locale/km";
 import { DATE_FORMAT } from "./formatDuration";
 import { getLanguage } from '@/services/languageService';
 
