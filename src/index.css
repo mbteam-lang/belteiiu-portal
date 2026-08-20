@@ -141,7 +141,7 @@ h2 {
 
 .cover {
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6) url('assets/images/cover1.jpg') no-repeat;
+    /* background: rgba(0, 0, 0, 0.6) url('assets/images/cover1.jpg') no-repeat; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -151,7 +151,7 @@ h2 {
 
 .cover2 {
     height: 40vh;
-    background: rgba(0, 0, 0, 0.8) url('assets/images/cover2.jpg') no-repeat;
+    /* background: rgba(0, 0, 0, 0.8) url('assets/images/cover2.jpg') no-repeat; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -161,7 +161,7 @@ h2 {
 
 .cover_bis {
     height: 80vh;
-    background: rgba(0, 0, 0, 0.8) url('assets/images/bg_bis.png') no-repeat;
+    /* background: rgba(0, 0, 0, 0.8) url('assets/images/bg_bis.png') no-repeat; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

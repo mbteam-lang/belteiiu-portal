@@ -100,7 +100,7 @@ const Navbar = () => {
                     <div className="flex flex-wrap justify-end items-center gap-1 xl:gap-4 lg:gap-2">
                         <DesktopDropdown
                             index="intensive"
-                            label="header.js_eng_com"
+                            label={t("header.js_eng_com")}
                             data={intCourceMenu}
                             icon={MenuBookIcon}
                             openMenuIndex={openMenuIndex}
@@ -110,7 +110,7 @@ const Navbar = () => {
                         />
                         <DesktopDropdown
                             index="about"
-                            label="header.js_about"
+                            label={t("header.js_about")}
                             data={aboutMenu}
                             icon={InfoIcon}
                             openMenuIndex={openMenuIndex}
@@ -120,7 +120,7 @@ const Navbar = () => {
                         />
                         <DesktopDropdown
                             index="collab"
-                            label="header.js_colab"
+                            label={t("header.js_colab")}
                             data={collabMenu}
                             icon={HandshakeIcon}
                             openMenuIndex={openMenuIndex}
@@ -130,7 +130,7 @@ const Navbar = () => {
                         />
                         <DesktopDropdown
                             index="degree"
-                            label="header.js_degree"
+                            label={t("header.js_degree")}
                             data={mainDegreeMenu}
                             icon={SchoolIcon}
                             openMenuIndex={openMenuIndex}
@@ -140,7 +140,7 @@ const Navbar = () => {
                         />
                         <DesktopDropdown
                             index="dorm"
-                            label="header.js_dorm"
+                            label={t("header.js_dorm")}
                             icon={MeetingRoomIcon}
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
@@ -150,7 +150,7 @@ const Navbar = () => {
                    
                         <DesktopDropdown
                             index="terms"
-                            label="term_condition.js_sub_title"
+                            label={t("term_condition.js_sub_title")}
                             icon={LocalPoliceIcon}
                             openMenuIndex={openMenuIndex}
                             toggleMenuIndex={toggleMenuIndex}
@@ -202,7 +202,7 @@ const Navbar = () => {
 
                     <MobileDropdown
                         index="intensive"
-                        label="header.js_eng_com"
+                        label={t("header.js_eng_com")}
                         data={intCourceMenu}
                         icon={MenuBookIcon}
                         openMenuIndex={openMenuIndex}
@@ -212,7 +212,7 @@ const Navbar = () => {
                     />
                     <MobileDropdown
                         index="about"
-                        label="header.js_about"
+                        label={t("header.js_about")}
                         data={aboutMenu}
                         icon={InfoIcon}
                         openMenuIndex={openMenuIndex}
@@ -222,7 +222,7 @@ const Navbar = () => {
                     />
                     <MobileDropdown
                         index="collab"
-                        label="header.js_colab"
+                        label={t("header.js_colab")}
                         data={collabMenu}
                         icon={HandshakeIcon}
                         openMenuIndex={openMenuIndex}
@@ -232,7 +232,7 @@ const Navbar = () => {
                     />
                     <MobileDropdown
                         index="degree"
-                        label="header.js_degree"
+                        label={t("header.js_degree")}
                         data={mainDegreeMenu}
                         icon={SchoolIcon}
                         openMenuIndex={openMenuIndex}
@@ -242,7 +242,7 @@ const Navbar = () => {
                     />
                     <MobileDropdown
                         index="dorm"
-                        label="header.js_dorm"
+                        label={t("header.js_dorm")}
                         icon={MeetingRoomIcon}
                         openMenuIndex={openMenuIndex}
                         toggleMenuIndex={toggleMenuIndex}
@@ -252,7 +252,7 @@ const Navbar = () => {
                     />
                     <MobileDropdown
                         index="terms"
-                        label="term_condition.js_sub_title"
+                        label={t("term_condition.js_sub_title")}
                         icon={LocalPoliceIcon}
                         openMenuIndex={openMenuIndex}
                         toggleMenuIndex={toggleMenuIndex}

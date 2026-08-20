@@ -43,7 +43,6 @@ import Course from '@/pages/e_learning/Course.jsx';
 import Other_Library from '@/pages/about/Other_Library.jsx';
 import Award from '@/pages/about/Award.jsx';
 import HistoryDetails from '@/pages/about/History_Details.jsx';
-import WatchVideo from '@/components/sections/WatchVideo.jsx';
 
 
 const AppRouter = () => (
@@ -91,7 +90,6 @@ const AppRouter = () => (
                 <Route path="history_detail/:id" element={<HistoryDetails />} />
                 <Route path="other_library" element={<Other_Library />} />
                 <Route path="award/:id" element={<Award />} />
-                <Route path="watch/:id" element={<WatchVideo />} />
             </Route>
             <Route path="*" element={<Nodata />} />
         </Routes>
