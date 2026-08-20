@@ -63,8 +63,8 @@ export default function Index() {
                 <div className="relative flex justify-center items-center">
                     <img src={Cover} alt="" className='w-full md:h-[550px] h-[250px] object-cover' />
                     <div className='absolute flex flex-col justify-center items-center text-center xl:space-y-10 lg:space-y-8 md:space-y-5 sm:space-y-2 space-y-3'>
-                        <h1 className='font-black text-center  md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2 '>សិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិច​</h1>
-                        <h1 className='font-black text-center  md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2 '>E-Learning</h1>
+                        <h1 className='font-black text-center md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2'>សិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិច</h1>
+                        <h1 className='font-black text-center md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2'>E-Learning</h1>
                         {/* <h1 className='text-white xl:text-3xl  lg:text-2xl md:text-xl sm:text-lg text-sm font-bold'></h1> */}
                         <div className=' md:w-auto text-center flex flex-wrap justify-center xl:gap-32 lg:gap-28 md:gap-10'>
                             <div className="w-28 md:w-auto">

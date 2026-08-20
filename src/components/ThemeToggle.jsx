@@ -26,19 +26,20 @@ const ThemeToggle = () => {
     <motion.button
       type="button"
       onClick={handleToggle}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.9 }}
-      className="relative flex items-center justify-center h-[46px] w-[46px] rounded-full bg-cyan-950/40 border border-cyan-700/30 backdrop-blur-xl shadow-lg shadow-cyan-950/20 hover:bg-cyan-900/50 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer select-none focus:outline-none overflow-hidden shrink-0"
+      whileHover={{ scale: 1.08 }}
+      whileTap={{ scale: 0.92 }}
+      transition={{ type: "spring", stiffness: 400, damping: 25 }}
+      className="relative flex items-center justify-center h-[36px] w-[36px] xl:h-[40px] xl:w-[40px] rounded-full bg-cyan-950/40 border border-cyan-700/30 backdrop-blur-xl shadow-md hover:bg-cyan-900/50 hover:border-cyan-500/50 transition-colors duration-200 cursor-pointer select-none focus:outline-none overflow-hidden shrink-0"
       aria-label="Toggle Theme"
       title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
           key={theme}
-          initial={{ y: -16, opacity: 0, rotate: -90 }}
-          animate={{ y: 0, opacity: 1, rotate: 0 }}
-          exit={{ y: 16, opacity: 0, rotate: 90 }}
-          transition={{ duration: 0.2 }}
+          initial={{ y: -14, opacity: 0, rotate: -70, scale: 0.8 }}
+          animate={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
+          exit={{ y: 14, opacity: 0, rotate: 70, scale: 0.8 }}
+          transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center justify-center"
         >
           {isDark ? (
@@ -53,6 +54,7 @@ const ThemeToggle = () => {
 };
 
 export default ThemeToggle;
+
 
 
 

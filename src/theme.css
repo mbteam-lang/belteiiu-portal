@@ -6,6 +6,7 @@
   --text-color: #212121;
   --card-bg: #ffffff;
 }
+
 .dark {
   /* Dark theme overrides */
   --bg-color: #282828;

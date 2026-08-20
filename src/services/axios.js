@@ -1,40 +1,24 @@
-// src/services/axios.js
+// src/services/axios.js (Bridge adapter to native apiClient)
 
-import axios from 'axios';
-import env from '@/config/env';
-import { getLanguage } from './languageService';
+import apiClient from './apiClient';
 
-const api = axios.create({
-    baseURL: env.BASE_URL,
-    timeout: 10000,
-    headers: { 
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+const api = {
+    get: (url, config = {}) => {
+        return apiClient.get(url, config.params, config.headers, config.signal).then(res => ({
+            data: res,
+            status: res.code || 200,
+        }));
     },
-});
-
-api.interceptors.request.use((config) => {
-    const currentLanguage = getLanguage();
-
-    // ✅ Normalize language codes to what API expects
-    const normalize = (lang) => {
-        if(lang === 'kh') {
-            return lang = 'km'
-        } else {
-            return lang = 'en'
-        }
-    };
-
-    const finalLang = normalize(currentLanguage);
-    config.headers['Accept-Language'] = finalLang;
-
-    // ✅ Always append the language to the URL query parameters
-    config.params = {
-        ...config.params,
-        lang: finalLang
-    };
-
-    return config;
-});
+    post: (url, data = {}, config = {}) => {
+        return apiClient.post(url, data, config.headers, config.signal).then(res => ({
+            data: res,
+            status: res.code || 200,
+        }));
+    },
+    interceptors: {
+        request: { use: () => {} },
+        response: { use: () => {} },
+    }
+};
 
 export default api;
