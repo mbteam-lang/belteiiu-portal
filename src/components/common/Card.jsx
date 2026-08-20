@@ -15,7 +15,7 @@ const ListCard = ({
             className="w-full h-full object-contain"
           />
         </div>
-        <p className="text-md md:text-lg font-medium text-slate-800 dark:text-slate-100 leading-snug line-clamp-2">
+        <p className="text-[15px] md:text-[17px] font-medium text-slate-800 dark:text-slate-100 leading-snug line-clamp-2">
           {title}
         </p>
       </div>

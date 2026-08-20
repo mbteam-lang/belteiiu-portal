@@ -14,6 +14,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  // add new
   optimizeDeps: {
     include: ['moment', 'moment/locale/km'],
   },
