@@ -12,7 +12,7 @@ export default function Degree() {
     return (
         <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
             <div className='h-5'></div>
-            <section className="max-w-7xl m-auto px-2 md:h-auto">
+            <section className="lg:max-w-7xl m-auto px-2 md:h-auto">
                 <div className='grid grid-cols-1 lg:grid-cols-2 md:gap-5'>
                     {
                         degree?.map((program, programIndex) => (

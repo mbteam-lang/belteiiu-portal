@@ -10,7 +10,7 @@ export default function Headquarters() {
     return (
         <>
             {loading && (
-                <div className='max-w-7xl m-auto px-5 pt-5 min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
+                <div className='lg:max-w-7xl m-auto px-5 pt-5 min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                     <div className='space-y-4 hq'>
                         <div className='md:grid-cols-2 gap-5 mx-auto'>
                             <div className="w-full h-64 bg-gray-200 dark:bg-slate-700 rounded"></div>
@@ -29,7 +29,7 @@ export default function Headquarters() {
             )}
             <div className='min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 <div className="h-5"></div>
-                <section className='max-w-7xl m-auto px-5'>
+                <section className='lg:max-w-7xl m-auto px-5'>
                     {/* <div className='m-auto flex justify-center items-center mb-5 md:px-0'>
                         <div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
                             <iframe

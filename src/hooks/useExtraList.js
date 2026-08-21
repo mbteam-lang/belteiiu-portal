@@ -8,7 +8,7 @@ import { endpoints } from '@/services/endpoints';
 export const useExtraList = (extraID, perPage = 10, filterYear = null) => {
     const [data, setExtraList] = useState([]);
     const [isGrouped, setIsGrouped] = useState(false);
-    const [years, setYears] = useState([1, 2, 3, 4, 5]);
+    const [years, setYears] = useState([]);
     const [fileTitle, setFileTitle] = useState("");
     const [fileLink, setFileLink] = useState("");
     const [noData, setNoData] = useState(false);
@@ -88,7 +88,9 @@ export const useExtraList = (extraID, perPage = 10, filterYear = null) => {
                 const allItems = grouped ? list.flatMap((g) => g.items || []) : list;
                 const uniqueYears = [...new Set(allItems.map((i) => Number(i.year)).filter(Boolean))];
                 if (uniqueYears.length > 0) {
-                    setYears((prev) => [...new Set([...prev, ...uniqueYears])].sort((a, b) => a - b));
+                    setYears((prev) => (isReset ? uniqueYears.sort((a, b) => a - b) : [...new Set([...prev, ...uniqueYears])].sort((a, b) => a - b)));
+                } else if (isReset) {
+                    setYears([]);
                 }
 
                 // Check if more pages are available

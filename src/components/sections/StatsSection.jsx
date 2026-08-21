@@ -24,7 +24,7 @@ export default function StatsSection() {
 
     return (
         <section ref={ref} className="bg-neutral-50 dark:bg-[#282828] py-10">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="lg:max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 md:divide-x md:divide-slate-200 dark:divide-slate-600">
                     {stats.map((item, index) => {
                         const { number, suffix } = parseCount(item.value);

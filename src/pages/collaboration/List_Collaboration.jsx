@@ -13,7 +13,7 @@ export default function List_Collaboration() {
 
     return (
     <div className="w-full px-4 pt-6">
-        <div className="grid grid-cols-1 gap-2 md:gap-2 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 gap-2 md:gap-2 lg:max-w-7xl mx-auto">
             {collaborationTypes.map((items) => (
                 <Link
                     key={items.id}

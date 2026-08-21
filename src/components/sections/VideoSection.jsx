@@ -11,7 +11,7 @@ export default function ServingVideo() {
 
     return (
         <section className="py-10 bg-white dark:bg-[#282828]">
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="lg:max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center border-b pb-4">
                     <div className="flex items-center gap-2">
                         <div className="h-7 w-1.5 bg-blue-800 rounded-full"></div>

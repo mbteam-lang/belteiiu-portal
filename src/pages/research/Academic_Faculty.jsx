@@ -13,7 +13,7 @@ export default function Academic_Faculty() {
         <>
             <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 <div className='h-3'></div>
-                <section className='max-w-7xl m-auto md:px-5 px-2'>
+                <section className='lg:max-w-7xl m-auto md:px-5 px-2'>
                     {academicFaculty.length > 0 ? (
                         academicFaculty.map((items, index) => (
                             <Link key={index} to={`/academic_researches/${items.id}`}>

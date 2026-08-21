@@ -365,7 +365,7 @@ export default function Tuition_Fees() {
 
     return (
         <div className="bg-[#F8FAFC] dark:bg-[#282828] min-h-screen py-2 sm:py-6 px-1 sm:px-4 transition-colors duration-200 select-none">
-            <div className="w-full max-w-7xl mx-auto space-y-3 sm:space-y-5">
+            <div className="w-full lg:max-w-7xl mx-auto space-y-3 sm:space-y-5">
                 {/* Header Title */}
                 
 

@@ -10,7 +10,7 @@ export default function List_Intensive() {
 
     return (
         <div className="w-full min-h-screen p-4 text-slate-800 dark:text-slate-100 transition-colors duration-200">
-            <div className="grid grid-cols-1 gap-2 max-w-7xl mx-auto items-start content-start">
+            <div className="grid grid-cols-1 gap-2 lg:max-w-7xl mx-auto items-start content-start">
                 {(
                     intensiveData.map((item) => (
                         <Link key={item.id} to={item.url} className="block">

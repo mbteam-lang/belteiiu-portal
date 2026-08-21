@@ -11,7 +11,7 @@ export default function Pedalogy() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 dark:bg-[#282828] transition-colors duration-200">
-      <section className="max-w-7xl mx-auto px-2 md:px-4 lg:px-8 space-y-8">
+      <section className="lg:max-w-7xl mx-auto px-2 md:px-4 lg:px-8 space-y-8">
         
         {/* Hero Video Section */}
         <div className='m-auto flex justify-center items-center mb-5 md:px-0 mt-5'>

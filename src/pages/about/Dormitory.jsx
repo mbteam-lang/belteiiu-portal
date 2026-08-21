@@ -15,7 +15,7 @@ export default function Dormitory() {
 
   return (
     <div className='min-h-screen py-4 md:py-6'>
-      <section className='max-w-7xl m-auto px-3 md:px-6 space-y-3 md:space-y-6'>
+      <section className='lg:max-w-7xl m-auto px-3 md:px-6 space-y-3 md:space-y-6'>
         
         {/* Featured Video Player */}
         <div className='w-full overflow-hidden rounded-2xl shadow-md '>

@@ -11,7 +11,7 @@ export default function Majors() {
     return (
         <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
             {loading ? (
-                <section className='max-w-7xl m-auto md:px-5 px-2'>
+                <section className='lg:max-w-7xl m-auto md:px-5 px-2'>
                     {Array.from({ length: 6 }).map((_, index) => (
                         <div
                             key={index}
@@ -35,7 +35,7 @@ export default function Majors() {
             ) : (
                 <div>
                     <div className='h-3'></div>
-                    <section className='max-w-7xl m-auto md:px-5 px-2'>
+                    <section className='lg:max-w-7xl m-auto md:px-5 px-2'>
                         {majors?.length === 0 ? (
                             <NoData />
                         ) : (majors.map((items, index) => (

@@ -12,7 +12,7 @@ export default function ExtraDetail() {
   const { extraDetail, loading, showView } = useExtraDetail(id);
 
   return (
-    <div className="flex flex-col gap-3 p-3 max-w-7xl m-auto">
+    <div className="flex flex-col gap-3 p-3 lg:max-w-7xl m-auto">
       {showView &&(
         <div>
           <ViewExtra/>

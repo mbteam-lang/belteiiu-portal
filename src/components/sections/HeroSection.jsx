@@ -21,7 +21,7 @@ export default function HeroSection() {
             <div className="absolute top-1/3 right-[-5%] w-[35vw] h-[35vw] bg-indigo-500/10 rounded-full blur-3xl hidden lg:block pointer-events-none" />
 
             {/* Main Hero Container */}
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="w-full lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
                     {/* LEFT COLUMN: Typography & Actions */}

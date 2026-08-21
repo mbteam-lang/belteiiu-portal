@@ -19,7 +19,7 @@ export default function NationalCollaboration() {
     };
 
     return (
-        <div className="py-6 min-h-screen max-w-7xl m-auto bg-slate-50/50 dark:bg-[#282828] transition-colors duration-200">
+        <div className="py-6 min-h-screen lg:max-w-7xl m-auto bg-slate-50/50 dark:bg-[#282828] transition-colors duration-200">
             <section className="container mx-auto md:px-4 px-2 max-w-2xl">
                 <div className="space-y-6">
                     {loading && (

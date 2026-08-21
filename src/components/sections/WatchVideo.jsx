@@ -25,7 +25,7 @@ export default function WatchVideo() {
     const recommendedVideos = sharingVideos.filter(video => video.youtubeId !== id);
 
     return (
-        <section className="min-h-screen py-6 max-w-7xl mx-auto px-4 lg:px-6">
+        <section className="min-h-screen py-6 lg:max-w-7xl mx-auto px-4 lg:px-6">
             <div className="flex justify-between items-center border-b border-slate-200 dark:border-slate-700 pb-4 mt-4 mb-8">
                 <Link to="/index_biu" className="hover:text-[#0a96a4] font-medium flex items-center gap-1.5 transition-all hover:gap-2 text-md md:text-lg text-[#0a98a9] dark:text-[#1fcfe0]">
                     <KeyboardDoubleArrowLeftIcon style={{ fontSize: 18 }} />{t('news.home')}

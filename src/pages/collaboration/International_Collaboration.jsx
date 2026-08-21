@@ -25,7 +25,7 @@ export default function International_Collaboration() {
     };
 
     return (
-        <div className="max-w-7xl m-auto p-2 md:p-4 font-sans mb-32 select-none min-h-screen">
+        <div className="lg:max-w-7xl m-auto p-2 md:p-4 font-sans mb-32 select-none min-h-screen">
             {loading ? (
                 Array.from({ length: 2 }).map((_, idx) => (
                     <div

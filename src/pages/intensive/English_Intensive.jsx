@@ -24,7 +24,7 @@ export default function EnglishIntensive() {
 
   return (
     <main className="Dormitory py-5 md:py-10">
-      <section className="max-w-7xl m-auto md:px-5 px-4 space-y-10">
+      <section className="lg:max-w-7xl m-auto md:px-5 px-4 space-y-10">
         
         {/* Intro Video */}
         <div className="flex justify-center items-center">

@@ -11,7 +11,7 @@ export default function Chinese_Intensive() {
     return (
         <>
             <div className='Dormitory computer_intensive'>
-                <section className='max-w-7xl m-auto md:px-5 px-2'>
+                <section className='lg:max-w-7xl m-auto md:px-5 px-2'>
                     <div className='m-auto flex justify-center items-center mb-5 md:px-0 mt-5'>
                         <YouTubePlayer videoId="SUie6wkvdWg" />
                     </div>

@@ -35,7 +35,7 @@ export default function ViewExtraDetail({ itemTitle }) {
   }
   const item = extraViewDetail[0];
   return (
-    <div className="flex flex-col gap-2 p-2 md:p-4 max-w-7xl m-auto" >
+    <div className="flex flex-col gap-2 p-2 md:p-4 lg:max-w-7xl m-auto" >
       {item.video_id ? (
         <div className="mt-4 aspect-video">
           <iframe

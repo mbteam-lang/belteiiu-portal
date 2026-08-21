@@ -37,7 +37,7 @@ export default function Award() {
   };
 
   return (
-    <div className="p-3 md:p-5 space-y-6 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
+    <div className="p-3 md:p-5 space-y-6 lg:max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
       {award.map((award) => (
         <div key={award.id} className="space-y-4">
           {award.video_1 && (
