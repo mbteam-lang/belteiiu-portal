@@ -14,7 +14,7 @@ export default function E_Learning() {
     const { facultiesData, loading } = useFaculty(3);
     return (
         <div className='bg-[#F8FAFC] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
-            <section className='max-w-7xl m-auto md:px-5 px-3 py-6'>
+            <section className='lg:max-w-7xl m-auto md:px-5 px-3 py-6'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-2">
                     {
                         facultiesData?.data?.map((items, index) => (

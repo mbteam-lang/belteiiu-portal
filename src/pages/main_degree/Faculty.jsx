@@ -11,7 +11,7 @@ export default function Faculty() {
     return (
         <div className='bg-[#F5F5F5] dark:bg-[#282828] min-h-screen transition-colors duration-200'>
             <div className='h-3'></div>
-            <section className='max-w-7xl m-auto md:px-5 px-3'>
+            <section className='lg:max-w-7xl m-auto md:px-5 px-3'>
                 <div className="grid md:gap-4 gap-2 ">
                     {facultiesData && (
                         facultiesData.data?.map((items, index) => (

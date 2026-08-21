@@ -46,7 +46,7 @@ export default function Academic_Research() {
     };
 
     return (
-        <div className="p-2 max-w-7xl m-auto md:px-5 min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
+        <div className="p-2 lg:max-w-7xl m-auto md:px-5 min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
             <div className="flex items-center gap-2 mb-4 select-none">
                 <input
                     type="text"

@@ -11,7 +11,7 @@ export default function Elibrary() {
 
     return (
         <>
-            <div className='flex flex-col gap-3 p-3 md:p-6 lg:p-8 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
+            <div className='flex flex-col gap-3 p-3 md:p-6 lg:p-8 lg:max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200'>
                 {loading ? (
                     Array.from({ length: 6 }).map((_, idx) => (
                         <div

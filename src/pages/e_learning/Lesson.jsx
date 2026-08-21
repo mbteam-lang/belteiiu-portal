@@ -75,7 +75,7 @@ export default function LessonScreen() {
             ) : lesson ? (
                 <div className="min-h-screen bg-[#f8fafc] dark:bg-[#181818] text-gray-900 dark:text-slate-100 transition-colors duration-200">
                     <SearchComponent />
-                    <main className="max-w-7xl mx-auto px-4 lg:px-6 py-6">
+                    <main className="lg:max-w-7xl mx-auto px-4 lg:px-6 py-6">
                         <div className="flex flex-col xl:flex-row gap-6">
 
                             {/* LEFT - VIDEO */}

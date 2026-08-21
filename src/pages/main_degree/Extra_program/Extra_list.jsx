@@ -54,7 +54,7 @@ export default function ExtraList() {
     }, [data, fileLink, loading, navigate]);
 
     return (
-        <div className="flex flex-col gap-2 md:gap-3 md:p-3 p-2 max-w-7xl m-auto min-h-screen">
+        <div className="flex flex-col gap-2 md:gap-3 md:p-3 p-2 lg:max-w-7xl m-auto min-h-screen">
             {/* PDF File Banner */}
             {fileLink && fileTitle && (
                 <Link to={fileLink} target="_blank" className="flex-shrink-0">

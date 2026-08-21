@@ -10,7 +10,7 @@ export default function Academic_Categories() {
     const { academicCategories, loading } = useAcademicCategories();
     return (
         <div className="min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
-            <div className="grid grid-cols-1 md:gap-3 p-4 md:space-y-0 space-y-2 select-none max-w-7xl m-auto">
+            <div className="grid grid-cols-1 md:gap-3 p-4 md:space-y-0 space-y-2 select-none lg:max-w-7xl m-auto">
                 {academicCategories?.map((academic_research) => (
                         <Link key={academic_research.id} to={`/academic_faculties/${academic_research.id}`} rel="noopener noreferrer" className="flex rounded-lg shadow-sm overflow-hidden border border-gray-100 dark:border-slate-700">
                             <div className="bg-white dark:bg-[#353535] flex items-center justify-center p-2 px-4 border-r border-gray-100 dark:border-slate-700">

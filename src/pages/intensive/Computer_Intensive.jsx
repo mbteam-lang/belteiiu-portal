@@ -32,7 +32,7 @@ export default function ComputerIntensive() {
 
   return (
     <main className="Dormitory select-none py-6 md:py-10">
-      <section className="max-w-7xl m-auto md:px-5 px-4 space-y-8">
+      <section className="lg:max-w-7xl m-auto md:px-5 px-4 space-y-8">
         
         {/* Course Presentation Video */}
         <div className="m-auto flex justify-center items-center md:px-0">

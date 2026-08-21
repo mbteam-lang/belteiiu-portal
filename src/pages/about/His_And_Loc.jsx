@@ -9,7 +9,7 @@ export default function Index() {
     const { about, loading } = useAbout();
     return (
         <>
-            <div className="flex flex-col gap-3 p-4 max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
+            <div className="flex flex-col gap-3 p-4 lg:max-w-7xl m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
                 {about.map((history) => (
                     <Link
                         key={history.id}

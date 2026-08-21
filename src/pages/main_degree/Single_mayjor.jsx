@@ -31,7 +31,7 @@ export default function Single_Major() {
                                     </div>
                                 )}
                             </div>
-                            <section className="max-w-7xl mx-auto md:px-5 px-2">
+                            <section className="lg:max-w-7xl mx-auto md:px-5 px-2">
                                 <div className="text-center mb-5">
                                     <h2 className="text-[#0a96a4] dark:text-cyan-400 md:text-3xl text-xl font-bold">{items.title}</h2>
                                     <div className="w-24 h-1 bg-[#0a96a4] dark:bg-cyan-400 mx-auto rounded-full mt-2"></div>

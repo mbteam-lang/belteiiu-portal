@@ -25,8 +25,8 @@ export default function ExtraProgram() {
   );
 
   return (
-    // Expanded container from max-w-7xl to max-w-7xl for a much grander desktop presence
-    <div className="max-w-7xl mx-auto px-4 py-5 lg:py-14">
+    // Expanded container from lg:max-w-7xl to lg:max-w-7xl for a much grander desktop presence
+    <div className="lg:max-w-7xl mx-auto px-4 py-5 lg:py-14">
 
       {/* Grid Layout: Spacious gap, 1 col mobile, 2 cols md, 3 cols lg */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-2">

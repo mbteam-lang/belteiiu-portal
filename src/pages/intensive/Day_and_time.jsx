@@ -8,7 +8,7 @@ export default function Day_And_Time() {
     return (
         <>
             <div className='min-h-screen py-8 bg-slate-50/30 dark:bg-[#282828] transition-colors duration-200'>
-                <section className='max-w-7xl m-auto md:px-6 px-4 space-y-3 md:space-y-4'>
+                <section className='lg:max-w-7xl m-auto md:px-6 px-4 space-y-3 md:space-y-4'>
                     
                     {/* <div className='flex items-center gap-3 border-b border-slate-200 dark:border-slate-700 pb-4'>
                         <div className="w-2.5 h-6 rounded-full bg-[#0a96a4]" />

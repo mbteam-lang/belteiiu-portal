@@ -10,7 +10,7 @@ export default function ViewExtra() {
   const { extraView, loading } = useExtraView(id);
   const item = extraView?.[0];
   return (
-    <div className="max-w-7xl m-auto">
+    <div className="lg:max-w-7xl m-auto">
       {/* 1. SKELETON LOADING STATE */}
       {(loading || !item) ? (
         <div className="flex flex-col gap-2 animate-pulse">
