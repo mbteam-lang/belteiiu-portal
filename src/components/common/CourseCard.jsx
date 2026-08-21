@@ -50,7 +50,7 @@ export default function CourseCard({ course, onClick }) {
                         <School className="h-5 w-5" />
                     </div>
                     <div className="min-w-0">
-                        <p className="text-sm md:text-md font-medium text-gray-600 dark:text-white truncate">
+                        <p className="text-md md:text-lg font-medium text-gray-600 dark:text-white truncate">
                             {/* faculty */}
                             {course.faculty}
                         </p>

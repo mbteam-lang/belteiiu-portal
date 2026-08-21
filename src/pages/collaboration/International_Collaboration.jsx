@@ -3,14 +3,25 @@ import { FiChevronDown } from 'react-icons/fi';
 import usePageTitle from '@/hooks/usePageTitle';
 import { useCollaboration } from '@/hooks/useCollaboration';
 import NoData from '@/components/common/Nodata';
+import ImagePreviewModal from '@/components/common/ImagePreviewModal';
 
 export default function International_Collaboration() {
     usePageTitle('កិច្ចសហប្រតិបត្តិការអន្តរជាតិ', 'International Collaboration');
     const { collaboration, loading } = useCollaboration(2);
     const [expandedIndex, setExpandedIndex] = useState(null);
+    const [previewImage, setPreviewImage] = useState({ isOpen: false, src: '', alt: '' });
 
     const toggleExpand = (index) => {
         setExpandedIndex((prev) => (prev === index ? null : index));
+    };
+
+    const handleImagePreview = (src, alt) => {
+        if (!src) return;
+        setPreviewImage({ isOpen: true, src, alt });
+    };
+
+    const handleClosePreview = () => {
+        setPreviewImage({ isOpen: false, src: '', alt: '' });
     };
 
     return (
@@ -43,7 +54,11 @@ export default function International_Collaboration() {
                                 <img
                                     src={country.image}
                                     alt={country.country}
-                                    className="h-10 w-16 md:h-14 md:w-24 object-cover border border-gray-200 dark:border-slate-700 rounded-sm shadow-sm"
+                                    className="h-10 w-16 md:h-14 md:w-24 object-cover border border-gray-200 dark:border-slate-700 rounded-sm shadow-sm cursor-pointer hover:opacity-85 transition-opacity"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleImagePreview(country.image, country.country);
+                                    }}
                                 />
                                 <span className="text-md md:text-lg font-medium text-gray-800 dark:text-slate-100">
                                     {country.country}
@@ -73,14 +88,16 @@ export default function International_Collaboration() {
                                             <img
                                                 src={item.logo}
                                                 alt={item.title || 'collaboration logo'}
-                                                className="h-10 md:h-14 object-contain"
+                                                className="h-10 md:h-14 object-contain cursor-pointer hover:opacity-85 transition-opacity"
+                                                onClick={() => handleImagePreview(item.logo, item.title)}
                                             />
                                         </div>
                                         <div className="col-span-5 flex items-center justify-center p-2">
                                             <img
                                                 src={item.image}
                                                 alt={item.title || 'collaboration image'}
-                                                className="w-full max-w-[220px] h-[90px] md:h-[120px] object-cover"
+                                                className="w-full max-w-[220px] h-[90px] md:h-[120px] object-cover cursor-pointer hover:opacity-85 transition-opacity rounded"
+                                                onClick={() => handleImagePreview(item.image, item.title)}
                                             />
                                         </div>
                                     </div>
@@ -94,6 +111,12 @@ export default function International_Collaboration() {
                 <NoData />
             )}
 
+            <ImagePreviewModal
+                isOpen={previewImage.isOpen}
+                src={previewImage.src}
+                alt={previewImage.alt}
+                onClose={handleClosePreview}
+            />
         </div>
     );
 }

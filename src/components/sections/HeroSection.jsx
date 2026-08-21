@@ -101,7 +101,7 @@ function ContactGrid() {
     return (
         <div className="animated fadeInDown bg-slate-950/40 backdrop-blur-md rounded-2xl shadow-2xl border border-white/10 overflow-hidden group hover:shadow-slate-950/50 transition-all duration-300">
             <div className="bg-[#0a96a4] dark:bg-[#075f73] text-white py-3.5 px-6">
-                <h2 className="text-sm md:text-base font-bold tracking-wide">
+                <h2 className="text-md md:text-lg font-bold tracking-wide">
                     Contact BELTEI University
                 </h2>
                 <p className="text-slate-200 text-xs mt-0.5 opacity-90">

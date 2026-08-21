@@ -3,14 +3,25 @@ import { FiChevronDown } from 'react-icons/fi';
 import usePageTitle from '@/hooks/usePageTitle';
 import { useCollaboration } from '@/hooks/useCollaboration';
 import NoData from '@/components/common/Nodata';
+import ImagePreviewModal from '@/components/common/ImagePreviewModal';
 
 export default function Scholarship() {
     usePageTitle('អាហារូបករណ៍', 'Scholarship');
     const { collaboration, loading } = useCollaboration(3);
     const [expandedId, setExpandedId] = useState(null);
+    const [previewImage, setPreviewImage] = useState({ isOpen: false, src: '', alt: '' });
 
     const toggleExpand = (index) => {
         setExpandedId(expandedId === index ? null : index);
+    };
+
+    const handleImagePreview = (src, alt) => {
+        if (!src) return;
+        setPreviewImage({ isOpen: true, src, alt });
+    };
+
+    const handleClosePreview = () => {
+        setPreviewImage({ isOpen: false, src: '', alt: '' });
     };
 
     return (
@@ -41,7 +52,15 @@ export default function Scholarship() {
                     >
                         <div className="flex items-center gap-3">
                             <div className="h-10 w-16 md:h-14 md:w-24 bg-blue-900 text-white flex items-center justify-center text-xs rounded-sm shadow-sm border border-gray-200 dark:border-slate-700 overflow-hidden">
-                                <img src={item.image} alt="Logo" className="object-cover w-full h-full" />
+                                <img
+                                    src={item.image}
+                                    alt={item.country || "Logo"}
+                                    className="object-cover w-full h-full cursor-pointer hover:opacity-85 transition-opacity"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleImagePreview(item.image, item.country);
+                                    }}
+                                />
                             </div>
                             <span className="text-md md:text-lg font-medium text-gray-800 dark:text-slate-100">
                                 {item.country}
@@ -61,7 +80,7 @@ export default function Scholarship() {
                                     className="grid grid-cols-12 border-b border-gray-400 dark:border-slate-700 bg-white dark:bg-[#353535] min-h-[80px]"
                                 >
                                     <div className="col-span-1 border-r border-gray-400 dark:border-slate-700 flex items-center justify-center p-1">
-                                        <span className="text-[10px] md:text-base font-bold text-gray-700 dark:text-slate-200">
+                                        <span className="text-[10px] md:text-md font-bold text-gray-700 dark:text-slate-200">
                                             {idx + 1}
                                         </span>
                                     </div>
@@ -90,7 +109,8 @@ export default function Scholarship() {
                                             <img
                                                 src={school.image}
                                                 alt={school.title}
-                                                className="w-full h-14 md:h-24 object-cover border border-gray-300 dark:border-slate-700"
+                                                className="w-full h-14 md:h-24 object-cover border border-gray-300 dark:border-slate-700 cursor-pointer hover:opacity-85 transition-opacity"
+                                                onClick={() => handleImagePreview(school.image, school.title)}
                                             />
                                         ) : (
                                             <div className="w-full h-14 md:h-24 bg-gray-100 dark:bg-slate-700 flex items-center justify-center text-xs text-gray-400 dark:text-slate-400">
@@ -104,6 +124,13 @@ export default function Scholarship() {
                     </div>
                 </div>
             )))}
+
+            <ImagePreviewModal
+                isOpen={previewImage.isOpen}
+                src={previewImage.src}
+                alt={previewImage.alt}
+                onClose={handleClosePreview}
+            />
         </div>
     );
 }

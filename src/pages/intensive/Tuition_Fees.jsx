@@ -34,7 +34,7 @@ export default function Tuition_Fees() {
     const renderSemesterTh = (textKey, bgClass = 'bg-white dark:bg-[#353535]') => (
         <th className={`px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-center ${bgClass} align-middle h-14 sm:h-16 md:h-7`}>
             <div className="flex items-center justify-center h-full w-full">
-                <span className="inline-block -rotate-90 md:rotate-0 whitespace-nowrap text-[9px] sm:text-[11.5px] lg:text-[12px] font-semibold text-gray-700 dark:text-slate-200 transform md:transform-none leading-none">
+                <span className="inline-block -rotate-90 md:rotate-0 whitespace-nowrap text-[8px] md:text-[8.5px] lg:text-[12px] font-semibold text-gray-700 dark:text-slate-200 transform md:transform-none leading-none">
                     {t(`tuition.${textKey}`)}
                 </span>
             </div>
@@ -63,7 +63,7 @@ export default function Tuition_Fees() {
                         <tr className="border-b border-gray-300 dark:border-slate-700">
                             <th
                                 rowSpan={2}
-                                className="w-[35%] md:w-[35%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
+                                className="w-[28%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                             >
                                 {t('tuition.js_faculty')}
                             </th>
@@ -104,23 +104,38 @@ export default function Tuition_Fees() {
                         {natData.map((row) => (
                             <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
                                 <td className="px-1 py-1.5 sm:py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] text-left align-middle">
-                                    <div className="md:px-2 text-[13px] md:text-[16px] lg:text-[16px] font-medium text-[#151B74] dark:text-cyan-300 leading-tight sm:leading-normal break-words whitespace-normal">
+                                    <div className="md:px-2 text-[12px] md:text-[16px] lg:text-[16px] font-medium text-[#151B74] dark:text-cyan-300 leading-tight sm:leading-normal break-words whitespace-normal">
                                         {renderFacultyTitle(t(`tuition.${row.key}`))}
                                     </div>
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee1}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee1}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                    {row.fee2}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                    {row.fee2}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                    {row.fee3 || '-'}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee3 || '-'}
                                 </td>
                             </tr>
@@ -143,7 +158,7 @@ export default function Tuition_Fees() {
                         <tr className="border-b border-gray-300 dark:border-slate-700">
                             <th
                                 rowSpan={2}
-                                className="w-[36%] md:w-[35%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
+                                className="w-[28%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                             >
                                 {t('tuition.js_faculty')}
                             </th>
@@ -177,20 +192,32 @@ export default function Tuition_Fees() {
                         {interData.map((row) => (
                             <tr key={row.key} className="hover:bg-blue-50 dark:hover:bg-slate-700/50 border-b border-gray-300 dark:border-slate-700">
                                 <td className="px-1 py-1.5 sm:py-2 border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] text-left align-middle">
-                                    <div className="md:px-2 text-[13px] md:text-[16px] lg:text-[16px] font-medium text-[#151B74] dark:text-cyan-300 leading-tight sm:leading-normal break-words whitespace-normal">
+                                    <div className="md:px-2 text-[12px] md:text-[16px] lg:text-[16px] font-medium text-[#151B74] dark:text-cyan-300 leading-tight sm:leading-normal break-words whitespace-normal">
                                         {renderFacultyTitle(t(`tuition.${row.key}`))}
                                     </div>
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee1}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                    {row.fee1}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={2} className="px-0.5 py-2 text-[13px] md:text-[15px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                    {row.fee2}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                    {row.fee2}
+                                </td>
+                                <td colSpan={1} className="px-0.5 py-2 text-[8.5px] md:text-[14px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
                             </tr>
@@ -217,7 +244,7 @@ export default function Tuition_Fees() {
                         <tr className="border-b border-gray-300 dark:border-slate-700">
                             <th
                                 rowSpan={2}
-                                className="w-[25%] md:w-[34%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
+                                className="w-[28%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                             >
                                 {t('tuition.academic_degree')}
                             </th>
@@ -288,14 +315,14 @@ export default function Tuition_Fees() {
                         <tr className="border-b border-gray-300 dark:border-slate-700">
                             <th
                                 rowSpan={2}
-                                className="w-[28%] md:w-[28%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
+                                className="w-[30%] align-middle text-center px-1 sm:px-2 py-2 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535] leading-tight relative z-10"
                             >
                                 {t('tuition.academic_degree')}
                             </th>
-                            <th colSpan={2} className="w-[36%] md:w-[36%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
+                            <th colSpan={2} className="align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                 {t('tuition.js_year1')}
                             </th>
-                            <th colSpan={2} className="w-[36%] md:w-[36%] align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
+                            <th colSpan={2} className="align-middle text-center px-0.5 py-1 border-r border-gray-300 dark:border-slate-700 text-[12px] md:text-[15px] lg:text-[17px] font-bold text-[#151B74] dark:text-cyan-300 bg-white dark:bg-[#353535]">
                                 {t('tuition.js_year2')}
                             </th>
                         </tr>
@@ -340,11 +367,7 @@ export default function Tuition_Fees() {
         <div className="bg-[#F8FAFC] dark:bg-[#282828] min-h-screen py-2 sm:py-6 px-1 sm:px-4 transition-colors duration-200 select-none">
             <div className="w-full max-w-7xl mx-auto space-y-3 sm:space-y-5">
                 {/* Header Title */}
-                <div className="pt-3 sm:pt-6 md:px-3">
-                    <h1 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-[#151B74] dark:text-cyan-400 tracking-wide">
-                        {t('tuition.js_tuition_fee')}
-                    </h1>
-                </div>
+                
 
                 {/* Table Content */}
                 <div className="w-full overflow-x-auto">

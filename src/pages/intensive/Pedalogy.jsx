@@ -92,7 +92,7 @@ export default function Pedalogy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Weekday Table */}
             <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
-              <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-white">
+              <table className="w-full border-collapse text-left text-md md:text-lg text-slate-600 dark:text-white">
                 <thead>
                   <tr className="text-white">
                     <th className="bg-[#0a96a4] px-6 py-4 font-semibold text-center" colSpan="2">
@@ -125,7 +125,7 @@ export default function Pedalogy() {
 
             {/* Weekend Table */}
             <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
-              <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-white">
+              <table className="w-full border-collapse text-left text-md md:text-lg text-slate-600 dark:text-white">
                 <thead >
                   <tr className="text-white text-center">
                     <th className="bg-[#0a96a4] px-6 py-4 font-semibold text-center" colSpan="2">{t('tuition.js_sat_sun')}</th>
@@ -166,7 +166,7 @@ export default function Pedalogy() {
           </div>
          
           <div className="overflow-hidden bg-white dark:bg-[#353535] rounded-lg shadow-sm border border-slate-100 dark:border-slate-700">
-            <table className="w-full border-collapse text-left text-sm md:text-base text-slate-600 dark:text-white">
+            <table className="w-full border-collapse text-left text-md md:text-lg text-slate-600 dark:text-white">
               <thead>
                 <tr className="text-white text-center">
                   <th className="bg-[#0a96a4] px-6 py-4 font-semibold text-center">{t('tuition.js_course')}</th>
@@ -209,7 +209,7 @@ export default function Pedalogy() {
                 </div>
                 <ul className="divide-y divide-slate-100 dark:divide-slate-700 px-5">
                   {[1, 2, 3, 4, 5, 6].map((num) => (
-                    <li key={`sem1-${num}`} className="py-4 flex justify-between items-start gap-4 text-sm md:text-base">
+                    <li key={`sem1-${num}`} className="py-4 flex justify-between items-start gap-4 text-md md:text-lg">
                       <span className="text-slate-700 dark:text-slate-200 font-medium leading-relaxed">
                         {t(`pedagogy.js_course_${num}`)}
                       </span>
@@ -233,7 +233,7 @@ export default function Pedalogy() {
                 </div>
                 <ul className="divide-y divide-slate-100 dark:divide-slate-700 px-5">
                   {[7, 8, 9, 10, 11, 12].map((num) => (
-                    <li key={`sem2-${num}`} className="py-4 flex justify-between items-start gap-4 text-sm md:text-base">
+                    <li key={`sem2-${num}`} className="py-4 flex justify-between items-start gap-4 text-md md:text-lg">
                       <span className="text-slate-700 dark:text-slate-200 font-medium leading-relaxed">
                         {t(`pedagogy.js_course_${num}`)}
                       </span>

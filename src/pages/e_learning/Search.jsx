@@ -57,7 +57,7 @@ const SearchComponent = () => {
                                     w-full bg-transparent border-none outline-none ring-0
                                     focus:outline-none focus:border-none focus:ring-0
                                     px-3 py-1
-                                    text-sm md:text-base 
+                                    text-md md:text-lg 
                                     placeholder:text-gray-400
                                     ${darkMode ? 'text-white' : 'text-gray-800'}
                                 `}

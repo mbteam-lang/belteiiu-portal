@@ -20,7 +20,7 @@ export default function EnglishIntensive() {
 
   // Common table th styles
   const thStyles = "md:px-5 md:py-4 text-center bg-[#0a96a4] border border-gray-200 dark:border-slate-700 md:text-lg text-xs text-white font-medium";
-  const tdStyles = "md:px-5 md:py-4 border border-gray-200 dark:border-slate-700 text-center text-sm md:text-base text-wrap text-gray-700 dark:text-slate-200";
+  const tdStyles = "md:px-5 md:py-4 border border-gray-200 dark:border-slate-700 text-center text-md md:text-lg text-wrap text-gray-700 dark:text-slate-200";
 
   return (
     <main className="Dormitory py-5 md:py-10">
