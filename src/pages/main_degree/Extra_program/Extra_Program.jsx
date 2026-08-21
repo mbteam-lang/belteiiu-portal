@@ -60,7 +60,7 @@ export default function ExtraProgram() {
               {/* Text Info Column with Enlarged Fonts */}
               <div className="flex-1 min-w-0 px-4 md:px-5 flex flex-col justify-center">
 
-                <h3 className="font-medium text-gray-700 dark:text-slate-100 text-sm md:text-base lg:text-[17px] leading-snug line-clamp-2 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400 transition-colors">
+                <h3 className="font-medium text-gray-700 dark:text-slate-100 text-md md:text-lg lg:text-[17px] leading-snug line-clamp-2 group-hover:text-[#0a96a4] dark:group-hover:text-cyan-400 transition-colors">
                   {item.title}
                 </h3>
               </div>
@@ -70,7 +70,7 @@ export default function ExtraProgram() {
                 {item.link ? (
                   <FaExternalLinkAlt className="text-xs md:text-sm" />
                 ) : (
-                  <FaChevronRight className="text-sm md:text-base" />
+                  <FaChevronRight className="text-md md:text-lg" />
                 )}
               </div>
             </button>

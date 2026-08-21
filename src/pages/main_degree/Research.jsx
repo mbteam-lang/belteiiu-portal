@@ -33,7 +33,7 @@ export default function Academic_Categories() {
                                 />
                             </div>
                             <div className="w-full flex items-center justify-between px-4 py-3" style={{ background: `linear-gradient(to right, ${academic_research.color})`, }}>
-                                <span className="md:text-base text-md font-normal text-white">
+                                <span className="md:text-md text-md font-normal text-white">
                                     {academic_research.title}
                                 </span>
                                 <NavigateNextIcon className="text-white flex-shrink-0" />

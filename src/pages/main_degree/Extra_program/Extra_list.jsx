@@ -122,7 +122,7 @@ export default function ExtraList() {
                                 {item.title}
                             </p>
                             {item.description && (
-                                <p className="text-sm md:text-md text-gray-600 dark:text-white leading-snug line-clamp-2 mt-1 w-full text-left">
+                                <p className="text-md md:text-lg text-gray-600 dark:text-white leading-snug line-clamp-2 mt-1 w-full text-left">
                                     {item.description}
                                 </p>
                             )}

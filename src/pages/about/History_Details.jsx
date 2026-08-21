@@ -21,7 +21,7 @@ export default function HistoryDetails() {
                     No data available
                 </div>
             )}
-            <div className="flex flex-col gap-3 p-2 md:w-8/12 m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
+            <div className="flex flex-col gap-3 p-2  m-auto min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">
                 {videoId && (
                     <div className="w-full mb-2">
                         <YouTubePlayer videoId={videoId} />
@@ -41,7 +41,7 @@ export default function HistoryDetails() {
                                     className="w-full h-full object-contain"
                                 />
                             </div>
-                            <span className="md:text-base text-sm font-normal text-gray-800 dark:text-slate-100 line-clamp-2">
+                            <span className="md:text-lg text-md font-normal text-gray-800 dark:text-slate-100 line-clamp-2">
                                 {history.title}
                             </span>
                         </div>

@@ -97,7 +97,7 @@ export default function Academic_Research() {
                             <div className="flex items-center">
                                 <img src={academics.image} alt='404' className="w-16 rounded-md" />
                                 <div className="w-full ml-3">
-                                    <h1 className="md:text-base text-sm font-normal text-gray-800 dark:text-slate-100 line-clamp-2 text-left">
+                                    <h1 className="md:text-lg text-md font-normal text-gray-800 dark:text-slate-100 line-clamp-2 text-left">
                                         {academics.title}
                                     </h1>
                                 </div>

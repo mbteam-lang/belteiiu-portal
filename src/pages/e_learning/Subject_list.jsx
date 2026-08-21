@@ -113,7 +113,7 @@ export default function Subject_list() {
                                 <button
                                     key={idx}
                                     onClick={() => setSelectedYearIndex(idx)}
-                                    className={`flex-1 py-4 text-sm md:text-base font-bold transition-all border-b-4 ${selectedYearIndex === idx
+                                    className={`flex-1 py-4 text-md md:text-lg font-bold transition-all border-b-4 ${selectedYearIndex === idx
                                             ? 'border-[#0a96a4] text-[#0a96a4] dark:text-cyan-400'
                                             : 'border-transparent text-gray-400 dark:text-slate-400 hover:text-gray-500 dark:hover:text-slate-200'
                                         }`}

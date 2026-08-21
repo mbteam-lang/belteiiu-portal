@@ -58,7 +58,7 @@ export function CustomTableCell({
     const alignClass = align === 'left' ? 'text-left' : align === 'right' ? 'text-right' : 'text-center';
 
     // Base padding & border styling
-    const baseClasses = `px-2 py-2 border-r border-b border-gray-300 dark:border-slate-700 text-xs sm:text-sm md:text-base font-medium align-middle transition-colors ${alignClass} ${bgClasses} ${textClasses} ${className}`;
+    const baseClasses = `px-2 py-2 border-r border-b border-gray-300 dark:border-slate-700 text-xs sm:text-md md:text-lg font-medium align-middle transition-colors ${alignClass} ${bgClasses} ${textClasses} ${className}`;
 
     const Component = isHeader ? 'th' : 'td';
 

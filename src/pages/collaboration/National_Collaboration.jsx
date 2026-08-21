@@ -1,10 +1,23 @@
+import { useState } from 'react';
 import usePageTitle from '@/hooks/usePageTitle';
 import { useCollaboration } from '@/hooks/useCollaboration';
 import NoData from '@/components/common/Nodata';
+import ImagePreviewModal from '@/components/common/ImagePreviewModal';
 
 export default function NationalCollaboration() {
     usePageTitle('កិច្ចសហប្រតិបត្តិការជាតិ', 'National Collaboration');
     const { collaboration, loading } = useCollaboration(1);
+    const [previewImage, setPreviewImage] = useState({ isOpen: false, src: '', alt: '' });
+
+    const handleImagePreview = (src, alt) => {
+        if (!src) return;
+        setPreviewImage({ isOpen: true, src, alt });
+    };
+
+    const handleClosePreview = () => {
+        setPreviewImage({ isOpen: false, src: '', alt: '' });
+    };
+
     return (
         <div className="py-6 min-h-screen max-w-7xl m-auto bg-slate-50/50 dark:bg-[#282828] transition-colors duration-200">
             <section className="container mx-auto md:px-4 px-2 max-w-2xl">
@@ -33,7 +46,8 @@ export default function NationalCollaboration() {
                                     <img
                                         src={country.image}
                                         alt={country.country}
-                                        className="w-12 h-8 object-cover rounded mr-4"
+                                        className="w-12 h-8 object-cover rounded mr-4 cursor-pointer hover:opacity-85 transition-opacity"
+                                        onClick={() => handleImagePreview(country.image, country.country)}
                                     />
                                 )}
                                 <h2 className="text-xl font-semibold tracking-wide">
@@ -53,7 +67,8 @@ export default function NationalCollaboration() {
                                                     <img
                                                         src={item.logo}
                                                         alt={item.title || "logo"}
-                                                        className="max-w-full max-h-full object-contain"
+                                                        className="max-w-full max-h-full object-contain cursor-pointer hover:opacity-85 transition-opacity"
+                                                        onClick={() => handleImagePreview(item.logo, item.title)}
                                                     />
                                                 </div>
                                                 <div className="min-w-0">
@@ -73,8 +88,9 @@ export default function NationalCollaboration() {
                                                 <div className="flex-shrink-0 w-16 md:w-24 md:h-16 rounded-lg overflow-hidden border border-gray-100 dark:border-slate-700 bg-gray-50 dark:bg-slate-700/50">
                                                     <img
                                                         src={item.image}
-                                                        alt="Colab preview"
-                                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                                        alt={item.title || "Colab preview"}
+                                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                                                        onClick={() => handleImagePreview(item.image, item.title)}
                                                     />
                                                 </div>
                                             )}
@@ -87,6 +103,13 @@ export default function NationalCollaboration() {
                     )}
                 </div>
             </section>
+
+            <ImagePreviewModal
+                isOpen={previewImage.isOpen}
+                src={previewImage.src}
+                alt={previewImage.alt}
+                onClose={handleClosePreview}
+            />
         </div>
     );
 }
