@@ -6,7 +6,7 @@ const ListCard = ({
   title
 }) => {
   return (
-    <div className="group w-full min-h-[4.5rem] bg-white dark:bg-[#353535] shadow-sm border border-gray-100 dark:border-gray-700/40 rounded-md px-4 py-3 flex items-center justify-between shadow-xs transition-all duration-300 cursor-pointer gap-3">
+    <div className="group w-full min-h-[4.5rem] shadow bg-white dark:bg-[#353535] shadow-sm border border-gray-100 dark:border-gray-700/40 rounded-md px-4 py-3 flex items-center justify-between shadow-xs transition-all duration-300 cursor-pointer gap-3">
       <div className="flex items-center gap-3.5 min-w-0">
         <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-sky-50/80 dark:bg-slate-700/80 flex items-center justify-center p-2 shrink-0">
           <img
