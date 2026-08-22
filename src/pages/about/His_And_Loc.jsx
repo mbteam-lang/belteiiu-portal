@@ -22,8 +22,8 @@ export default function Index() {
                         rel="noopener noreferrer"
                     >
                         <ListCard
-                            images = {history.image}
-                            title = {history.title}
+                            images={history.image}
+                            title={history.title}
                         />
                     </Link>
                 ))}

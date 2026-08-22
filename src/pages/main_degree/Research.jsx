@@ -1,11 +1,11 @@
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Link } from 'react-router-dom';
-import { useAcademicResearch } from '@/hooks/useAcademicResearch';
+import { useAcademicCategories } from '@/hooks/useAcademic';
 import usePageTitle from '@/hooks/usePageTitle';
 
 export default function Academic_Categories() {
-    usePageTitle('ការចុះឈ្មោះ', 'Admission');
-    const { academicResearch, loading } = useAcademicResearch();
+    usePageTitle('កិច្ចការស្រាវជ្រាវ', 'Academic Research');
+    const { academicCategories, loading } = useAcademicCategories();
     return (
         <>
             <div className="grid grid-cols-1 md:gap-3 p-4 md:space-y-0 space-y-2 select-none">
@@ -23,7 +23,7 @@ export default function Academic_Categories() {
                         </div>
                     ))
                 ) : (
-                    academicResearch?.map((academic_research) => (
+                    academicCategories?.map((academic_research) => (
                         <Link key={academic_research.id} to={`/academic_faculties/${academic_research.id}`} rel="noopener noreferrer" className="flex rounded-lg shadow-sm overflow-hidden">
                             <div className="bg-white dark:bg-[#353535] flex items-center justify-center p-2 px-4">
                                 <img

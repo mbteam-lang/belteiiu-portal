@@ -42,7 +42,7 @@ export default function Course() {
     // Performance fix: Use lazy state initialization
     const [isDark] = useState(() => localStorage.getItem('darkMode') === 'dark');
 
-    usePageTitle('កិច្ចសហប្រតិបត្តិការជាតិ', 'National Collaboration');
+    usePageTitle('វគ្គសិក្សា', 'Course');
 
     const { course, loading, nodata, error, countView } = useElearning({ subjectID: id });
 

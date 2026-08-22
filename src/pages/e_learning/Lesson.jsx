@@ -15,7 +15,7 @@ const Player = createPlayer({ features: videoFeatures });
 
 export default function LessonScreen() {
     const { id: courseID } = useParams();
-    usePageTitle('កិច្ចសហប្រតិបត្តិការជាតិ', 'National Collaboration');
+    usePageTitle('មេរៀន', 'Lesson');
     const { lesson, relatedCourse, loading, nodata, countView } = useElearning({ courseID });
     const [activeLessonId, setActiveLessonId] = useState(null);
     const [currentVideo, setCurrentVideo] = useState(null);

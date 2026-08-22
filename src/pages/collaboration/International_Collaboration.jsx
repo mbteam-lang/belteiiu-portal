@@ -71,8 +71,8 @@ export default function International_Collaboration() {
                         </div>
                         <div
                             className={`overflow-hidden transition-all duration-300 ${expandedIndex === index
-                                    ? 'max-h-[2000px] opacity-100 p-2 border-t border-gray-100 dark:border-slate-700'
-                                    : 'max-h-0 opacity-0'
+                                ? 'max-h-[2000px] opacity-100 p-2 border-t border-gray-100 dark:border-slate-700'
+                                : 'max-h-0 opacity-0'
                                 }`}
                         >
                             <div className="border border-gray-200 dark:border-slate-700 overflow-hidden">

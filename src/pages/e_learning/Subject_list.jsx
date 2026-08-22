@@ -12,7 +12,7 @@ import NoData from '@/components/common/Nodata.jsx';
 
 export default function Subject_list() {
     const { id } = useParams();
-    usePageTitle('កិច្ចសហប្រតិបត្តិការជាតិ', 'National Collaboration');
+    usePageTitle('បញ្ជីមុខវិជ្ជា', 'Subject List');
     const { subjectList, loading, nodata } = useElearning(id);
     const [isDark, setIsDark] = useState(localStorage.getItem('darkMode') === 'dark');
 
