@@ -20,14 +20,14 @@ export const useAcademicFaculty = (cateogryID) => {
 
     const fetchMajors = async (cateogryID) => {
         if (academicFacultyCache[cacheKey]) {
-            setAcademicFaculty(Array.isArray(academicFacultyCache[cacheKey]) ? academicFacultyCache[cacheKey] : []);
+            setAcademicFaculty(academicFacultyCache[cacheKey]);
             setLoading(false);
             return;
         }
         setLoading(true);
         try {
             const res = await getService(endpoints.academicFaculties, { academic_categories: cateogryID });
-            if (res.code === 200 && Array.isArray(res.data)) {
+            if (res.code === 200) {
                 academicFacultyCache[cacheKey] = res.data;
                 setAcademicFaculty(res.data);
             } else {
@@ -42,10 +42,5 @@ export const useAcademicFaculty = (cateogryID) => {
         }
     };
 
-    return { 
-        academicFaculty: Array.isArray(academicFaculty) ? academicFaculty : [], 
-        loading, 
-        error, 
-        refetch: fetchMajors 
-    };
+    return { academicFaculty, loading, error, refetch: fetchMajors };
 };

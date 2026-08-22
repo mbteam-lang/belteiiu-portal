@@ -6,7 +6,7 @@ import usePageTitle from '@/hooks/usePageTitle';
 
 export default function Academic_Categories() {
 
-    usePageTitle('កិច្ចការស្រាវជ្រាវ', 'Academic Research');
+    usePageTitle('ការចុះឈ្មោះ', 'Admission');
     const { academicCategories, loading } = useAcademicCategories();
     return (
         <div className="min-h-screen text-slate-800 dark:text-slate-100 transition-colors duration-200">

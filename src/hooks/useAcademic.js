@@ -13,16 +13,11 @@ export const useAcademicCategories = () => {
     const currentLanguage = getLanguage();
     
     const fetchAdmission = async () => {
-        if (academicCategoriesCache[currentLanguage] && Array.isArray(academicCategoriesCache[currentLanguage])) {
-            setAcademicCategories(academicCategoriesCache[currentLanguage]);
-            setLoading(false);
-            return;
-        }
         setLoading(true);
         try {
             const res = await getService(endpoints.academicCategories);
-            if(res.code === 200 && Array.isArray(res.data)) {
-                academicCategoriesCache[currentLanguage] = res.data;
+            if(res.code === 200) {
+                academicCategoriesCache[currentLanguage] = res;
                 setAcademicCategories(res.data);
             } else {
                 setAcademicCategories([]);
@@ -30,6 +25,7 @@ export const useAcademicCategories = () => {
                     getResponseMessage({response: res})
                 );
             }
+            setLoading(false);
         } catch (error) {
             setError(getResponseMessage(error));
             setAcademicCategories([]);
@@ -43,7 +39,7 @@ export const useAcademicCategories = () => {
     }, [currentLanguage]);
 
     return {
-        academicCategories: Array.isArray(academicCategories) ? academicCategories : [],
+        academicCategories,
         loading,
         error,
         refetch: fetchAdmission,

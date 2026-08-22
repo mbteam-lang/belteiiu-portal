@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import i18n from 'i18next';
 import Cover from '@/assets/images/cover.png'
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import usePageTitle from '@/hooks/usePageTitle';
 
 export default function Index() {
-    usePageTitle('ការសិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិក', 'E-Learning');
+    usePageTitle('E-Learning', 'E-Learning');
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState([]);
     const [dataPopCourse, setDataPopCourse] = useState([]);

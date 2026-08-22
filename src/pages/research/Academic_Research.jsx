@@ -136,11 +136,11 @@ export default function Academic_Research() {
                             </div>
                         </div>
                     ))
-                ) : Array.isArray(academicResearch) && academicResearch.length > 0 ? (
+                ) : academicResearch.length > 0 ? (
                     academicResearch.map((academics) => (
                         <div
                             key={academics.id}
-                            onClick={() => academics.pdf && window.open(academics.pdf, "_blank", "noopener,noreferrer")}
+                            onClick={() => window.open(academics.pdf, "_blank", "noopener,noreferrer")}
                             className="flex items-center justify-between bg-white dark:bg-[#353535] border border-gray-100 dark:border-slate-700 rounded-lg shadow-sm px-3 py-1 cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-700/60 transition-colors"
                         >
                             <div className="flex items-center">
@@ -175,7 +175,7 @@ export default function Academic_Research() {
                             onChange={(e) => setMajorId(e.target.value)}
                         >
                             <option value="">Select Major</option>
-                            {filters?.major?.map((m) => (
+                            {filters.major?.map((m) => (
                                 <option key={m.id} value={m.id}>{m.title}</option>
                             ))}
                         </select>
@@ -187,7 +187,7 @@ export default function Academic_Research() {
                             onChange={(e) => setYearId(e.target.value)}
                         >
                             <option value="">Select Year</option>
-                            {filters?.year?.map((y) => (
+                            {filters.year?.map((y) => (
                                 <option key={y.id} value={y.id}>{y.title}</option>
                             ))}
                         </select>

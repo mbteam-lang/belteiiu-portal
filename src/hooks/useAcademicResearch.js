@@ -17,7 +17,7 @@ export const useAcademicResearch = (facultyID) => {
     const fetchAcademicResearch = async (params = {}) => {
         if (!facultyID) return;
         const hasFilters = Object.values(params).some(v => v !== "" && v !== null && v !== undefined);
-        if (!hasFilters && academicResearchCache[cacheKey] && Array.isArray(academicResearchCache[cacheKey])) {
+        if (!hasFilters && academicResearchCache[cacheKey]) {
             setAcademicResearch(academicResearchCache[cacheKey]);
             return;
         }
@@ -33,7 +33,7 @@ export const useAcademicResearch = (facultyID) => {
                 faculty_id: facultyID,
                 ...cleanParams,
             });
-            if (res.code === 200 && Array.isArray(res.data) && res.data.length > 0) {
+            if (res.code === 200 && res.data?.length > 0) {
                 if (!hasFilters) {
                     academicResearchCache[cacheKey] = res.data;
                 }
@@ -61,9 +61,8 @@ export const useAcademicResearch = (facultyID) => {
     }, [currentLanguage, facultyID]);
 
     return { 
-        academicResearch: Array.isArray(academicResearch) ? academicResearch : [], 
-        loading, 
-        error, 
+        academicResearch, 
+        loading, error, 
         refetch: fetchAcademicResearch 
     };
 };

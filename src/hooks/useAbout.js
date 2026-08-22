@@ -17,15 +17,11 @@ export const useAbout = (id) => {
     const catchKey = `${currentLanguage}_${id}`;
 
     const fetchAbout = async () => {
-        if (aboutCache[currentLanguage] && Array.isArray(aboutCache[currentLanguage])) {
-            setAbout(aboutCache[currentLanguage]);
-            return;
-        }
         setLoading(true);
         try {
             const res = await getService(endpoints.about_list);
-            if (res.code === 200 && Array.isArray(res.data)) {
-                aboutCache[currentLanguage] = res.data;
+            if (res.code === 200) {
+                aboutCache[currentLanguage] = res;
                 setAbout(res.data);
             } else {
                 setAbout([]);
@@ -40,21 +36,17 @@ export const useAbout = (id) => {
     };
 
     const fetchDetail = async (id) => {
-        if (detailCache[catchKey] && Array.isArray(detailCache[catchKey])) {
-            setDetails(detailCache[catchKey]);
-            setNodata(false);
-            return;
-        }
         setLoading(true);
         try {
             const res = await getService(endpoints.type_university, {
                 university: id,
             });
 
-            if (res.code === 200 && Array.isArray(res.data)) {
-                detailCache[catchKey] = res.data;
+            if (res.code === 200) {
+                detailCache[catchKey] = res;
                 setDetails(res.data);
                 setNodata(false);
+
             } else {
                 setDetails([]);
                 setError(getResponseMessage({ response: res }));
@@ -75,7 +67,8 @@ export const useAbout = (id) => {
             const res = await getService(endpoints.single_university, {
                 university_list: id,
             });
-            if (res.code === 200 && Array.isArray(res.data)) {
+            if (res.code === 200) {
+                detailCache[catchKey] = res;
                 setAward(res.data);
             } else {
                 setAward([]);
@@ -100,9 +93,9 @@ export const useAbout = (id) => {
     }, [currentLanguage, id]);
 
     return {
-        about: Array.isArray(about) ? about : [],
-        award: Array.isArray(award) ? award : [],
-        details: Array.isArray(details) ? details : [],
+        about,
+        award,
+        details,
         loading,
         nodata,
         error,

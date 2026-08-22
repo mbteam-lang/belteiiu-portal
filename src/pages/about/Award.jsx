@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import YouTubePlayer from '@/components/common/YouTubePlayer';
+import YouTubePlayer  from '@/components/common/YouTubePlayer';
 import usePageTitle from "@/hooks/usePageTitle";
 import { useAbout } from "@/hooks/useAbout";
 
@@ -10,7 +10,7 @@ export default function Award() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   usePageTitle('ព័ត៌មានលម្អិត', 'Award Details');
-  const { award, loading, nodata } = useAbout(id);
+  const { award, loading , nodata} = useAbout(id);
 
   // Modal control functions
   const openModal = (index) => {
@@ -46,7 +46,7 @@ export default function Award() {
             </div>
           )}
           {award.video_2 && (
-            <div className="w-full mb-2">
+           <div className="w-full mb-2">
               <YouTubePlayer videoId={award.video_2} />
             </div>
           )}
@@ -80,21 +80,21 @@ export default function Award() {
       {/* Modal for Full Image View */}
       {isModalOpen && award[0]?.albums && award[0].albums.length > 0 && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <button className="absolute top-4 right-4 text-white text-2xl" onClick={closeModal}>
-            ×
-          </button>
-          <button className="absolute left-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 text-white text-2xl shadow-lg" onClick={goToPrevious}>
-            ←
-          </button>
-          <img
-            src={award[0].albums[currentImageIndex].name}
-            alt={`Full Album ${award[0].albums[currentImageIndex].albums_id}`}
-            className="max-h-[90vh] max-w-[90vw] object-contain"
-          />
-          <button className="absolute right-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 text-white text-2xl shadow-lg" onClick={goToNext}>
-            →
-          </button>
-        </div>
+            <button className="absolute top-4 right-4 text-white text-2xl" onClick={closeModal}>
+              ×
+            </button>
+            <button className="absolute left-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 text-white text-2xl shadow-lg" onClick={goToPrevious}>
+              ←
+            </button>
+            <img
+              src={award[0].albums[currentImageIndex].name}
+              alt={`Full Album ${award[0].albums[currentImageIndex].albums_id}`}
+              className="max-h-[90vh] max-w-[90vw] object-contain"
+            />
+            <button className="absolute right-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 text-white text-2xl shadow-lg" onClick={goToNext}>
+              →
+            </button>
+        </div>  
       )}
     </div>
   );
