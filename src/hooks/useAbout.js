@@ -20,7 +20,6 @@ export const useAbout = (id) => {
         setLoading(true);
         try {
             const res = await getService(endpoints.about_list);
-            console.log("data : ", res)
             if (res.code === 200) {
                 aboutCache[currentLanguage] = res;
                 setAbout(res.data);

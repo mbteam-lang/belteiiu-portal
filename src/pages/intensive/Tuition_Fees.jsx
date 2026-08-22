@@ -108,34 +108,34 @@ export default function Tuition_Fees() {
                                         {renderFacultyTitle(t(`tuition.${row.key}`))}
                                     </div>
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-white dark:bg-[#353535] dark:text-slate-200 align-middle">
                                     {row.fee1}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee2}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee3 || '-'}
                                 </td>
-                                <td colSpan={1} className="px-0.5 py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
+                                <td colSpan={1} className="py-2 text-[7px] md:text-[13px] lg:text-[17px] border-r border-gray-300 dark:border-slate-700 bg-[#f4f7e6] dark:bg-slate-700/70 dark:text-slate-200 align-middle">
                                     {row.fee3 || '-'}
                                 </td>
                             </tr>

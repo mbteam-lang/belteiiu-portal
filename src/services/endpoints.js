@@ -7,7 +7,6 @@ export const endpoints = {
     about_list: '/about-universities',
     type_university: '/type-universities',
     single_university: '/single-universities',
-    extraDetail: '/extras-detail',
     faculty: '/faculties',
     countAll: '/count-all',
     collaboration: '/portal-collaborations',
@@ -36,3 +35,6 @@ export const endpoints = {
     intensives: '/intensives',
     worldwideElibrary: '/worldwide-elibrary',
 };
+
+export const ENDPOINTS = endpoints;
+export default endpoints;

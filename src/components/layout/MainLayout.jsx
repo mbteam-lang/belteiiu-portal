@@ -1,9 +1,25 @@
-import React, { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+// src/components/layout/MainLayout.jsx
+
+import React, { useEffect, useMemo } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/layout/Navbar';
-import { isMobile } from 'react-device-detect';
+import { isMobile as deviceIsMobile } from 'react-device-detect';
 
 export default function MainLayout() {
+    const location = useLocation();
+
+    // Synchronous mobile & webview detection to prevent any initial UI flash
+    const isMobileClient = useMemo(() => {
+        if (typeof window === 'undefined') return false;
+        if (deviceIsMobile) return true;
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('mobile') === 'true' || params.get('is_mobile') === 'true' || params.get('app') === 'true') {
+            return true;
+        }
+        return false;
+    }, []);
+
     useEffect(() => {
         const handleContextMenu = (e) => {
             // Block contextmenu ONLY when triggered by touch (mobile long-press),
@@ -20,12 +36,20 @@ export default function MainLayout() {
     }, []);
 
     return (
-        <div className="relative w-full min-h-screen flex flex-col bg-white dark:bg-[#282828] text-slate-900 dark:text-slate-100 transition-colors duration-200">
-            {!isMobile && (
+        <div className="relative w-full min-h-screen min-h-[100dvh] flex flex-col bg-white dark:bg-[#282828] text-slate-900 dark:text-slate-100 transition-colors duration-200">
+            {!isMobileClient && (
                 <Navbar />
             )}
-            <main className="flex-1 w-full">
-                <Outlet />
+            <main className="flex-1 w-full overflow-hidden">
+                <motion.div
+                    key={location.pathname}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+                    className="w-full h-full"
+                >
+                    <Outlet />
+                </motion.div>
             </main>
         </div>
     );

@@ -63,8 +63,8 @@ export default function Index() {
                 <div className="relative flex justify-center items-center">
                     <img src={Cover} alt="" className='w-full md:h-[550px] h-[250px] object-cover' />
                     <div className='absolute flex flex-col justify-center items-center text-center xl:space-y-10 lg:space-y-8 md:space-y-5 sm:space-y-2 space-y-3'>
-                        <h1 className='font-black text-center  md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2 '>សិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិច​</h1>
-                        <h1 className='font-black text-center  md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2 '>E-Learning</h1>
+                        <h1 className='font-black text-center md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2'>សិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិច</h1>
+                        <h1 className='font-black text-center md:text-5xl lg:text-6xl xl:text-7xl text-3xl text-white sm:mb-4 mb-2'>E-Learning</h1>
                         {/* <h1 className='text-white xl:text-3xl  lg:text-2xl md:text-xl sm:text-lg text-sm font-bold'></h1> */}
                         <div className=' md:w-auto text-center flex flex-wrap justify-center xl:gap-32 lg:gap-28 md:gap-10'>
                             <div className="w-28 md:w-auto">
@@ -139,14 +139,14 @@ export default function Index() {
                     <section className='mx-auto'>
                         {loading ? (
                             <div className="skeleton-loading">
-                                <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
+                                <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
                                     {[...Array(4)].map((_, indexPopCourse) => (
                                         <div key={indexPopCourse} className="skeleton-item w-full h-60 rounded-md bg-gray-200 dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse" />
                                     ))}
                                 </div>
                             </div>
                         ) : (
-                            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
+                            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
                                 {dataPopCourse.map((popCourse, indexPopCourse) => {
                                     const maxLength = 30;
                                     const isTruncated = popCourse.title.length > maxLength;
@@ -207,14 +207,14 @@ export default function Index() {
                     <section className='mx-auto'>
                         {loading ? (
                             <div className="skeleton-loading">
-                                <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
+                                <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
                                     {[...Array(4)].map((_, indexNewCourse) => (
                                         <div key={indexNewCourse} className="skeleton-item w-full h-60 rounded-md bg-gray-200 dark:bg-[#353535] border border-gray-100 dark:border-slate-700 animate-pulse" />
                                     ))}
                                 </div>
                             </div>
                         ) : (
-                            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3'>
+                            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2'>
                                 {dataNewCourse.map((newCourse, indexNewCourse) => {
                                     const maxLength = 30;
                                     const isTruncated = newCourse.title.length > maxLength;

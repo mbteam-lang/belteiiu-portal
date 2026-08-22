@@ -70,7 +70,7 @@ export default function Academic_Research() {
                 </button>
             </div>
 
-            <div className="grid grid-cols-1 gap-3">
+            <div className="grid grid-cols-1 gap-2">
                 {loading ? (
                     Array.from({ length: 5 }).map((_, index) => (
                         <div

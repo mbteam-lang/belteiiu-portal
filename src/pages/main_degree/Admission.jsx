@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useAdmission } from '@/hooks/useAdmission';
@@ -8,11 +8,12 @@ export default function Admission() {
   const [expandedId, setExpandedId] = useState(null);
   const contentRefs = useRef({});
   usePageTitle('ការចុះឈ្មោះ', 'Admission');
-  const { admission, loading } = useAdmission();
+  const { admission } = useAdmission();
 
   const toggleExpand = (id) => {
     setExpandedId((prev) => (prev === id ? null : id));
   };
+
   return (
     <div className="bg-[#F5F5F5] dark:bg-[#282828] min-h-screen select-none transition-colors duration-200">
       <div className="h-5" />

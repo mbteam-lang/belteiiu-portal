@@ -6,8 +6,8 @@ import HttpApi from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { getLanguage, setLanguage } from '@/services/languageService';
 
-const params = new URLSearchParams(window.location.search);
-const urlLang = params.get('lang');
+const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+const urlLang = params?.get('lang');
 const supported = ['en', 'kh'];
 
 const currentLanguage =
@@ -39,7 +39,6 @@ i18n.use(HttpApi)
             escapeValue: false,
         },
         detection: {
-            // Priority
             order: [
                 'querystring',
                 'localStorage',
@@ -48,17 +47,9 @@ i18n.use(HttpApi)
                 'htmlTag',
             ],
             lookupQuerystring: 'lang',
-            // Save language
             caches: ['localStorage'],
             lookupLocalStorage: 'language',
         },
     });
-
-// Debug (optional)
-// i18n.on('languageChanged', (lng) => {
-//   console.log('======================');
-//   console.log('Language Changed:', lng);
-//   console.trace();
-// });
 
 export default i18n;
